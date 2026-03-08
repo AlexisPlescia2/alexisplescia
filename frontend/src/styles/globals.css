@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply bg-background text-[#e8e8e8];
+    font-family: 'DM Sans', system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-background min-h-screen antialiased;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-surface;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-muted rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-accent;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent text-white font-body font-semibold rounded-md hover:bg-blue-900 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border border-accent text-accent font-body font-semibold rounded-md hover:bg-accent/10 transition-all duration-200;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-[#e8e8e8]/60 font-body font-medium rounded-md hover:text-[#e8e8e8] hover:bg-surface transition-all duration-200;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-3 bg-surface border border-border rounded-md text-[#e8e8e8] font-body placeholder-muted focus:outline-none focus:border-accent transition-colors;
+  }
+
+  .card-dark {
+    @apply bg-card border border-border rounded-lg;
+  }
+
+  .section-title {
+    @apply font-display text-4xl md:text-5xl tracking-widest text-[#e8e8e8] uppercase;
+  }
+
+  .skeleton {
+    @apply bg-surface animate-pulse rounded-md;
+  }
+}
+
+@layer utilities {
+  .text-dim {
+    color: #777777;
+  }
+
+  .text-body {
+    color: #e8e8e8;
+  }
+}

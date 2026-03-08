@@ -1,0 +1,116 @@
+import api from './api'
+
+export interface AdminStats {
+  totalRevenue: number
+  totalOrders: number
+  totalProducts: number
+  totalCustomers: number
+  averageOrderValue: number
+  revenueGrowth: number
+  ordersByStatus: { status: string; count: number }[]
+  topProducts: { name: string; category: string; totalSold: number; revenue: number }[]
+  salesByCategory: { category: string; revenue: number; percentage: number; count: number }[]
+  monthlySales: { month: string; revenue: number; orders: number }[]
+  dailySales: { date: string; revenue: number; orders: number }[]
+  lowStockProducts: { name: string; stock: number }[]
+  recentOrders: AdminOrder[]
+}
+
+export interface AdminOrder {
+  id: string
+  createdAt: string
+  total: number
+  status: string
+  address: string
+  user: { name: string; email: string }
+  items: { id: string; quantity: number; price: number; name: string; product: { name: string; images: string[] } }[]
+}
+
+export interface AdminProduct {
+  id: string
+  name: string
+  slug: string
+  description: string
+  price: number
+  comparePrice: number | null
+  onSale: boolean
+  stock: number
+  images: string[]
+  brand: string
+  featured: boolean
+  categoryId: string
+  category: { id: string; name: string; slug: string }
+  createdAt: string
+}
+
+export interface AdminCategory {
+  id: string
+  name: string
+  slug: string
+  image?: string
+  _count: { products: number }
+}
+
+export const adminService = {
+  async getStats(): Promise<AdminStats> {
+    const { data } = await api.get('/admin/stats')
+    return data
+  },
+
+  async getProducts(search?: string): Promise<AdminProduct[]> {
+    const { data } = await api.get('/admin/products', { params: search ? { search } : {} })
+    return data
+  },
+
+  async createProduct(data: Partial<AdminProduct>): Promise<AdminProduct> {
+    const { data: res } = await api.post('/admin/products', data)
+    return res
+  },
+
+  async updateProduct(id: string, data: Partial<AdminProduct>): Promise<AdminProduct> {
+    const { data: res } = await api.patch(`/admin/products/${id}`, data)
+    return res
+  },
+
+  async deleteProduct(id: string): Promise<void> {
+    await api.delete(`/admin/products/${id}`)
+  },
+
+  async getCategories(): Promise<AdminCategory[]> {
+    const { data } = await api.get('/admin/categories')
+    return data
+  },
+
+  async createCategory(data: { name: string; image?: string }): Promise<AdminCategory> {
+    const { data: res } = await api.post('/admin/categories', data)
+    return res
+  },
+
+  async updateCategory(id: string, data: { name?: string; image?: string }): Promise<AdminCategory> {
+    const { data: res } = await api.patch(`/admin/categories/${id}`, data)
+    return res
+  },
+
+  async deleteCategory(id: string): Promise<void> {
+    await api.delete(`/admin/categories/${id}`)
+  },
+
+  async getOrders(status?: string): Promise<AdminOrder[]> {
+    const { data } = await api.get('/admin/orders', { params: status ? { status } : {} })
+    return data
+  },
+
+  async updateOrderStatus(id: string, status: string): Promise<AdminOrder> {
+    const { data } = await api.patch(`/admin/orders/${id}`, { status })
+    return data
+  },
+
+  async getConfig(): Promise<Record<string, string>> {
+    const { data } = await api.get('/config')
+    return data
+  },
+
+  async updateConfig(updates: Record<string, string>): Promise<void> {
+    await api.patch('/config', updates)
+  },
+}
