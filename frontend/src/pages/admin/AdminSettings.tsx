@@ -24,7 +24,8 @@ const SECTIONS = [
   {
     title: 'Redes sociales',
     fields: [
-      { key: 'instagram_url', label: 'URL de Instagram' },
+      { key: 'github_url', label: 'URL de GitHub' },
+      { key: 'linkedin_url', label: 'URL de LinkedIn' },
       { key: 'whatsapp_number', label: 'WhatsApp (ej: 5491112345678)' },
     ],
   },
