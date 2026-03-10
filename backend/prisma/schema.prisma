@@ -41,6 +41,7 @@ model Product {
   onSale       Boolean  @default(false)
   stock        Int      @default(0)
   images       String[]
+  features     String[] @default([])
   brand        String
   featured     Boolean  @default(false)
   category     Category @relation(fields: [categoryId], references: [id])
