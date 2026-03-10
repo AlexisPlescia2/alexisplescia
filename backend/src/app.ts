@@ -16,7 +16,7 @@ app.use(
       if (!origin) return callback(null, true)
       const isAllowed =
         allowedOrigins.includes(origin) ||
-        /^https:\/\/alexisplescia.*\.vercel\.app$/.test(origin)
+        origin.endsWith('.vercel.app')
       if (isAllowed) {
         callback(null, true)
       } else {
