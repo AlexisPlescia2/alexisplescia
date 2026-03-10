@@ -11,13 +11,14 @@ interface FormData {
   categoryId: string
   brand: string
   images: string
+  projectUrl: string
   featured: boolean
   onSale: boolean
 }
 
 const EMPTY: FormData = {
   name: '', description: '', price: '', comparePrice: '', stock: '',
-  categoryId: '', brand: '', images: '', featured: false, onSale: false,
+  categoryId: '', brand: '', images: '', projectUrl: '', featured: false, onSale: false,
 }
 
 export default function AdminProductForm() {
@@ -48,6 +49,7 @@ export default function AdminProductForm() {
             categoryId: product.categoryId,
             brand: product.brand,
             images: product.images.join('\n'),
+            projectUrl: product.projectUrl || '',
             featured: product.featured,
             onSale: product.onSale,
           })
@@ -85,6 +87,7 @@ export default function AdminProductForm() {
       categoryId: form.categoryId,
       brand: form.brand.trim(),
       images: imagesArr,
+      projectUrl: form.projectUrl.trim() || null,
       featured: form.featured,
       onSale: form.onSale,
     }
@@ -155,6 +158,17 @@ export default function AdminProductForm() {
             <option value="">Seleccioná una categoría</option>
             {categories.map((c) => <option key={c.id} value={c.id}>{c.name}</option>)}
           </select>
+        </Field>
+
+        <Field label="URL del proyecto (botón 'Ver proyecto')">
+          <input
+            className="input-admin"
+            type="url"
+            value={form.projectUrl}
+            onChange={(e) => set('projectUrl', e.target.value)}
+            placeholder="https://mi-proyecto.vercel.app"
+          />
+          <p className="text-xs text-white/30 mt-1">Si está vacío el botón no se muestra</p>
         </Field>
 
         <Field label="URLs de imágenes (una por línea)">
