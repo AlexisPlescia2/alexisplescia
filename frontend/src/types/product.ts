@@ -16,6 +16,7 @@ export interface Product {
   onSale?: boolean
   stock: number
   images: string[]
+  features: string[]
   brand: string
   featured: boolean
   categoryId: string

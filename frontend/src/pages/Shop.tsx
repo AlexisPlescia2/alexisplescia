@@ -24,7 +24,7 @@ export default function Shop() {
 
   return (
     <div className="min-h-screen bg-background py-12 px-4">
-      <div className="max-w-4xl mx-auto">
+      <div className="max-w-6xl mx-auto">
 
         {/* Header */}
         <div className="mb-10">
@@ -65,14 +65,17 @@ export default function Shop() {
         {loading && (
           <div className="space-y-8">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="card-dark overflow-hidden animate-pulse">
-                <div className="w-full aspect-video bg-surface" />
-                <div className="p-8 space-y-4">
-                  <div className="h-3 bg-surface rounded w-20" />
-                  <div className="h-6 bg-surface rounded w-64" />
-                  <div className="h-4 bg-surface rounded w-full" />
-                  <div className="h-4 bg-surface rounded w-3/4" />
+              <div key={i} className="overflow-hidden animate-pulse flex" style={{ background: '#111111', border: '1px solid #222', borderRadius: 8 }}>
+                <div className="p-8 lg:p-10 lg:w-1/2 space-y-4">
+                  <div className="h-3 rounded w-20" style={{ background: '#1a1a1a' }} />
+                  <div className="h-8 rounded w-64" style={{ background: '#1a1a1a' }} />
+                  <div className="h-4 rounded w-full" style={{ background: '#1a1a1a' }} />
+                  <div className="h-4 rounded w-3/4" style={{ background: '#1a1a1a' }} />
+                  <div className="space-y-2 pt-2">
+                    {[1,2,3].map(j => <div key={j} className="h-3 rounded w-full" style={{ background: '#1a1a1a' }} />)}
+                  </div>
                 </div>
+                <div className="hidden lg:block lg:w-1/2 min-h-[380px]" style={{ background: '#141414' }} />
               </div>
             ))}
           </div>

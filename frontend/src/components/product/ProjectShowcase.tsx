@@ -9,58 +9,163 @@ interface ProjectShowcaseProps {
 
 export default function ProjectShowcase({ project, index }: ProjectShowcaseProps) {
   const techs = project.brand.split('·').map((t) => t.trim()).filter(Boolean)
+  const features = project.features ?? []
 
   return (
-    <article className="card-dark overflow-hidden">
-      {/* Carrusel */}
-      <ImageCarousel images={project.images} alt={project.name} />
+    <article
+      style={{
+        background: '#111111',
+        border: '1px solid #222222',
+        borderRadius: 8,
+        overflow: 'hidden',
+      }}
+    >
+      <div className="flex flex-col lg:flex-row">
 
-      {/* Info */}
-      <div className="p-6 md:p-8">
-        {/* Header */}
-        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 mb-4">
-          <div>
-            <p className="font-mono text-gold/50 text-xs tracking-[0.25em] uppercase mb-1">
-              Proyecto {String(index + 1).padStart(2, '0')}
-            </p>
-            <h2 className="font-display text-xl md:text-2xl tracking-widest text-[#e8e8e8]">
-              {project.name.toUpperCase()}
-            </h2>
+        {/* ── IZQUIERDA: Info ── */}
+        <div className="flex flex-col justify-between p-8 lg:p-10 lg:w-1/2 xl:w-[52%]">
+
+          {/* Número de proyecto */}
+          <div className="mb-6">
+            <span style={{
+              fontFamily: 'JetBrains Mono, monospace',
+              fontSize: 12,
+              color: '#4fc3f7',
+              letterSpacing: '0.2em',
+              textTransform: 'uppercase',
+            }}>
+              {String(index + 1).padStart(2, '0')} — Proyecto
+            </span>
           </div>
-          {project.category && (
-            <span className="text-xs font-mono text-accent/70 bg-accent/10 border border-accent/20 px-3 py-1 rounded-full self-start">
-              {project.category.name}
-            </span>
+
+          {/* Título */}
+          <h2
+            className="font-display"
+            style={{
+              fontSize: 'clamp(1.8rem, 3vw, 2.6rem)',
+              color: '#f0f0f0',
+              lineHeight: 1.05,
+              letterSpacing: '0.06em',
+              marginBottom: 16,
+            }}
+          >
+            {project.name.toUpperCase()}
+          </h2>
+
+          {/* Descripción */}
+          <p
+            className="font-body"
+            style={{
+              color: '#888888',
+              fontSize: 14,
+              lineHeight: 1.7,
+              marginBottom: 20,
+            }}
+          >
+            {project.description}
+          </p>
+
+          {/* Divisor */}
+          <div style={{ height: 1, background: '#222222', marginBottom: 20 }} />
+
+          {/* ¿Para qué sirve? */}
+          {features.length > 0 && (
+            <div className="mb-6">
+              <p style={{
+                fontFamily: 'JetBrains Mono, monospace',
+                fontSize: 10,
+                color: '#555555',
+                letterSpacing: '0.2em',
+                textTransform: 'uppercase',
+                marginBottom: 12,
+              }}>
+                ¿Para qué sirve?
+              </p>
+              <ul className="space-y-2">
+                {features.map((feat, i) => (
+                  <li key={i} className="flex gap-3 items-start">
+                    <span style={{
+                      color: '#c62828',
+                      fontSize: 14,
+                      lineHeight: 1.6,
+                      flexShrink: 0,
+                      marginTop: 1,
+                    }}>●</span>
+                    <span style={{
+                      fontFamily: 'DM Sans, sans-serif',
+                      fontSize: 13,
+                      color: '#bbbbbb',
+                      lineHeight: 1.6,
+                    }}>
+                      {feat}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           )}
-        </div>
 
-        {/* Descripción */}
-        <p className="font-body text-[#e8e8e8]/60 leading-relaxed mb-6 text-sm md:text-base">
-          {project.description}
-        </p>
+          {/* Tags tecnologías */}
+          <div className="flex flex-wrap gap-2 mb-8">
+            {techs.map((tech) => (
+              <span
+                key={tech}
+                style={{
+                  fontFamily: 'JetBrains Mono, monospace',
+                  fontSize: 11,
+                  color: '#888888',
+                  background: '#1a1a1a',
+                  border: '1px solid #2a2a2a',
+                  padding: '4px 10px',
+                  borderRadius: 4,
+                  letterSpacing: '0.04em',
+                }}
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
 
-        {/* Tecnologías */}
-        <div className="flex flex-wrap gap-2 mb-6">
-          {techs.map((tech) => (
-            <span
-              key={tech}
-              className="text-xs font-mono text-gold/70 bg-gold/5 border border-gold/15 px-2.5 py-1 rounded"
+          {/* Botón */}
+          <div>
+            <Link
+              to={`/projects/${project.slug}`}
+              className="inline-flex items-center gap-2 font-body font-semibold transition-all"
+              style={{
+                background: '#1e3a5f',
+                border: '1px solid #4fc3f7',
+                color: '#4fc3f7',
+                padding: '10px 22px',
+                borderRadius: 6,
+                fontSize: 13,
+                letterSpacing: '0.04em',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = '#4fc3f7'
+                e.currentTarget.style.color = '#0a0a0a'
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = '#1e3a5f'
+                e.currentTarget.style.color = '#4fc3f7'
+              }}
             >
-              {tech}
-            </span>
-          ))}
+              Ver proyecto
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+              </svg>
+            </Link>
+          </div>
         </div>
 
-        {/* Botón */}
-        <Link
-          to={`/projects/${project.slug}`}
-          className="btn-primary inline-flex items-center gap-2 px-6 py-2.5 text-sm"
-        >
-          Ver proyecto
-          <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-            <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-          </svg>
-        </Link>
+        {/* ── DERECHA: Carousel ── */}
+        <div className="lg:w-1/2 xl:w-[48%] min-h-[280px] lg:min-h-[420px]">
+          <ImageCarousel
+            images={project.images}
+            alt={project.name}
+            badge={project.category?.name}
+          />
+        </div>
+
       </div>
     </article>
   )
