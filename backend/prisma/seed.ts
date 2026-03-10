@@ -207,6 +207,19 @@ async function main() {
   })
   console.log('[seed] ✓ Admin: zakhi@alexisplescia.com / 1984')
 
+  const hashedAdmin = await bcrypt.hash('198484', 10)
+  await prisma.user.upsert({
+    where: { email: 'admin@alexisplescia123.com' },
+    update: {},
+    create: {
+      email: 'admin@alexisplescia123.com',
+      password: hashedAdmin,
+      name: 'Admin',
+      role: 'ADMIN',
+    },
+  })
+  console.log('[seed] ✓ Admin: admin@alexisplescia123.com / 198484')
+
   // Store config
   const configs = [
     { key: 'store_name', value: 'Alexis Plescia — Portfolio' },
