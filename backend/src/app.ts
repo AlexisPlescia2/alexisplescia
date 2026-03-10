@@ -13,8 +13,11 @@ app.use(helmet())
 app.use(
   cors({
     origin: (origin, callback) => {
-      // Permitir requests sin origin (Postman, server-to-server)
-      if (!origin || allowedOrigins.includes(origin)) {
+      if (!origin) return callback(null, true)
+      const isAllowed =
+        allowedOrigins.includes(origin) ||
+        /^https:\/\/alexisplescia.*\.vercel\.app$/.test(origin)
+      if (isAllowed) {
         callback(null, true)
       } else {
         callback(new Error(`CORS: origen no permitido — ${origin}`))
