@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { Product } from '../../types/product'
 import ImageCarousel from './ImageCarousel'
 
@@ -127,34 +126,39 @@ export default function ProjectShowcase({ project, index }: ProjectShowcaseProps
           </div>
 
           {/* Botón */}
-          <div>
-            <Link
-              to={`/projects/${project.slug}`}
-              className="inline-flex items-center gap-2 font-body font-semibold transition-all"
-              style={{
-                background: '#1e3a5f',
-                border: '1px solid #4fc3f7',
-                color: '#4fc3f7',
-                padding: '10px 22px',
-                borderRadius: 6,
-                fontSize: 13,
-                letterSpacing: '0.04em',
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.background = '#4fc3f7'
-                e.currentTarget.style.color = '#0a0a0a'
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.background = '#1e3a5f'
-                e.currentTarget.style.color = '#4fc3f7'
-              }}
-            >
-              Ver proyecto
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
-                <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
-              </svg>
-            </Link>
-          </div>
+          {project.projectUrl && (
+            <div>
+              <a
+                href={project.projectUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 font-body font-semibold transition-all"
+                style={{
+                  background: '#1e3a5f',
+                  border: '1px solid #4fc3f7',
+                  color: '#4fc3f7',
+                  padding: '10px 22px',
+                  borderRadius: 6,
+                  fontSize: 13,
+                  letterSpacing: '0.04em',
+                  textDecoration: 'none',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.background = '#4fc3f7'
+                  e.currentTarget.style.color = '#0a0a0a'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.background = '#1e3a5f'
+                  e.currentTarget.style.color = '#4fc3f7'
+                }}
+              >
+                Ver proyecto
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </a>
+            </div>
+          )}
         </div>
 
         {/* ── DERECHA: Carousel ── */}

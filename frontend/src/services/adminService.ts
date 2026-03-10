@@ -36,6 +36,8 @@ export interface AdminProduct {
   onSale: boolean
   stock: number
   images: string[]
+  features: string[]
+  projectUrl?: string | null
   brand: string
   featured: boolean
   categoryId: string

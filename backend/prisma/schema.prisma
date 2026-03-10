@@ -42,6 +42,7 @@ model Product {
   stock        Int      @default(0)
   images       String[]
   features     String[] @default([])
+  projectUrl   String?
   brand        String
   featured     Boolean  @default(false)
   category     Category @relation(fields: [categoryId], references: [id])
