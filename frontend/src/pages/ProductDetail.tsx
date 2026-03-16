@@ -69,7 +69,6 @@ export default function ProductDetail() {
   }
 
   const mainImage = product.images?.[activeImg] || PLACEHOLDER
-  const githubUrl = product.images?.[1] || '#'
 
   return (
     <div className="min-h-screen bg-background py-8 px-4">
@@ -141,14 +140,26 @@ export default function ProductDetail() {
             <p className="font-body text-[#e8e8e8]/60 leading-relaxed mb-8 flex-1">{product.description}</p>
 
             <div className="flex gap-3 flex-wrap">
-              <a
-                href={githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary px-8 py-3 flex-1 text-center"
-              >
-                Ver en GitHub →
-              </a>
+              {product.githubUrl && (
+                <a
+                  href={product.githubUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary px-8 py-3 flex-1 text-center"
+                >
+                  Ver en GitHub →
+                </a>
+              )}
+              {product.projectUrl && (
+                <a
+                  href={product.projectUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-primary px-8 py-3 flex-1 text-center"
+                >
+                  Ir a la web →
+                </a>
+              )}
               <Link to="/shop" className="btn-secondary px-8 py-3 flex-1 text-center">
                 Volver a proyectos
               </Link>

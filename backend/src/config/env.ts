@@ -1,3 +1,5 @@
+import 'dotenv/config'
+
 const isProd = process.env.NODE_ENV === 'production'
 
 function required(key: string): string {

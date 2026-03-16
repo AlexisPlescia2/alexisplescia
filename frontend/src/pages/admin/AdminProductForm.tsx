@@ -12,13 +12,14 @@ interface FormData {
   brand: string
   images: string
   projectUrl: string
+  githubUrl: string
   featured: boolean
   onSale: boolean
 }
 
 const EMPTY: FormData = {
   name: '', description: '', price: '', comparePrice: '', stock: '',
-  categoryId: '', brand: '', images: '', projectUrl: '', featured: false, onSale: false,
+  categoryId: '', brand: '', images: '', projectUrl: '', githubUrl: '', featured: false, onSale: false,
 }
 
 export default function AdminProductForm() {
@@ -50,6 +51,7 @@ export default function AdminProductForm() {
             brand: product.brand,
             images: product.images.join('\n'),
             projectUrl: product.projectUrl || '',
+            githubUrl: product.githubUrl || '',
             featured: product.featured,
             onSale: product.onSale,
           })
@@ -88,6 +90,7 @@ export default function AdminProductForm() {
       brand: form.brand.trim(),
       images: imagesArr,
       projectUrl: form.projectUrl.trim() || null,
+      githubUrl: form.githubUrl.trim() || null,
       featured: form.featured,
       onSale: form.onSale,
     }
@@ -160,7 +163,18 @@ export default function AdminProductForm() {
           </select>
         </Field>
 
-        <Field label="URL del proyecto (botón 'Ver proyecto')">
+        <Field label="URL de GitHub (botón 'Ver en GitHub')">
+          <input
+            className="input-admin"
+            type="url"
+            value={form.githubUrl}
+            onChange={(e) => set('githubUrl', e.target.value)}
+            placeholder="https://github.com/alexisplescia"
+          />
+          <p className="text-xs text-white/30 mt-1">Si está vacío el botón no se muestra</p>
+        </Field>
+
+        <Field label="URL del proyecto (botón 'Ir a la web')">
           <input
             className="input-admin"
             type="url"

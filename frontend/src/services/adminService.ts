@@ -38,6 +38,7 @@ export interface AdminProduct {
   images: string[]
   features: string[]
   projectUrl?: string | null
+  githubUrl?: string | null
   brand: string
   featured: boolean
   categoryId: string
