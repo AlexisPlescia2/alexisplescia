@@ -133,6 +133,7 @@ export async function adminCreateProduct(data: {
   featured?: boolean
   onSale?: boolean
   projectUrl?: string | null
+  githubUrl?: string | null
 }) {
   const slug = slugify(data.name)
   const existing = await prisma.product.findUnique({ where: { slug } })
@@ -163,6 +164,7 @@ export async function adminUpdateProduct(
     featured: boolean
     onSale: boolean
     projectUrl: string | null
+    githubUrl: string | null
   }>,
 ) {
   const updateData: Record<string, unknown> = { ...data }
