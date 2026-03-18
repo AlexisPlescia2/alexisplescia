@@ -17,6 +17,7 @@ import AdminProductList from './pages/admin/AdminProductList'
 import AdminProductForm from './pages/admin/AdminProductForm'
 import AdminCategoryList from './pages/admin/AdminCategoryList'
 import AdminSettings from './pages/admin/AdminSettings'
+import AdminMessages from './pages/admin/AdminMessages'
 
 export const router = createBrowserRouter([
   {
@@ -49,6 +50,7 @@ export const router = createBrowserRouter([
       { path: 'products/new', element: <AdminProductForm /> },
       { path: 'products/:id/edit', element: <AdminProductForm /> },
       { path: 'categories', element: <AdminCategoryList /> },
+      { path: 'messages', element: <AdminMessages /> },
       { path: 'settings', element: <AdminSettings /> },
     ],
   },

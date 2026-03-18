@@ -46,6 +46,16 @@ export interface AdminProduct {
   createdAt: string
 }
 
+export interface AdminMessage {
+  id: string
+  name: string
+  email: string
+  phone?: string | null
+  message: string
+  read: boolean
+  createdAt: string
+}
+
 export interface AdminCategory {
   id: string
   name: string
@@ -96,6 +106,20 @@ export const adminService = {
 
   async deleteCategory(id: string): Promise<void> {
     await api.delete(`/admin/categories/${id}`)
+  },
+
+  async getMessages(): Promise<AdminMessage[]> {
+    const { data } = await api.get('/admin/messages')
+    return data
+  },
+
+  async markMessageRead(id: string, read: boolean): Promise<AdminMessage> {
+    const { data } = await api.patch(`/admin/messages/${id}`, { read })
+    return data
+  },
+
+  async deleteMessage(id: string): Promise<void> {
+    await api.delete(`/admin/messages/${id}`)
   },
 
   async getOrders(status?: string): Promise<AdminOrder[]> {
