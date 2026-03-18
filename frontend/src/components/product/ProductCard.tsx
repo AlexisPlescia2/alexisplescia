@@ -7,15 +7,17 @@ const PLACEHOLDER =
 
 interface ProductCardProps {
   product: Product
+  showPrice?: boolean
+  className?: string
 }
 
-export default function ProductCard({ product }: ProductCardProps) {
+export default function ProductCard({ product, showPrice = true, className = '' }: ProductCardProps) {
   const navigate = useNavigate()
 
   const mainImage = product.images?.[0] || PLACEHOLDER
 
   return (
-    <div className="group relative card-dark overflow-hidden hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-200 flex flex-col">
+    <div className={`group relative card-dark overflow-hidden hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-200 flex flex-col ${className}`}>
       {/* Image */}
       <Link to={`/product/${product.slug}`} className="block overflow-hidden">
         <div className="aspect-[4/3] overflow-hidden bg-surface">
@@ -53,13 +55,15 @@ export default function ProductCard({ product }: ProductCardProps) {
           </h3>
         </Link>
 
-        <div className="mt-auto pt-3">
-          {product.price > 0 ? (
-            <span className="font-mono text-accent font-semibold text-base">{formatPrice(product.price)}</span>
-          ) : (
-            <span className="font-mono text-accent/70 text-xs">{product.brand}</span>
-          )}
-        </div>
+        {showPrice && (
+          <div className="mt-auto pt-3">
+            {product.price > 0 ? (
+              <span className="font-mono text-accent font-semibold text-base">{formatPrice(product.price)}</span>
+            ) : (
+              <span className="font-mono text-accent/70 text-xs">{product.brand}</span>
+            )}
+          </div>
+        )}
 
         <button
           className="btn-primary w-full py-2 text-sm mt-3"

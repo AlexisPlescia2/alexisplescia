@@ -223,11 +223,22 @@ export default function Home() {
               ))}
             </div>
           ) : featured.length > 0 ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-              {featured.slice(0, 4).map((product) => (
-                <ProductCard key={product.id} product={product} />
-              ))}
-            </div>
+            (() => {
+              const count = Math.min(featured.length, 4)
+              const isFew = count < 3
+              return (
+                <div className={isFew ? 'flex flex-wrap justify-center gap-5' : 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'}>
+                  {featured.slice(0, 4).map((product) => (
+                    <ProductCard
+                      key={product.id}
+                      product={product}
+                      showPrice={false}
+                      className={isFew ? 'w-full sm:w-72' : ''}
+                    />
+                  ))}
+                </div>
+              )
+            })()
           ) : (
             <div className="text-center py-12">
               <p className="text-sm font-mono text-[#e8e8e8]/30">
