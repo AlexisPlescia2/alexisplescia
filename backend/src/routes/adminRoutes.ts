@@ -14,6 +14,10 @@ router.post('/products', adminController.createProduct)
 router.patch('/products/:id', adminController.updateProduct)
 router.delete('/products/:id', adminController.deleteProduct)
 
+router.get('/messages', adminController.getMessages)
+router.patch('/messages/:id', adminController.markMessageRead)
+router.delete('/messages/:id', adminController.deleteMessage)
+
 router.get('/categories', adminController.getCategories)
 router.post('/categories', adminController.createCategory)
 router.patch('/categories/:id', adminController.updateCategory)

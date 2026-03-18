@@ -48,6 +48,35 @@ export const deleteProduct = async (req: Request, res: Response, next: NextFunct
   }
 }
 
+// Messages
+export const getMessages = async (_req: Request, res: Response, next: NextFunction) => {
+  try {
+    const messages = await adminService.adminGetMessages()
+    res.json(messages)
+  } catch (err) {
+    next(err)
+  }
+}
+
+export const markMessageRead = async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    const { read } = req.body
+    const message = await adminService.adminMarkMessageRead(req.params.id, Boolean(read))
+    res.json(message)
+  } catch (err) {
+    next(err)
+  }
+}
+
+export const deleteMessage = async (req: Request, res: Response, next: NextFunction) => {
+  try {
+    await adminService.adminDeleteMessage(req.params.id)
+    res.json({ success: true })
+  } catch (err) {
+    next(err)
+  }
+}
+
 // Categories
 export const getCategories = async (_req: Request, res: Response, next: NextFunction) => {
   try {

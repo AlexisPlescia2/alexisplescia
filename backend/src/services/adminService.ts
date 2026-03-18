@@ -182,6 +182,22 @@ export async function adminDeleteProduct(id: string) {
   return prisma.product.delete({ where: { id } })
 }
 
+// ─── MESSAGES ──────────────────────────────────────────────────────────────
+
+export async function adminGetMessages() {
+  return prisma.contactMessage.findMany({
+    orderBy: { createdAt: 'desc' },
+  })
+}
+
+export async function adminMarkMessageRead(id: string, read: boolean) {
+  return prisma.contactMessage.update({ where: { id }, data: { read } })
+}
+
+export async function adminDeleteMessage(id: string) {
+  return prisma.contactMessage.delete({ where: { id } })
+}
+
 // ─── CATEGORIES ────────────────────────────────────────────────────────────
 
 export async function adminGetCategories() {
