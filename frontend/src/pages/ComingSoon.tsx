@@ -16,7 +16,7 @@ export default function ComingSoon() {
   const pageName = PAGE_NAMES[pathname] || 'Esta página'
 
   useEffect(() => {
-    document.title = `${pageName} — Prometeo Tattoo`
+    document.title = `${pageName} — Alexis Plescia`
   }, [pageName])
 
   return (

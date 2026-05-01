@@ -2,65 +2,148 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── CSS Variables (paleta extraída del tema actual) ── */
+:root {
+  --color-bg: #0a0a0a;
+  --color-surface: #141414;
+  --color-card: #1a1a1a;
+  --color-border: #222222;
+  --color-accent: #1e40af;
+  --color-gold: #60a5fa;
+  --color-muted: #555555;
+  --color-text: #e8e8e8;
+  --color-text-muted: rgba(232, 232, 232, 0.5);
+
+  /* Andes-inspired spacing base: 8px */
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 32px;
+  --space-6: 48px;
+  --space-8: 64px;
+
+  /* iOS-like spring timing (fallback for non-FM transitions) */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 180ms;
+  --duration-base: 320ms;
+}
+
 @layer base {
   html {
     @apply bg-background text-[#e8e8e8];
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
 
   body {
-    @apply bg-background min-h-screen antialiased;
+    @apply bg-background min-h-screen;
   }
 
   * {
     @apply border-border;
   }
 
+  /* Tipografía base estilo Apple */
+  h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
   ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
+    width: 5px;
+    height: 5px;
   }
 
   ::-webkit-scrollbar-track {
-    @apply bg-surface;
+    background: var(--color-bg);
   }
 
   ::-webkit-scrollbar-thumb {
-    @apply bg-muted rounded-full;
+    background: var(--color-border);
+    border-radius: 99px;
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    @apply bg-accent;
+    background: var(--color-muted);
   }
 }
 
 @layer components {
+  /* ── Buttons (Andes-inspired: border-radius 6px, sin gradientes) ── */
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent text-white font-body font-semibold rounded-md hover:bg-blue-900 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed;
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-accent text-white font-semibold rounded-btn hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+    transition: background-color var(--duration-fast) var(--ease-out),
+                transform var(--duration-fast) var(--ease-spring);
+  }
+  .btn-primary:active {
+    transform: scale(0.97);
   }
 
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border border-accent text-accent font-body font-semibold rounded-md hover:bg-accent/10 transition-all duration-200;
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border border-accent text-accent font-semibold rounded-btn hover:bg-accent/10 transition-colors;
+    transition: background-color var(--duration-fast) var(--ease-out),
+                transform var(--duration-fast) var(--ease-spring);
+  }
+  .btn-secondary:active {
+    transform: scale(0.97);
   }
 
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-[#e8e8e8]/60 font-body font-medium rounded-md hover:text-[#e8e8e8] hover:bg-surface transition-all duration-200;
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 text-[#e8e8e8]/60 font-medium rounded-btn hover:text-[#e8e8e8] hover:bg-surface transition-colors;
+    transition: background-color var(--duration-fast) var(--ease-out),
+                color var(--duration-fast) var(--ease-out),
+                transform var(--duration-fast) var(--ease-spring);
+  }
+  .btn-ghost:active {
+    transform: scale(0.97);
   }
 
+  /* ── Input (Andes: 44px altura, 1.5px border) ── */
   .input-field {
-    @apply w-full px-4 py-3 bg-surface border border-border rounded-md text-[#e8e8e8] font-body placeholder-muted focus:outline-none focus:border-accent transition-colors;
+    @apply w-full px-4 bg-surface border rounded-md text-[#e8e8e8] placeholder-muted focus:outline-none transition-colors;
+    height: 44px;
+    border-width: 1.5px;
+    border-color: var(--color-border);
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+    font-size: 15px;
+  }
+  .input-field:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.15);
+  }
+  textarea.input-field {
+    height: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
   }
 
+  /* ── Card (Andes: border-radius 12px, sombra sutil) ── */
   .card-dark {
-    @apply bg-card border border-border rounded-lg;
+    @apply bg-card border border-border;
+    border-radius: 12px;
+    box-shadow: var(--tw-shadow, 0 2px 8px rgba(0,0,0,0.32));
+    transition: box-shadow var(--duration-base) var(--ease-out),
+                border-color var(--duration-fast) var(--ease-out),
+                transform var(--duration-base) var(--ease-spring);
+  }
+  .card-dark:hover {
+    box-shadow: 0 8px 24px rgba(0,0,0,0.48);
   }
 
+  /* ── Section title ── */
   .section-title {
-    @apply font-display text-4xl md:text-5xl tracking-widest text-[#e8e8e8] uppercase;
+    @apply text-4xl md:text-5xl font-bold tracking-tight text-[#e8e8e8];
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif;
+    letter-spacing: -0.02em;
   }
 
+  /* ── Skeleton ── */
   .skeleton {
-    @apply bg-surface animate-pulse rounded-md;
+    @apply bg-surface animate-pulse;
+    border-radius: 8px;
   }
 }
 
@@ -71,5 +154,21 @@
 
   .text-body {
     color: #e8e8e8;
+  }
+
+  /* Label estilo Apple — caption pequeño uppercase */
+  .label-caps {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--color-gold);
+    opacity: 0.7;
+  }
+
+  /* Gradiente de entrada hero */
+  .hero-glow {
+    background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(30, 64, 175, 0.12) 0%, transparent 70%);
   }
 }

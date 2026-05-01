@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const columns = [
   {
@@ -19,45 +20,53 @@ const columns = [
   },
 ]
 
+const springFast = { type: 'spring' as const, stiffness: 450, damping: 32 }
+
 export default function Footer() {
   return (
     <footer className="bg-surface border-t border-border mt-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="md:col-span-2">
-            <Link to="/" className="font-display text-xl tracking-widest">
-              <span className="text-accent">ALEXIS</span>
-              <span className="text-[#e8e8e8]"> PLESCIA</span>
+            <Link to="/" className="font-display text-base font-semibold tracking-tight">
+              <span className="text-accent">Alexis</span>
+              <span className="text-[#e8e8e8]"> Plescia</span>
             </Link>
-            <p className="mt-3 text-sm text-[#e8e8e8]/40 font-body leading-relaxed">
+            <p className="mt-3 text-sm text-[#e8e8e8]/35 leading-relaxed">
               Desarrollador Full Stack & Analista de Datos. Buenos Aires, Argentina.
             </p>
-            {/* Social links */}
-            <div className="flex gap-3 mt-4">
-              <a
+            <div className="flex gap-2 mt-4">
+              <motion.a
                 href="https://github.com/AlexisPlescia"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded border border-border flex items-center justify-center text-[#e8e8e8]/40 hover:text-accent hover:border-accent transition-colors text-xs font-mono uppercase"
+                className="w-8 h-8 rounded-md border border-border flex items-center justify-center text-[#e8e8e8]/35 hover:text-accent hover:border-accent transition-colors text-xs font-mono uppercase"
+                style={{ borderRadius: '8px' }}
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.94 }}
+                transition={springFast}
               >
                 gh
-              </a>
-              <a
+              </motion.a>
+              <motion.a
                 href="https://www.linkedin.com/in/alexisplescia/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="w-8 h-8 rounded border border-border flex items-center justify-center text-[#e8e8e8]/40 hover:text-accent hover:border-accent transition-colors text-xs font-mono uppercase"
+                className="w-8 h-8 rounded-md border border-border flex items-center justify-center text-[#e8e8e8]/35 hover:text-accent hover:border-accent transition-colors text-xs font-mono uppercase"
+                style={{ borderRadius: '8px' }}
+                whileHover={{ scale: 1.08 }}
+                whileTap={{ scale: 0.94 }}
+                transition={springFast}
               >
                 in
-              </a>
+              </motion.a>
             </div>
           </div>
 
-          {/* Columns */}
           {columns.map((col) => (
             <div key={col.title}>
-              <h4 className="font-display tracking-widest text-gold text-sm mb-4 uppercase">
+              <h4 className="text-xs font-semibold text-[#e8e8e8]/40 tracking-widest uppercase mb-4">
                 {col.title}
               </h4>
               <ul className="space-y-2">
@@ -65,7 +74,7 @@ export default function Footer() {
                   <li key={link.label}>
                     <Link
                       to={link.to}
-                      className="text-sm font-body text-[#e8e8e8]/40 hover:text-[#e8e8e8] transition-colors"
+                      className="text-sm text-[#e8e8e8]/35 hover:text-[#e8e8e8] transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -77,11 +86,11 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 pt-6 border-t border-border flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs font-mono text-[#e8e8e8]/30 uppercase tracking-widest">
+          <p className="text-xs font-mono text-[#e8e8e8]/25 uppercase tracking-widest">
             © 2026 Alexis Plescia
           </p>
-          <p className="text-xs font-mono text-[#e8e8e8]/20 tracking-wide">
-            React + TypeScript + Node.js + Prisma
+          <p className="text-xs font-mono text-[#e8e8e8]/15">
+            React · TypeScript · Node.js · Prisma
           </p>
         </div>
       </div>

@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { motion } from 'framer-motion'
 
 const EXPERIENCE = [
   {
@@ -106,89 +107,143 @@ const EDUCATION = [
   },
 ]
 
+const springBase = { type: 'spring' as const, stiffness: 320, damping: 26, mass: 0.9 }
+const stagger = {
+  hidden: {},
+  show: { transition: { staggerChildren: 0.08 } },
+}
+const fadeUp = {
+  hidden: { opacity: 0, y: 18 },
+  show: { opacity: 1, y: 0 },
+}
+
 export default function About() {
   useEffect(() => {
     document.title = 'Sobre mí — Alexis Plescia'
   }, [])
 
   return (
-    <div className="min-h-screen bg-background py-12 px-4">
+    <div className="min-h-screen bg-background py-16 px-4">
       <div className="max-w-4xl mx-auto">
-        <div className="mb-10">
-          <p className="font-mono text-gold/60 text-xs tracking-[0.3em] uppercase mb-2">Mi historia</p>
+        {/* Header */}
+        <motion.div
+          className="mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={springBase}
+        >
+          <span className="label-caps block mb-3">Mi historia</span>
           <h1 className="section-title">Sobre mí</h1>
-        </div>
+        </motion.div>
 
         {/* Bio */}
-        <div className="card-dark p-8 mb-10">
-          <p className="font-body text-[#e8e8e8]/70 leading-relaxed mb-4">
-            Soy <strong className="text-[#e8e8e8]">Alexis Plescia</strong>, Desarrollador Full Stack y Analista de Datos con base en Hurlingham, Buenos Aires. Me especializo en construir aplicaciones web completas y en transformar datos en insights accionables mediante dashboards y reportes.
+        <motion.div
+          className="card-dark p-8 mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ ...springBase, delay: 0.1 }}
+        >
+          <p className="text-[#e8e8e8]/65 leading-relaxed mb-4 text-[15px]">
+            Soy <strong className="text-[#e8e8e8] font-semibold">Alexis Plescia</strong>, Desarrollador Full Stack y Analista de Datos con base en Hurlingham, Buenos Aires. Me especializo en construir aplicaciones web completas y en transformar datos en insights accionables mediante dashboards y reportes.
           </p>
-          <p className="font-body text-[#e8e8e8]/70 leading-relaxed mb-6">
+          <p className="text-[#e8e8e8]/65 leading-relaxed mb-8 text-[15px]">
             Actualmente trabajo como Analista de Datos en Carrefour, donde diseño dashboards para monitoreo de KPIs energéticos a nivel nacional. En paralelo, desarrollo proyectos full stack con React, Node.js y Python.
           </p>
           <div className="flex gap-3 flex-wrap">
-            <Link to="/shop" className="btn-primary px-6 py-2">Ver proyectos</Link>
-            <a href="https://www.linkedin.com/in/alexisplescia/" target="_blank" rel="noopener noreferrer" className="btn-secondary px-6 py-2">LinkedIn</a>
-            <a href="https://github.com/AlexisPlescia" target="_blank" rel="noopener noreferrer" className="btn-secondary px-6 py-2">GitHub</a>
+            <Link to="/shop" className="btn-primary px-5 py-2.5 text-sm">Ver proyectos</Link>
+            <a href="https://www.linkedin.com/in/alexisplescia/" target="_blank" rel="noopener noreferrer" className="btn-secondary px-5 py-2.5 text-sm">LinkedIn</a>
+            <a href="https://github.com/AlexisPlescia" target="_blank" rel="noopener noreferrer" className="btn-secondary px-5 py-2.5 text-sm">GitHub</a>
           </div>
-        </div>
+        </motion.div>
 
         {/* Experiencia */}
-        <div className="mb-10">
-          <h2 className="font-display text-2xl tracking-widest text-[#e8e8e8] mb-6">EXPERIENCIA</h2>
-          <div className="space-y-4">
+        <motion.section
+          className="mb-12"
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: '-80px' }}
+          variants={stagger}
+        >
+          <motion.h2
+            className="text-xl font-semibold text-[#e8e8e8] mb-6 tracking-tight"
+            variants={fadeUp}
+            transition={springBase}
+          >
+            Experiencia
+          </motion.h2>
+          <div className="space-y-3">
             {EXPERIENCE.map((exp) => (
-              <div key={exp.role + exp.company} className="card-dark p-6">
+              <motion.div
+                key={exp.role + exp.company}
+                className="card-dark p-6"
+                variants={fadeUp}
+                transition={springBase}
+              >
                 <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 mb-3">
                   <div>
-                    <h3 className="font-body font-semibold text-[#e8e8e8]">{exp.role}</h3>
-                    <p className="text-accent font-mono text-sm">{exp.company}</p>
+                    <h3 className="font-semibold text-[#e8e8e8] text-[15px] tracking-tight">{exp.role}</h3>
+                    <p className="text-accent text-sm mt-0.5">{exp.company}</p>
                   </div>
-                  <div className="text-right">
+                  <div className="sm:text-right shrink-0">
                     <p className="text-xs font-mono text-[#e8e8e8]/40">{exp.period}</p>
-                    <p className="text-xs text-[#e8e8e8]/30">{exp.location}</p>
+                    <p className="text-xs text-[#e8e8e8]/25 mt-0.5">{exp.location}</p>
                   </div>
                 </div>
-                <ul className="space-y-1 mb-3">
+                <ul className="space-y-1.5 mb-3">
                   {exp.items.map((item) => (
-                    <li key={item} className="text-sm text-[#e8e8e8]/60 flex gap-2">
-                      <span className="text-accent/60 flex-shrink-0">›</span>
+                    <li key={item} className="text-sm text-[#e8e8e8]/55 flex gap-2">
+                      <span className="text-accent/50 flex-shrink-0 mt-0.5">›</span>
                       {item}
                     </li>
                   ))}
                 </ul>
-                <p className="text-xs font-mono text-gold/50">{exp.stack}</p>
-              </div>
+                <p className="text-xs font-mono text-gold/40">{exp.stack}</p>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.section>
 
         {/* Educación */}
-        <div>
-          <h2 className="font-display text-2xl tracking-widest text-[#e8e8e8] mb-6">EDUCACIÓN</h2>
-          <div className="space-y-4">
+        <motion.section
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, margin: '-80px' }}
+          variants={stagger}
+        >
+          <motion.h2
+            className="text-xl font-semibold text-[#e8e8e8] mb-6 tracking-tight"
+            variants={fadeUp}
+            transition={springBase}
+          >
+            Educación
+          </motion.h2>
+          <div className="space-y-3">
             {EDUCATION.map((edu) => (
-              <div key={edu.title} className="card-dark p-6">
+              <motion.div
+                key={edu.title}
+                className="card-dark p-6"
+                variants={fadeUp}
+                transition={springBase}
+              >
                 <div className="flex flex-col sm:flex-row sm:justify-between gap-2 mb-3">
                   <div>
-                    <h3 className="font-body font-semibold text-[#e8e8e8]">{edu.title}</h3>
-                    <p className="text-accent font-mono text-sm">{edu.institution}</p>
+                    <h3 className="font-semibold text-[#e8e8e8] text-[15px] tracking-tight">{edu.title}</h3>
+                    <p className="text-accent text-sm mt-0.5">{edu.institution}</p>
                   </div>
-                  <p className="text-xs font-mono text-[#e8e8e8]/40 sm:text-right">{edu.period}</p>
+                  <p className="text-xs font-mono text-[#e8e8e8]/40 sm:text-right shrink-0">{edu.period}</p>
                 </div>
-                <ul className="space-y-1">
+                <ul className="space-y-1.5">
                   {edu.items.map((item) => (
-                    <li key={item} className="text-sm text-[#e8e8e8]/60 flex gap-2">
-                      <span className="text-accent/60">›</span>
+                    <li key={item} className="text-sm text-[#e8e8e8]/55 flex gap-2">
+                      <span className="text-accent/50 shrink-0 mt-0.5">›</span>
                       {item}
                     </li>
                   ))}
                 </ul>
-              </div>
+              </motion.div>
             ))}
           </div>
-        </div>
+        </motion.section>
       </div>
     </div>
   )

@@ -11,7 +11,7 @@ const api = axios.create({
 // Agregar JWT de authStore a cada request
 api.interceptors.request.use((config) => {
   try {
-    const raw = localStorage.getItem('prometeo-auth')
+    const raw = localStorage.getItem('alexis-auth')
     if (raw) {
       const { state } = JSON.parse(raw)
       if (state?.token) {
