@@ -20,7 +20,8 @@ const variantStyles: Record<BadgeVariant, string> = {
 export default function Badge({ children, variant = 'default', className = '' }: BadgeProps) {
   return (
     <span
-      className={`inline-flex items-center px-2 py-0.5 rounded text-xs font-mono tracking-wider uppercase ${variantStyles[variant]} ${className}`}
+      className={`inline-flex items-center px-2 py-0.5 text-xs font-medium tracking-wide ${variantStyles[variant]} ${className}`}
+      style={{ borderRadius: '4px' }}
     >
       {children}
     </span>

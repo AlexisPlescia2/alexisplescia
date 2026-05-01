@@ -9,9 +9,9 @@ export default function Input({ label, error, className = '', id, ...props }: In
   const inputId = id || label?.toLowerCase().replace(/\s+/g, '-')
 
   return (
-    <div className="flex flex-col gap-1">
+    <div className="flex flex-col gap-1.5">
       {label && (
-        <label htmlFor={inputId} className="text-sm font-medium text-gray-300">
+        <label htmlFor={inputId} className="text-sm font-medium text-[#e8e8e8]/70">
           {label}
         </label>
       )}
@@ -19,8 +19,8 @@ export default function Input({ label, error, className = '', id, ...props }: In
         id={inputId}
         {...props}
         className={[
-          'bg-[#1a1a1f] border rounded px-3 py-2 text-sm text-white placeholder-gray-600 outline-none transition-colors focus:border-accent',
-          error ? 'border-red-500' : 'border-white/10',
+          'input-field',
+          error ? '!border-red-500 focus:!ring-red-500/20' : '',
           className,
         ].join(' ')}
       />

@@ -18,6 +18,8 @@ import AdminProductForm from './pages/admin/AdminProductForm'
 import AdminCategoryList from './pages/admin/AdminCategoryList'
 import AdminSettings from './pages/admin/AdminSettings'
 import AdminMessages from './pages/admin/AdminMessages'
+import DashRoute from './components/auth/DashRoute'
+import DashView from './pages/dash/DashView'
 
 export const router = createBrowserRouter([
   {
@@ -36,6 +38,14 @@ export const router = createBrowserRouter([
       { path: 'privacy', element: <ComingSoon /> },
       { path: '*', element: <NotFound /> },
     ],
+  },
+  {
+    path: '/dash',
+    element: (
+      <DashRoute>
+        <DashView />
+      </DashRoute>
+    ),
   },
   {
     path: '/admin',

@@ -1,26 +1,30 @@
 import React from 'react'
+import { motion, HTMLMotionProps } from 'framer-motion'
 
 type Variant = 'primary' | 'secondary' | 'ghost' | 'danger'
 type Size = 'sm' | 'md' | 'lg'
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+type ButtonBaseProps = Omit<HTMLMotionProps<'button'>, 'children'>
+
+interface ButtonProps extends ButtonBaseProps {
   variant?: Variant
   size?: Size
   loading?: boolean
   fullWidth?: boolean
+  children?: React.ReactNode
 }
 
 const variants: Record<Variant, string> = {
-  primary: 'bg-accent hover:bg-red-700 text-white border-transparent',
-  secondary: 'bg-transparent hover:bg-white/5 text-white border-white/20',
-  ghost: 'bg-transparent hover:bg-white/5 text-gray-400 hover:text-white border-transparent',
-  danger: 'bg-red-900/40 hover:bg-red-900/60 text-red-400 border-red-800/40',
+  primary: 'bg-accent hover:bg-blue-700 text-white border-transparent',
+  secondary: 'bg-transparent hover:bg-accent/10 text-accent border border-accent',
+  ghost: 'bg-transparent hover:bg-white/5 text-[#e8e8e8]/60 hover:text-[#e8e8e8] border-transparent',
+  danger: 'bg-red-900/30 hover:bg-red-900/50 text-red-400 border border-red-800/30',
 }
 
 const sizes: Record<Size, string> = {
-  sm: 'px-3 py-1.5 text-xs',
-  md: 'px-4 py-2 text-sm',
-  lg: 'px-6 py-3 text-base',
+  sm: 'px-3 py-1.5 text-sm',
+  md: 'px-5 py-2.5 text-sm',
+  lg: 'px-7 py-3.5 text-base',
 }
 
 export default function Button({
@@ -33,12 +37,17 @@ export default function Button({
   className = '',
   ...props
 }: ButtonProps) {
+  const isDisabled = disabled || loading
   return (
-    <button
+    <motion.button
       {...props}
-      disabled={disabled || loading}
+      disabled={isDisabled}
+      whileHover={{ scale: isDisabled ? 1 : 1.02 }}
+      whileTap={{ scale: isDisabled ? 1 : 0.97 }}
+      transition={{ type: 'spring', stiffness: 500, damping: 35 }}
       className={[
-        'inline-flex items-center justify-center gap-2 font-semibold rounded border transition-colors duration-150 focus:outline-none focus:ring-2 focus:ring-accent/50 disabled:opacity-50 disabled:cursor-not-allowed',
+        'inline-flex items-center justify-center gap-2 font-semibold transition-colors focus:outline-none focus:ring-2 focus:ring-accent/40 disabled:opacity-50 disabled:cursor-not-allowed',
+        'rounded-btn',
         variants[variant],
         sizes[size],
         fullWidth ? 'w-full' : '',
@@ -52,6 +61,6 @@ export default function Button({
         </svg>
       )}
       {children}
-    </button>
+    </motion.button>
   )
 }
