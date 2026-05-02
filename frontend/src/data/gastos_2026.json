@@ -1,0 +1,6185 @@
+[
+  {
+    "id": "0",
+    "fecha": "02-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 10.51,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "1",
+    "fecha": "02-01-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 300000.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "2",
+    "fecha": "02-01-2026",
+    "desc": "Transferencia enviada Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia enviada",
+    "monto": -180000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "3",
+    "fecha": "02-01-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "4",
+    "fecha": "02-01-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "5",
+    "fecha": "02-01-2026",
+    "desc": "Transferencia enviada Analia Veronica Gil",
+    "categoria": "Transferencia enviada",
+    "monto": -15000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "6",
+    "fecha": "02-01-2026",
+    "desc": "Transferencia enviada Ariel Ramiro Leon Chang",
+    "categoria": "Transferencia enviada",
+    "monto": -10000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "7",
+    "fecha": "02-01-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 100000.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "8",
+    "fecha": "02-01-2026",
+    "desc": "Transferencia enviada Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia enviada",
+    "monto": -30000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "9",
+    "fecha": "02-01-2026",
+    "desc": "Transferencia enviada Kiosco Martita",
+    "categoria": "Transferencia enviada",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "10",
+    "fecha": "02-01-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -2700.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "11",
+    "fecha": "02-01-2026",
+    "desc": "Transferencia enviada Ariel Ramiro Leon Chang",
+    "categoria": "Transferencia enviada",
+    "monto": -10000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "12",
+    "fecha": "03-01-2026",
+    "desc": "Transferencia enviada Astor Xavier Dioguardi",
+    "categoria": "Transferencia enviada",
+    "monto": -14500.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "13",
+    "fecha": "03-01-2026",
+    "desc": "Pago de cuota Créditos de Mercado Pago",
+    "categoria": "Créditos MP",
+    "monto": -21690.8,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "14",
+    "fecha": "03-01-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "15",
+    "fecha": "03-01-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -3300.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "16",
+    "fecha": "03-01-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -6900.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "17",
+    "fecha": "03-01-2026",
+    "desc": "Compra de Reloj Poedagar 613 Hombre Acero Inoxidable, Cristal Hardlex, Diseño Esti...",
+    "categoria": "Otros pagos",
+    "monto": -41602.4,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "18",
+    "fecha": "03-01-2026",
+    "desc": "Transferencia enviada Lautaro Daniel,romano",
+    "categoria": "Transferencia enviada",
+    "monto": -15000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "19",
+    "fecha": "03-01-2026",
+    "desc": "Transferencia enviada Oscar Horacio Ledesma",
+    "categoria": "Transferencia enviada",
+    "monto": -8600.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "20",
+    "fecha": "03-01-2026",
+    "desc": "Transferencia enviada Leonardo Nicolas Martinez",
+    "categoria": "Transferencia enviada",
+    "monto": -9000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "21",
+    "fecha": "04-01-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -3700.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "22",
+    "fecha": "04-01-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 180000.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "23",
+    "fecha": "04-01-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 400000.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "24",
+    "fecha": "04-01-2026",
+    "desc": "Compra de Arnes Pretal Pechera Reforzado Perro Anti Tirones Waggs Mercado Libre",
+    "categoria": "Mercado Libre",
+    "monto": -20391.5,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "25",
+    "fecha": "04-01-2026",
+    "desc": "Transferencia enviada Kiosco Martita",
+    "categoria": "Transferencia enviada",
+    "monto": -10000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "26",
+    "fecha": "04-01-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -11000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "27",
+    "fecha": "05-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 382.55,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "28",
+    "fecha": "05-01-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 55000.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "29",
+    "fecha": "05-01-2026",
+    "desc": "Transferencia enviada Alan Ariel Bottero",
+    "categoria": "Transferencia enviada",
+    "monto": -20000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "30",
+    "fecha": "05-01-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1050.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "31",
+    "fecha": "05-01-2026",
+    "desc": "Transferencia enviada Claudia Mabel Acosta",
+    "categoria": "Transferencia enviada",
+    "monto": -3100.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "32",
+    "fecha": "05-01-2026",
+    "desc": "Transferencia enviada Perez Verd Michelle",
+    "categoria": "Transferencia enviada",
+    "monto": -530000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "33",
+    "fecha": "05-01-2026",
+    "desc": "Pago ICase",
+    "categoria": "Otros pagos",
+    "monto": -17000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "34",
+    "fecha": "05-01-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -5400.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "35",
+    "fecha": "06-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 376.96,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "36",
+    "fecha": "06-01-2026",
+    "desc": "Transferencia enviada Kiosco Martita",
+    "categoria": "Transferencia enviada",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "37",
+    "fecha": "07-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 26.77,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "38",
+    "fecha": "07-01-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1050.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "39",
+    "fecha": "07-01-2026",
+    "desc": "Transferencia enviada Carlos Alberto Amendola",
+    "categoria": "Transferencia enviada",
+    "monto": -1000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "40",
+    "fecha": "08-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 24.9,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "41",
+    "fecha": "08-01-2026",
+    "desc": "Devolución de dinero Compra protegida",
+    "categoria": "Devolución",
+    "monto": 20391.5,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "42",
+    "fecha": "09-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 37.98,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "43",
+    "fecha": "09-01-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "44",
+    "fecha": "09-01-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "45",
+    "fecha": "09-01-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "46",
+    "fecha": "09-01-2026",
+    "desc": "Pago de suscripción Meli+",
+    "categoria": "Mercado Libre",
+    "monto": -3490.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "47",
+    "fecha": "09-01-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -900.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "48",
+    "fecha": "09-01-2026",
+    "desc": "Transferencia enviada Erika Guadalupe Romero",
+    "categoria": "Transferencia enviada",
+    "monto": -3300.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "49",
+    "fecha": "10-01-2026",
+    "desc": "Transferencia enviada Alan Ariel Bottero",
+    "categoria": "Transferencia enviada",
+    "monto": -20000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "50",
+    "fecha": "10-01-2026",
+    "desc": "Transferencia enviada Osvaldo Marcelo Riveros",
+    "categoria": "Transferencia enviada",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "51",
+    "fecha": "10-01-2026",
+    "desc": "Transferencia enviada Reconquista",
+    "categoria": "Transferencia enviada",
+    "monto": -4800.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "52",
+    "fecha": "10-01-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -6400.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "53",
+    "fecha": "11-01-2026",
+    "desc": "Transferencia enviada Kiosco Martita",
+    "categoria": "Transferencia enviada",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "54",
+    "fecha": "11-01-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 99722.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "55",
+    "fecha": "11-01-2026",
+    "desc": "Transferencia enviada Sandra Patricia Crespo",
+    "categoria": "Transferencia enviada",
+    "monto": -15500.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "56",
+    "fecha": "11-01-2026",
+    "desc": "Transferencia enviada Claudia Mabel Acosta",
+    "categoria": "Transferencia enviada",
+    "monto": -5700.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "57",
+    "fecha": "12-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 90.43,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "58",
+    "fecha": "12-01-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "59",
+    "fecha": "12-01-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "60",
+    "fecha": "12-01-2026",
+    "desc": "Transferencia enviada Luis Alberto Duarte",
+    "categoria": "Transferencia enviada",
+    "monto": -40000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "61",
+    "fecha": "12-01-2026",
+    "desc": "Transferencia enviada Lucas Jeronimo Beron",
+    "categoria": "Transferencia enviada",
+    "monto": -1050.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "62",
+    "fecha": "12-01-2026",
+    "desc": "Pago Shell",
+    "categoria": "Combustible",
+    "monto": -5000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "63",
+    "fecha": "12-01-2026",
+    "desc": "Transferencia enviada Osvaldo Marcelo Riveros",
+    "categoria": "Transferencia enviada",
+    "monto": -5000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "64",
+    "fecha": "12-01-2026",
+    "desc": "Transferencia enviada Monica",
+    "categoria": "Transferencia enviada",
+    "monto": -4200.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "65",
+    "fecha": "13-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 21.46,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "66",
+    "fecha": "13-01-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "67",
+    "fecha": "13-01-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "68",
+    "fecha": "13-01-2026",
+    "desc": "Transferencia enviada Plescia Alexis Maximiliano",
+    "categoria": "Transferencia enviada",
+    "monto": -10000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "69",
+    "fecha": "14-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 14.81,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "70",
+    "fecha": "14-01-2026",
+    "desc": "Transferencia enviada Lucas Jeronimo Beron",
+    "categoria": "Transferencia enviada",
+    "monto": -1050.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "71",
+    "fecha": "14-01-2026",
+    "desc": "Transferencia recibida Analia Veronica Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 5000.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "72",
+    "fecha": "14-01-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 10000.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "73",
+    "fecha": "14-01-2026",
+    "desc": "Transferencia enviada Alan Ariel Bottero",
+    "categoria": "Transferencia enviada",
+    "monto": -19000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "74",
+    "fecha": "15-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 9.49,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "75",
+    "fecha": "15-01-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "76",
+    "fecha": "15-01-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 500.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "77",
+    "fecha": "15-01-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "78",
+    "fecha": "16-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.1,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "79",
+    "fecha": "16-01-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 1100.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "80",
+    "fecha": "16-01-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "81",
+    "fecha": "16-01-2026",
+    "desc": "Transferencia recibida agustin emanuel delgado",
+    "categoria": "Transferencia recibida",
+    "monto": 20000.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "82",
+    "fecha": "16-01-2026",
+    "desc": "Pago Tuenti",
+    "categoria": "Otros pagos",
+    "monto": -2000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "83",
+    "fecha": "16-01-2026",
+    "desc": "Pago con QR BYB GARDEN",
+    "categoria": "Pago QR",
+    "monto": -15000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "84",
+    "fecha": "17-01-2026",
+    "desc": "Pago San miguel hs",
+    "categoria": "Otros pagos",
+    "monto": -3100.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "85",
+    "fecha": "17-01-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 1100.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "86",
+    "fecha": "17-01-2026",
+    "desc": "Transferencia enviada Leonel Matias Freiria",
+    "categoria": "Transferencia enviada",
+    "monto": -200.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "87",
+    "fecha": "18-01-2026",
+    "desc": "Transferencia recibida Diego Brian Silva",
+    "categoria": "Transferencia recibida",
+    "monto": 5000.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "88",
+    "fecha": "19-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.26,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "89",
+    "fecha": "19-01-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "90",
+    "fecha": "19-01-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "91",
+    "fecha": "19-01-2026",
+    "desc": "Transferencia recibida Ricardo Emanuel Plescia",
+    "categoria": "Transferencia recibida",
+    "monto": 5000.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "92",
+    "fecha": "19-01-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "93",
+    "fecha": "19-01-2026",
+    "desc": "Transferencia enviada Plescia Alexis Maximiliano",
+    "categoria": "Transferencia enviada",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "94",
+    "fecha": "20-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 1.81,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "95",
+    "fecha": "21-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 1.83,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "96",
+    "fecha": "21-01-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 10000.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "97",
+    "fecha": "21-01-2026",
+    "desc": "Transferencia enviada Astor Xavier Dioguardi",
+    "categoria": "Transferencia enviada",
+    "monto": -7000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "98",
+    "fecha": "21-01-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "99",
+    "fecha": "22-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 2.03,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "100",
+    "fecha": "22-01-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 10000.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "101",
+    "fecha": "22-01-2026",
+    "desc": "Transferencia enviada Plescia Alexis Maximiliano",
+    "categoria": "Transferencia enviada",
+    "monto": -5000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "102",
+    "fecha": "22-01-2026",
+    "desc": "Transferencia enviada Astor Xavier Dioguardi",
+    "categoria": "Transferencia enviada",
+    "monto": -3650.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "103",
+    "fecha": "22-01-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -3700.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "104",
+    "fecha": "23-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 3.01,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "105",
+    "fecha": "23-01-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 800.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "106",
+    "fecha": "23-01-2026",
+    "desc": "Transferencia recibida Nazareno Leonel Coria",
+    "categoria": "Transferencia recibida",
+    "monto": 50000.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "107",
+    "fecha": "23-01-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -3500.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "108",
+    "fecha": "23-01-2026",
+    "desc": "Transferencia enviada Nazareno Leonel Coria",
+    "categoria": "Transferencia enviada",
+    "monto": -15000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "109",
+    "fecha": "24-01-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "110",
+    "fecha": "24-01-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "111",
+    "fecha": "24-01-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -8800.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "112",
+    "fecha": "25-01-2026",
+    "desc": "Transferencia enviada Plescia Alexis Maximiliano",
+    "categoria": "Transferencia enviada",
+    "monto": -6000.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "113",
+    "fecha": "25-01-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -5800.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "114",
+    "fecha": "26-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 2.46,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "115",
+    "fecha": "26-01-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "116",
+    "fecha": "26-01-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "117",
+    "fecha": "27-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 3.2,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "118",
+    "fecha": "27-01-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "119",
+    "fecha": "27-01-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "120",
+    "fecha": "28-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.83,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "121",
+    "fecha": "28-01-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "122",
+    "fecha": "29-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.47,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "123",
+    "fecha": "29-01-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 1380.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "124",
+    "fecha": "29-01-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 200.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "125",
+    "fecha": "29-01-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "126",
+    "fecha": "29-01-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 150.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "127",
+    "fecha": "29-01-2026",
+    "desc": "Pago YPF",
+    "categoria": "Otros pagos",
+    "monto": -1300.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "128",
+    "fecha": "30-01-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.06,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "129",
+    "fecha": "31-01-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 1000.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "130",
+    "fecha": "31-01-2026",
+    "desc": "Transferencia enviada Florencia Soledad Vivas",
+    "categoria": "Transferencia enviada",
+    "monto": -1050.0,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "131",
+    "fecha": "31-01-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 3300.0,
+    "tipo": "Ingreso",
+    "mes": "Enero"
+  },
+  {
+    "id": "132",
+    "fecha": "TOTAL GASTOS DEL MES",
+    "desc": "",
+    "categoria": "Otros",
+    "monto": -1277424.7,
+    "tipo": "Gasto",
+    "mes": "Enero"
+  },
+  {
+    "id": "133",
+    "fecha": "02-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.18,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "134",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 20000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "135",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia enviada Camila Rodriguez",
+    "categoria": "Transferencia enviada",
+    "monto": -2900.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "136",
+    "fecha": "02-02-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "137",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia enviada Florencia Soledad Vivas",
+    "categoria": "Transferencia enviada",
+    "monto": -3750.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "138",
+    "fecha": "02-02-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "139",
+    "fecha": "02-02-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -8527.5,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "140",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 70000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "141",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia enviada Carlos Ariel Silva",
+    "categoria": "Transferencia enviada",
+    "monto": -70000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "142",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 30000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "143",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia enviada Ricardo Emanuel Plescia",
+    "categoria": "Transferencia enviada",
+    "monto": -5000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "144",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia enviada Analia Veronica Gil",
+    "categoria": "Transferencia enviada",
+    "monto": -5000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "145",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia enviada Diego Brian Silva",
+    "categoria": "Transferencia enviada",
+    "monto": -5000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "146",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 50000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "147",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia enviada Nazareno Leonel Coria",
+    "categoria": "Transferencia enviada",
+    "monto": -57000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "148",
+    "fecha": "02-02-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "149",
+    "fecha": "02-02-2026",
+    "desc": "Pago Norauto Argentina",
+    "categoria": "Autos/Moto",
+    "monto": -6390.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "150",
+    "fecha": "02-02-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "151",
+    "fecha": "02-02-2026",
+    "desc": "Pago Qun Wang",
+    "categoria": "Otros pagos",
+    "monto": -4600.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "152",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 6000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "153",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 50000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "154",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia enviada Leonel Matias Freiria",
+    "categoria": "Transferencia enviada",
+    "monto": -8000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "155",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia enviada Alan Ariel Bottero",
+    "categoria": "Transferencia enviada",
+    "monto": -40000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "156",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 30000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "157",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia enviada Araceli Celeste Mateos",
+    "categoria": "Transferencia enviada",
+    "monto": -15000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "158",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia enviada Agustin Emanuel Delgado",
+    "categoria": "Transferencia enviada",
+    "monto": -20000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "159",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 30000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "160",
+    "fecha": "02-02-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -7800.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "161",
+    "fecha": "03-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 4.43,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "162",
+    "fecha": "03-02-2026",
+    "desc": "Pago de cuota Créditos de Mercado Pago",
+    "categoria": "Créditos MP",
+    "monto": -18397.95,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "163",
+    "fecha": "03-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 50000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "164",
+    "fecha": "03-02-2026",
+    "desc": "Transferencia enviada Invertironline S.a.",
+    "categoria": "Transferencia enviada",
+    "monto": -50000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "165",
+    "fecha": "03-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 30000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "166",
+    "fecha": "03-02-2026",
+    "desc": "Transferencia enviada Analia Veronica Gil",
+    "categoria": "Transferencia enviada",
+    "monto": -25000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "167",
+    "fecha": "03-02-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "168",
+    "fecha": "03-02-2026",
+    "desc": "Pago YPF",
+    "categoria": "Otros pagos",
+    "monto": -800.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "169",
+    "fecha": "03-02-2026",
+    "desc": "Pago YPF",
+    "categoria": "Otros pagos",
+    "monto": -3360.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "170",
+    "fecha": "04-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 5.57,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "171",
+    "fecha": "04-02-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "172",
+    "fecha": "04-02-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "173",
+    "fecha": "04-02-2026",
+    "desc": "Pago cancelado Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": 600.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "174",
+    "fecha": "04-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 15000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "175",
+    "fecha": "04-02-2026",
+    "desc": "Transferencia enviada FARM LA NOBLEZA",
+    "categoria": "Farmacia",
+    "monto": -15152.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "176",
+    "fecha": "04-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 2000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "177",
+    "fecha": "04-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 15000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "178",
+    "fecha": "04-02-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -6600.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "179",
+    "fecha": "05-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 3.12,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "180",
+    "fecha": "05-02-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -3300.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "181",
+    "fecha": "05-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 15000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "182",
+    "fecha": "05-02-2026",
+    "desc": "Transferencia enviada Florencia Soledad Vivas",
+    "categoria": "Transferencia enviada",
+    "monto": -20000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "183",
+    "fecha": "05-02-2026",
+    "desc": "Pago de suscripción Meli+",
+    "categoria": "Mercado Libre",
+    "monto": -3490.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "184",
+    "fecha": "05-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 45000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "185",
+    "fecha": "05-02-2026",
+    "desc": "Transferencia enviada gym vicefitness",
+    "categoria": "Transferencia enviada",
+    "monto": -45000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "186",
+    "fecha": "06-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 4.45,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "187",
+    "fecha": "06-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 30000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "188",
+    "fecha": "06-02-2026",
+    "desc": "Pago de cuota Créditos de Mercado Pago",
+    "categoria": "Créditos MP",
+    "monto": -14104.12,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "189",
+    "fecha": "06-02-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -2220.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "190",
+    "fecha": "06-02-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "191",
+    "fecha": "06-02-2026",
+    "desc": "Transferencia enviada Astor Xavier Dioguardi",
+    "categoria": "Transferencia enviada",
+    "monto": -5000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "192",
+    "fecha": "06-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 15000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "193",
+    "fecha": "06-02-2026",
+    "desc": "Transferencia enviada Astor Xavier Dioguardi",
+    "categoria": "Transferencia enviada",
+    "monto": -20000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "194",
+    "fecha": "06-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 19000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "195",
+    "fecha": "06-02-2026",
+    "desc": "Transferencia enviada Astor Xavier Dioguardi",
+    "categoria": "Transferencia enviada",
+    "monto": -19000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "196",
+    "fecha": "06-02-2026",
+    "desc": "Transferencia enviada Luis Alberto Acuña",
+    "categoria": "Transferencia enviada",
+    "monto": -2900.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "197",
+    "fecha": "07-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 10000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "198",
+    "fecha": "07-02-2026",
+    "desc": "Transferencia enviada Kiosco Martita",
+    "categoria": "Transferencia enviada",
+    "monto": -6000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "199",
+    "fecha": "07-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 8000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "200",
+    "fecha": "08-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 10000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "201",
+    "fecha": "08-02-2026",
+    "desc": "Transferencia enviada Reconquista",
+    "categoria": "Transferencia enviada",
+    "monto": -12600.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "202",
+    "fecha": "08-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 5000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "203",
+    "fecha": "08-02-2026",
+    "desc": "Transferencia enviada Navarro Santiago Hernan",
+    "categoria": "Transferencia enviada",
+    "monto": -15000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "204",
+    "fecha": "08-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 6400.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "205",
+    "fecha": "08-02-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -6400.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "206",
+    "fecha": "09-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 17.87,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "207",
+    "fecha": "09-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 3000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "208",
+    "fecha": "09-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 3000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "209",
+    "fecha": "09-02-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "210",
+    "fecha": "09-02-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "211",
+    "fecha": "09-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 50000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "212",
+    "fecha": "09-02-2026",
+    "desc": "Transferencia enviada Gonzalo Casagrande",
+    "categoria": "Transferencia enviada",
+    "monto": -2900.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "213",
+    "fecha": "09-02-2026",
+    "desc": "Transferencia enviada Bici ale",
+    "categoria": "Transferencia enviada",
+    "monto": -4200.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "214",
+    "fecha": "09-02-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -7400.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "215",
+    "fecha": "10-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 32.94,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "216",
+    "fecha": "10-02-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -2220.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "217",
+    "fecha": "10-02-2026",
+    "desc": "Transferencia enviada Gonzalo Casagrande",
+    "categoria": "Transferencia enviada",
+    "monto": -2600.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "218",
+    "fecha": "10-02-2026",
+    "desc": "Transferencia enviada Alan Ariel Bottero",
+    "categoria": "Transferencia enviada",
+    "monto": -20000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "219",
+    "fecha": "10-02-2026",
+    "desc": "Transferencia enviada Galarza Rosario Ayelen",
+    "categoria": "Transferencia enviada",
+    "monto": -7000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "220",
+    "fecha": "11-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 21.75,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "221",
+    "fecha": "11-02-2026",
+    "desc": "Transferencia enviada Kiosco Martita",
+    "categoria": "Transferencia enviada",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "222",
+    "fecha": "11-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 2000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "223",
+    "fecha": "11-02-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -4500.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "224",
+    "fecha": "11-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 8000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "225",
+    "fecha": "11-02-2026",
+    "desc": "Transferencia enviada Osvaldo Marcelo Riveros",
+    "categoria": "Transferencia enviada",
+    "monto": -8500.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "226",
+    "fecha": "11-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 3000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "227",
+    "fecha": "11-02-2026",
+    "desc": "Transferencia enviada Vanesa Alejandra Castro",
+    "categoria": "Transferencia enviada",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "228",
+    "fecha": "12-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.58,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "229",
+    "fecha": "12-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 5000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "230",
+    "fecha": "12-02-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "231",
+    "fecha": "12-02-2026",
+    "desc": "Transferencia enviada Leila Abigail Garay",
+    "categoria": "Transferencia enviada",
+    "monto": -2500.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "232",
+    "fecha": "13-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.07,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "233",
+    "fecha": "13-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 2000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "234",
+    "fecha": "13-02-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "235",
+    "fecha": "13-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 3000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "236",
+    "fecha": "13-02-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "237",
+    "fecha": "14-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 5000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "238",
+    "fecha": "14-02-2026",
+    "desc": "Transferencia enviada Gonzalo Casagrande",
+    "categoria": "Transferencia enviada",
+    "monto": -5000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "239",
+    "fecha": "14-02-2026",
+    "desc": "Devolución de transferencia enviada Gonzalo Casagrande",
+    "categoria": "Transferencia enviada",
+    "monto": 5000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "240",
+    "fecha": "14-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 2000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "241",
+    "fecha": "14-02-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -2220.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "242",
+    "fecha": "14-02-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -2947.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "243",
+    "fecha": "14-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 5000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "244",
+    "fecha": "14-02-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -4020.25,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "245",
+    "fecha": "14-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 9000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "246",
+    "fecha": "14-02-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -7500.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "247",
+    "fecha": "15-02-2026",
+    "desc": "Transferencia enviada Kiosco Martita",
+    "categoria": "Transferencia enviada",
+    "monto": -4900.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "248",
+    "fecha": "15-02-2026",
+    "desc": "Dinero retirado Ahorro",
+    "categoria": "Otros",
+    "monto": 8.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "249",
+    "fecha": "15-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 600.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "250",
+    "fecha": "15-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 34260.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "251",
+    "fecha": "15-02-2026",
+    "desc": "Transferencia enviada Rosario Teresa Amado",
+    "categoria": "Transferencia enviada",
+    "monto": -2000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "252",
+    "fecha": "15-02-2026",
+    "desc": "Transferencia enviada Rosario Teresa Amado",
+    "categoria": "Transferencia enviada",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "253",
+    "fecha": "16-02-2026",
+    "desc": "Transferencia enviada Agustin Emanuel Delgado",
+    "categoria": "Transferencia enviada",
+    "monto": -10000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "254",
+    "fecha": "16-02-2026",
+    "desc": "Transferencia enviada Alan Ariel Bottero",
+    "categoria": "Transferencia enviada",
+    "monto": -20000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "255",
+    "fecha": "16-02-2026",
+    "desc": "Transferencia recibida Nazareno Leonel Coria",
+    "categoria": "Transferencia recibida",
+    "monto": 20000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "256",
+    "fecha": "16-02-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 5000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "257",
+    "fecha": "16-02-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -11200.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "258",
+    "fecha": "16-02-2026",
+    "desc": "Pago Dlocal Argentina SA",
+    "categoria": "Otros pagos",
+    "monto": -5244.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "259",
+    "fecha": "17-02-2026",
+    "desc": "Pago Dlocal Argentina SA",
+    "categoria": "Otros pagos",
+    "monto": -5690.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "260",
+    "fecha": "17-02-2026",
+    "desc": "Transferencia enviada Maria Florencia Vazquez",
+    "categoria": "Transferencia enviada",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "261",
+    "fecha": "18-02-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -3300.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "262",
+    "fecha": "18-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 4.53,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "263",
+    "fecha": "18-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 20000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "264",
+    "fecha": "18-02-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -13350.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "265",
+    "fecha": "18-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 23253.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "266",
+    "fecha": "19-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.03,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "267",
+    "fecha": "19-02-2026",
+    "desc": "Transferencia enviada Erika Guadalupe Romero",
+    "categoria": "Transferencia enviada",
+    "monto": -3300.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "268",
+    "fecha": "19-02-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 200.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "269",
+    "fecha": "19-02-2026",
+    "desc": "Transferencia enviada Libreria flowers",
+    "categoria": "Transferencia enviada",
+    "monto": -450.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "270",
+    "fecha": "19-02-2026",
+    "desc": "Pago Qun Wang",
+    "categoria": "Otros pagos",
+    "monto": -8500.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "271",
+    "fecha": "20-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 22.77,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "272",
+    "fecha": "20-02-2026",
+    "desc": "Pago Anthropic",
+    "categoria": "Otros pagos",
+    "monto": -7346.78,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "273",
+    "fecha": "20-02-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -9100.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "274",
+    "fecha": "21-02-2026",
+    "desc": "Transferencia recibida INVERTIRONLINE S.A.",
+    "categoria": "Transferencia recibida",
+    "monto": 6733.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "275",
+    "fecha": "21-02-2026",
+    "desc": "Pago Qun Wang",
+    "categoria": "Otros pagos",
+    "monto": -5200.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "276",
+    "fecha": "21-02-2026",
+    "desc": "Pago con QR YPF KM 18",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "277",
+    "fecha": "23-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 15.42,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "278",
+    "fecha": "23-02-2026",
+    "desc": "Transferencia recibida Analia Veronica Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 5000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "279",
+    "fecha": "23-02-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "280",
+    "fecha": "23-02-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 8615.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "281",
+    "fecha": "23-02-2026",
+    "desc": "Transferencia recibida VERONICA,GIL ANALIA",
+    "categoria": "Transferencia recibida",
+    "monto": 30000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "282",
+    "fecha": "23-02-2026",
+    "desc": "Pago Showcase haedo",
+    "categoria": "Otros pagos",
+    "monto": -37100.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "283",
+    "fecha": "24-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 1.75,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "284",
+    "fecha": "24-02-2026",
+    "desc": "Transferencia recibida INVERTIRONLINE S.A.",
+    "categoria": "Transferencia recibida",
+    "monto": 28304.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "285",
+    "fecha": "24-02-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -2220.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "286",
+    "fecha": "24-02-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "287",
+    "fecha": "24-02-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "288",
+    "fecha": "25-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 18.49,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "289",
+    "fecha": "25-02-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "290",
+    "fecha": "25-02-2026",
+    "desc": "Transferencia enviada Carlos Ariel Silva",
+    "categoria": "Transferencia enviada",
+    "monto": -10000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "291",
+    "fecha": "25-02-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "292",
+    "fecha": "25-02-2026",
+    "desc": "Pago Shell",
+    "categoria": "Combustible",
+    "monto": -7000.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "293",
+    "fecha": "26-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 3.35,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "294",
+    "fecha": "26-02-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "295",
+    "fecha": "26-02-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "296",
+    "fecha": "27-02-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 1.09,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "297",
+    "fecha": "27-02-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 2000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "298",
+    "fecha": "27-02-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "299",
+    "fecha": "27-02-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "300",
+    "fecha": "27-02-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "301",
+    "fecha": "27-02-2026",
+    "desc": "Transferencia enviada Erika Guadalupe Romero",
+    "categoria": "Transferencia enviada",
+    "monto": -300.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "302",
+    "fecha": "28-02-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 3000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "303",
+    "fecha": "28-02-2026",
+    "desc": "Pago JARANA 24",
+    "categoria": "Otros pagos",
+    "monto": -3850.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "304",
+    "fecha": "28-02-2026",
+    "desc": "Transferencia recibida Diego Brian Silva",
+    "categoria": "Transferencia recibida",
+    "monto": 2000.0,
+    "tipo": "Ingreso",
+    "mes": "Febrero"
+  },
+  {
+    "id": "305",
+    "fecha": "28-02-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "306",
+    "fecha": "28-02-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "307",
+    "fecha": "TOTAL GASTOS DEL MES",
+    "desc": "",
+    "categoria": "Otros",
+    "monto": -858899.6,
+    "tipo": "Gasto",
+    "mes": "Febrero"
+  },
+  {
+    "id": "308",
+    "fecha": "02-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 2.53,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "309",
+    "fecha": "02-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 2000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "310",
+    "fecha": "02-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "311",
+    "fecha": "02-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 400000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "312",
+    "fecha": "02-03-2026",
+    "desc": "Transferencia enviada Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia enviada",
+    "monto": -230000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "313",
+    "fecha": "02-03-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -8300.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "314",
+    "fecha": "02-03-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -1300.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "315",
+    "fecha": "02-03-2026",
+    "desc": "Pago Open 25",
+    "categoria": "Pago QR",
+    "monto": -100.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "316",
+    "fecha": "02-03-2026",
+    "desc": "Transferencia enviada Analia Veronica Gil",
+    "categoria": "Transferencia enviada",
+    "monto": -10000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "317",
+    "fecha": "02-03-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -2220.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "318",
+    "fecha": "02-03-2026",
+    "desc": "Transferencia enviada Ian Miguel Vaquero",
+    "categoria": "Transferencia enviada",
+    "monto": -1050.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "319",
+    "fecha": "02-03-2026",
+    "desc": "Transferencia enviada Turnos dni",
+    "categoria": "Transferencia enviada",
+    "monto": -135000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "320",
+    "fecha": "02-03-2026",
+    "desc": "Transferencia enviada Gonzalo Casagrande",
+    "categoria": "Transferencia enviada",
+    "monto": -12000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "321",
+    "fecha": "02-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 110000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "322",
+    "fecha": "02-03-2026",
+    "desc": "Transferencia enviada Luis Alberto Duarte",
+    "categoria": "Transferencia enviada",
+    "monto": -50000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "323",
+    "fecha": "02-03-2026",
+    "desc": "Transferencia enviada Hernan Ezequiel Rios",
+    "categoria": "Transferencia enviada",
+    "monto": -51000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "324",
+    "fecha": "03-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 6.52,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "325",
+    "fecha": "03-03-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "326",
+    "fecha": "03-03-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "327",
+    "fecha": "03-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 152000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "328",
+    "fecha": "03-03-2026",
+    "desc": "Pago Merpago*educacionit",
+    "categoria": "Educación",
+    "monto": -152022.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "329",
+    "fecha": "03-03-2026",
+    "desc": "Pago Norauto Argentina",
+    "categoria": "Autos/Moto",
+    "monto": -6582.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "330",
+    "fecha": "03-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 10000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "331",
+    "fecha": "03-03-2026",
+    "desc": "Pago Shell",
+    "categoria": "Combustible",
+    "monto": -10000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "332",
+    "fecha": "03-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 14000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "333",
+    "fecha": "03-03-2026",
+    "desc": "Pago Ivan Alejandro Jerez",
+    "categoria": "Otros pagos",
+    "monto": -14000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "334",
+    "fecha": "03-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 3000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "335",
+    "fecha": "03-03-2026",
+    "desc": "Transferencia enviada Vyv",
+    "categoria": "Transferencia enviada",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "336",
+    "fecha": "03-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 15000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "337",
+    "fecha": "03-03-2026",
+    "desc": "Transferencia enviada Yunmei Li",
+    "categoria": "Transferencia enviada",
+    "monto": -10600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "338",
+    "fecha": "03-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 15000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "339",
+    "fecha": "03-03-2026",
+    "desc": "Transferencia enviada Diego Brian Silva",
+    "categoria": "Transferencia enviada",
+    "monto": -14000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "340",
+    "fecha": "04-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 64000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "341",
+    "fecha": "04-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 22000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "342",
+    "fecha": "04-03-2026",
+    "desc": "Compra Mercado Libre",
+    "categoria": "Mercado Libre",
+    "monto": -86116.79,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "343",
+    "fecha": "04-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.3,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "344",
+    "fecha": "04-03-2026",
+    "desc": "Transferencia enviada Facundo Nicolas Dieghi",
+    "categoria": "Transferencia enviada",
+    "monto": -4000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "345",
+    "fecha": "04-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 30000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "346",
+    "fecha": "04-03-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "347",
+    "fecha": "04-03-2026",
+    "desc": "Pago Go*cenidor 1_4",
+    "categoria": "Otros pagos",
+    "monto": -18625.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "348",
+    "fecha": "05-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 16.85,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "349",
+    "fecha": "05-03-2026",
+    "desc": "Transferencia enviada Lucas Jeronimo Beron",
+    "categoria": "Transferencia enviada",
+    "monto": -1000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "350",
+    "fecha": "05-03-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "351",
+    "fecha": "05-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 24000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "352",
+    "fecha": "05-03-2026",
+    "desc": "Pago de cuota Créditos de Mercado Pago",
+    "categoria": "Créditos MP",
+    "monto": -23182.05,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "353",
+    "fecha": "05-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 20000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "354",
+    "fecha": "05-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 5000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "355",
+    "fecha": "05-03-2026",
+    "desc": "Pago Claude.ai subscription",
+    "categoria": "Suscripciones",
+    "monto": -29781.12,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "356",
+    "fecha": "05-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 25000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "357",
+    "fecha": "05-03-2026",
+    "desc": "Pago Qun Wang",
+    "categoria": "Otros pagos",
+    "monto": -18339.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "358",
+    "fecha": "06-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 4.29,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "359",
+    "fecha": "06-03-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "360",
+    "fecha": "06-03-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -2800.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "361",
+    "fecha": "07-03-2026",
+    "desc": "Transferencia enviada Lucas Jeronimo Beron",
+    "categoria": "Transferencia enviada",
+    "monto": -2500.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "362",
+    "fecha": "07-03-2026",
+    "desc": "Transferencia enviada Florencia Soledad Vivas",
+    "categoria": "Transferencia enviada",
+    "monto": -2100.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "363",
+    "fecha": "07-03-2026",
+    "desc": "Ingreso de dinero",
+    "categoria": "Ingreso",
+    "monto": 5000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "364",
+    "fecha": "07-03-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "365",
+    "fecha": "07-03-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -500.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "366",
+    "fecha": "07-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 10000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "367",
+    "fecha": "07-03-2026",
+    "desc": "Transferencia enviada San miguel",
+    "categoria": "Transferencia enviada",
+    "monto": -4000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "368",
+    "fecha": "07-03-2026",
+    "desc": "Transferencia enviada Chaoquan Weng",
+    "categoria": "Transferencia enviada",
+    "monto": -7500.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "369",
+    "fecha": "07-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 10000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "370",
+    "fecha": "07-03-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -4700.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "371",
+    "fecha": "08-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 20000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "372",
+    "fecha": "08-03-2026",
+    "desc": "Transferencia enviada Graciela Vanesa Lopez",
+    "categoria": "Transferencia enviada",
+    "monto": -5700.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "373",
+    "fecha": "08-03-2026",
+    "desc": "Transferencia enviada Lautaro Daniel Romano",
+    "categoria": "Transferencia enviada",
+    "monto": -15000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "374",
+    "fecha": "09-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 9.61,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "375",
+    "fecha": "09-03-2026",
+    "desc": "Transferencia enviada Lucas Jeronimo Beron",
+    "categoria": "Transferencia enviada",
+    "monto": -1400.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "376",
+    "fecha": "09-03-2026",
+    "desc": "Transferencia enviada Lucas Jeronimo Beron",
+    "categoria": "Transferencia enviada",
+    "monto": -1050.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "377",
+    "fecha": "09-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 3000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "378",
+    "fecha": "09-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 5000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "379",
+    "fecha": "09-03-2026",
+    "desc": "Transferencia enviada FARM LA NOBLEZA",
+    "categoria": "Farmacia",
+    "monto": -7140.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "380",
+    "fecha": "09-03-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "381",
+    "fecha": "09-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 20000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "382",
+    "fecha": "09-03-2026",
+    "desc": "Transferencia enviada Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia enviada",
+    "monto": -20000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "383",
+    "fecha": "10-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.47,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "384",
+    "fecha": "10-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 62000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "385",
+    "fecha": "10-03-2026",
+    "desc": "Transferencia enviada Alan Ariel Bottero",
+    "categoria": "Transferencia enviada",
+    "monto": -24000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "386",
+    "fecha": "10-03-2026",
+    "desc": "Transferencia enviada Monica Viviana Corbalan",
+    "categoria": "Transferencia enviada",
+    "monto": -700.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "387",
+    "fecha": "10-03-2026",
+    "desc": "Transferencia enviada Turnos dni",
+    "categoria": "Transferencia enviada",
+    "monto": -34000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "388",
+    "fecha": "11-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.46,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "389",
+    "fecha": "12-03-2026",
+    "desc": "Pago de suscripción Meli+",
+    "categoria": "Mercado Libre",
+    "monto": -3490.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "390",
+    "fecha": "12-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 2.35,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "391",
+    "fecha": "12-03-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 20000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "392",
+    "fecha": "12-03-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "393",
+    "fecha": "13-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 11.37,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "394",
+    "fecha": "13-03-2026",
+    "desc": "Pago Shell",
+    "categoria": "Combustible",
+    "monto": -5000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "395",
+    "fecha": "13-03-2026",
+    "desc": "Transferencia enviada Florencia Soledad Vivas",
+    "categoria": "Transferencia enviada",
+    "monto": -3690.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "396",
+    "fecha": "14-03-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "397",
+    "fecha": "14-03-2026",
+    "desc": "Transferencia enviada FARM LA NOBLEZA",
+    "categoria": "Farmacia",
+    "monto": -7300.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "398",
+    "fecha": "14-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 5000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "399",
+    "fecha": "14-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -2000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "400",
+    "fecha": "14-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 10000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "401",
+    "fecha": "14-03-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -6100.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "402",
+    "fecha": "15-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 10000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "403",
+    "fecha": "15-03-2026",
+    "desc": "Pago con QR Make",
+    "categoria": "Pago QR",
+    "monto": -10050.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "404",
+    "fecha": "15-03-2026",
+    "desc": "Transferencia enviada Christian Scorzo",
+    "categoria": "Transferencia enviada",
+    "monto": -3500.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "405",
+    "fecha": "16-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 19.07,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "406",
+    "fecha": "16-03-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "407",
+    "fecha": "16-03-2026",
+    "desc": "Ingreso de dinero",
+    "categoria": "Ingreso",
+    "monto": 1500.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "408",
+    "fecha": "16-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "409",
+    "fecha": "16-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 1200.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "410",
+    "fecha": "16-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1200.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "411",
+    "fecha": "17-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.52,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "412",
+    "fecha": "17-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 10000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "413",
+    "fecha": "17-03-2026",
+    "desc": "Transferencia enviada Marcos Adrián Labat",
+    "categoria": "Transferencia enviada",
+    "monto": -2050.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "414",
+    "fecha": "17-03-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "415",
+    "fecha": "17-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -2000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "416",
+    "fecha": "17-03-2026",
+    "desc": "Pago Shell",
+    "categoria": "Combustible",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "417",
+    "fecha": "18-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.49,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "418",
+    "fecha": "18-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 3000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "419",
+    "fecha": "18-03-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -2220.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "420",
+    "fecha": "18-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "421",
+    "fecha": "18-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 300.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "422",
+    "fecha": "18-03-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 1690.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "423",
+    "fecha": "18-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "424",
+    "fecha": "19-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 1.4,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "425",
+    "fecha": "19-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "426",
+    "fecha": "19-03-2026",
+    "desc": "Devolución de Pix enviado Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": 600.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "427",
+    "fecha": "19-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "428",
+    "fecha": "19-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "429",
+    "fecha": "19-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "430",
+    "fecha": "19-03-2026",
+    "desc": "Dinero retirado Ahorro",
+    "categoria": "Otros",
+    "monto": 11.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "431",
+    "fecha": "19-03-2026",
+    "desc": "Transferencia enviada Leonel Matias Freiria",
+    "categoria": "Transferencia enviada",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "432",
+    "fecha": "20-03-2026",
+    "desc": "Transferencia recibida Gonzalo Casagrande",
+    "categoria": "Transferencia recibida",
+    "monto": 4000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "433",
+    "fecha": "20-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "434",
+    "fecha": "20-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -900.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "435",
+    "fecha": "20-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1200.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "436",
+    "fecha": "20-03-2026",
+    "desc": "Devolución de Pix enviado Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": 1200.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "437",
+    "fecha": "20-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "438",
+    "fecha": "21-03-2026",
+    "desc": "Transferencia recibida Gonzalo Casagrande",
+    "categoria": "Transferencia recibida",
+    "monto": 10000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "439",
+    "fecha": "21-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "440",
+    "fecha": "21-03-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "441",
+    "fecha": "22-03-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -3500.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "442",
+    "fecha": "22-03-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -2000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "443",
+    "fecha": "23-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "444",
+    "fecha": "23-03-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 1000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "445",
+    "fecha": "23-03-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "446",
+    "fecha": "25-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.31,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "447",
+    "fecha": "25-03-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 1000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "448",
+    "fecha": "25-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "449",
+    "fecha": "25-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "450",
+    "fecha": "26-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.06,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "451",
+    "fecha": "27-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.06,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "452",
+    "fecha": "27-03-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 1000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "453",
+    "fecha": "27-03-2026",
+    "desc": "Transferencia recibida VERONICA,GIL ANALIA",
+    "categoria": "Transferencia recibida",
+    "monto": 3000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "454",
+    "fecha": "27-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "455",
+    "fecha": "27-03-2026",
+    "desc": "Transferencia recibida Diego Brian Silva",
+    "categoria": "Transferencia recibida",
+    "monto": 1000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "456",
+    "fecha": "27-03-2026",
+    "desc": "Transferencia enviada Agustin Ortiz",
+    "categoria": "Transferencia enviada",
+    "monto": -1100.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "457",
+    "fecha": "27-03-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "458",
+    "fecha": "27-03-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 2000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "459",
+    "fecha": "27-03-2026",
+    "desc": "Pago SUBE",
+    "categoria": "Transporte",
+    "monto": -2000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "460",
+    "fecha": "28-03-2026",
+    "desc": "Transferencia recibida MARCOS ADRIAN LABAT",
+    "categoria": "Transferencia recibida",
+    "monto": 20000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "461",
+    "fecha": "28-03-2026",
+    "desc": "Transferencia enviada Alan Ariel Bottero",
+    "categoria": "Transferencia enviada",
+    "monto": -18000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "462",
+    "fecha": "28-03-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "463",
+    "fecha": "28-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "464",
+    "fecha": "28-03-2026",
+    "desc": "Devolución de Pix enviado Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": 600.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "465",
+    "fecha": "28-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "466",
+    "fecha": "28-03-2026",
+    "desc": "Devolución de Pix enviado Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": 600.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "467",
+    "fecha": "28-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "468",
+    "fecha": "28-03-2026",
+    "desc": "Transferencia recibida Diego Brian Silva",
+    "categoria": "Transferencia recibida",
+    "monto": 2000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "469",
+    "fecha": "28-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "470",
+    "fecha": "28-03-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -700.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "471",
+    "fecha": "29-03-2026",
+    "desc": "Transferencia enviada Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia enviada",
+    "monto": -1000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "472",
+    "fecha": "30-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 4.14,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "473",
+    "fecha": "30-03-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 1000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "474",
+    "fecha": "30-03-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "475",
+    "fecha": "30-03-2026",
+    "desc": "Transferencia recibida Gonzalo Casagrande",
+    "categoria": "Transferencia recibida",
+    "monto": 500.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "476",
+    "fecha": "30-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "477",
+    "fecha": "31-03-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.11,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "478",
+    "fecha": "31-03-2026",
+    "desc": "Transferencia recibida agustin emanuel delgado",
+    "categoria": "Transferencia recibida",
+    "monto": 10000.0,
+    "tipo": "Ingreso",
+    "mes": "Marzo"
+  },
+  {
+    "id": "479",
+    "fecha": "31-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "480",
+    "fecha": "31-03-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "481",
+    "fecha": "31-03-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -2200.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "482",
+    "fecha": "31-03-2026",
+    "desc": "Transferencia enviada Rojoyverde2518",
+    "categoria": "Transferencia enviada",
+    "monto": -2400.0,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "483",
+    "fecha": "TOTAL GASTOS DEL MES",
+    "desc": "",
+    "categoria": "Otros",
+    "monto": -1166867.96,
+    "tipo": "Gasto",
+    "mes": "Marzo"
+  },
+  {
+    "id": "484",
+    "fecha": "01-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 2.52,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "485",
+    "fecha": "01-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 500000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "486",
+    "fecha": "01-04-2026",
+    "desc": "Transferencia enviada Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia enviada",
+    "monto": -200000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "487",
+    "fecha": "01-04-2026",
+    "desc": "Transferencia enviada Alan Ariel Bottero",
+    "categoria": "Transferencia enviada",
+    "monto": -30000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "488",
+    "fecha": "01-04-2026",
+    "desc": "Transferencia enviada Analia Veronica Gil",
+    "categoria": "Transferencia enviada",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "489",
+    "fecha": "01-04-2026",
+    "desc": "Transferencia enviada Diego Brian Silva",
+    "categoria": "Transferencia enviada",
+    "monto": -5000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "490",
+    "fecha": "01-04-2026",
+    "desc": "Transferencia recibida Alan Ariel Bottero",
+    "categoria": "Transferencia recibida",
+    "monto": 24000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "491",
+    "fecha": "01-04-2026",
+    "desc": "Transferencia enviada Hernan Ezequiel Rios",
+    "categoria": "Transferencia enviada",
+    "monto": -51000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "492",
+    "fecha": "01-04-2026",
+    "desc": "Transferencia enviada Luis Alberto Duarte",
+    "categoria": "Transferencia enviada",
+    "monto": -50000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "493",
+    "fecha": "01-04-2026",
+    "desc": "Transferencia enviada Nicolas Alcaraz",
+    "categoria": "Transferencia enviada",
+    "monto": -70000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "494",
+    "fecha": "01-04-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "495",
+    "fecha": "01-04-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -2105.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "496",
+    "fecha": "01-04-2026",
+    "desc": "Pago Tuenti recargas dcp",
+    "categoria": "Otros pagos",
+    "monto": -2462.5,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "497",
+    "fecha": "01-04-2026",
+    "desc": "Pago Qun Wang",
+    "categoria": "Otros pagos",
+    "monto": -7750.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "498",
+    "fecha": "01-04-2026",
+    "desc": "Transferencia enviada Osvaldo Marcelo Riveros",
+    "categoria": "Transferencia enviada",
+    "monto": -7100.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "499",
+    "fecha": "01-04-2026",
+    "desc": "Transferencia enviada Alan Ariel Bottero",
+    "categoria": "Transferencia enviada",
+    "monto": -20000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "500",
+    "fecha": "01-04-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -3700.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "501",
+    "fecha": "01-04-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -8200.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "502",
+    "fecha": "02-04-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -1500.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "503",
+    "fecha": "02-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 91000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "504",
+    "fecha": "02-04-2026",
+    "desc": "Transferencia enviada Zoe Quimey Gonzalez",
+    "categoria": "Transferencia enviada",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "505",
+    "fecha": "02-04-2026",
+    "desc": "Transferencia enviada Stuntmotos",
+    "categoria": "Transferencia enviada",
+    "monto": -51000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "506",
+    "fecha": "02-04-2026",
+    "desc": "Compra Mercado Libre",
+    "categoria": "Mercado Libre",
+    "monto": -59990.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "507",
+    "fecha": "02-04-2026",
+    "desc": "Pago Axion Hurlingham",
+    "categoria": "Otros pagos",
+    "monto": -5000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "508",
+    "fecha": "02-04-2026",
+    "desc": "Transferencia enviada GI MOTOS racing",
+    "categoria": "Transferencia enviada",
+    "monto": -7000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "509",
+    "fecha": "02-04-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -3800.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "510",
+    "fecha": "02-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 80000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "511",
+    "fecha": "02-04-2026",
+    "desc": "Transferencia enviada Turnos dni",
+    "categoria": "Transferencia enviada",
+    "monto": -49000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "512",
+    "fecha": "02-04-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -3800.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "513",
+    "fecha": "02-04-2026",
+    "desc": "Pago YPF",
+    "categoria": "Otros pagos",
+    "monto": -10000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "514",
+    "fecha": "03-04-2026",
+    "desc": "Pago Go*cenidor 2_4",
+    "categoria": "Otros pagos",
+    "monto": -18625.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "515",
+    "fecha": "03-04-2026",
+    "desc": "Transferencia enviada Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia enviada",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "516",
+    "fecha": "03-04-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -9100.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "517",
+    "fecha": "04-04-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "518",
+    "fecha": "04-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 15000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "519",
+    "fecha": "04-04-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -12205.3,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "520",
+    "fecha": "04-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 40000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "521",
+    "fecha": "04-04-2026",
+    "desc": "Transferencia enviada Samuel Nicolas Bruzzaniti",
+    "categoria": "Transferencia enviada",
+    "monto": -14000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "522",
+    "fecha": "04-04-2026",
+    "desc": "Pago Tuenti",
+    "categoria": "Otros pagos",
+    "monto": -12500.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "523",
+    "fecha": "04-04-2026",
+    "desc": "Pago Qun Wang",
+    "categoria": "Otros pagos",
+    "monto": -7800.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "524",
+    "fecha": "04-04-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -7500.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "525",
+    "fecha": "05-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 30000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "526",
+    "fecha": "05-04-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -9100.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "527",
+    "fecha": "05-04-2026",
+    "desc": "Pago de cuota Créditos de Mercado Pago",
+    "categoria": "Créditos MP",
+    "monto": -20544.58,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "528",
+    "fecha": "05-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 30000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "529",
+    "fecha": "05-04-2026",
+    "desc": "Pago Claude.ai subscription",
+    "categoria": "Suscripciones",
+    "monto": -30024.52,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "530",
+    "fecha": "05-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 8000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "531",
+    "fecha": "05-04-2026",
+    "desc": "Transferencia enviada Emmanuel Alonso",
+    "categoria": "Transferencia enviada",
+    "monto": -13000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "532",
+    "fecha": "06-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 319.49,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "533",
+    "fecha": "06-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 3000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "534",
+    "fecha": "06-04-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "535",
+    "fecha": "07-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 1.42,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "536",
+    "fecha": "07-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 3000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "537",
+    "fecha": "07-04-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "538",
+    "fecha": "07-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 5000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "539",
+    "fecha": "07-04-2026",
+    "desc": "Transferencia enviada Gonzalo Casagrande",
+    "categoria": "Transferencia enviada",
+    "monto": -2900.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "540",
+    "fecha": "07-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 110000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "541",
+    "fecha": "07-04-2026",
+    "desc": "Transferencia enviada Alan Ariel Bottero",
+    "categoria": "Transferencia enviada",
+    "monto": -20000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "542",
+    "fecha": "07-04-2026",
+    "desc": "Transferencia enviada Rojoyverde2518",
+    "categoria": "Transferencia enviada",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "543",
+    "fecha": "07-04-2026",
+    "desc": "Transferencia enviada Daiana Micaela Lange",
+    "categoria": "Transferencia enviada",
+    "monto": -20000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "544",
+    "fecha": "08-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 64.07,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "545",
+    "fecha": "08-04-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "546",
+    "fecha": "08-04-2026",
+    "desc": "Transferencia enviada Sportclub Hurlingham",
+    "categoria": "Transferencia enviada",
+    "monto": -50000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "547",
+    "fecha": "08-04-2026",
+    "desc": "Pago de suscripción Meli+",
+    "categoria": "Mercado Libre",
+    "monto": -3490.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "548",
+    "fecha": "08-04-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "549",
+    "fecha": "09-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 38.01,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "550",
+    "fecha": "09-04-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "551",
+    "fecha": "09-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "552",
+    "fecha": "09-04-2026",
+    "desc": "Devolución de pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": 1000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "553",
+    "fecha": "09-04-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "554",
+    "fecha": "09-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -2200.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "555",
+    "fecha": "10-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 3.25,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "556",
+    "fecha": "10-04-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "557",
+    "fecha": "10-04-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "558",
+    "fecha": "10-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 20000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "559",
+    "fecha": "10-04-2026",
+    "desc": "Pago SUBE",
+    "categoria": "Transporte",
+    "monto": -4000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "560",
+    "fecha": "10-04-2026",
+    "desc": "Transferencia enviada MacArena Berenice Valverde",
+    "categoria": "Transferencia enviada",
+    "monto": -700.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "561",
+    "fecha": "10-04-2026",
+    "desc": "Transferencia enviada Gonzalo Casagrande",
+    "categoria": "Transferencia enviada",
+    "monto": -11000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "562",
+    "fecha": "10-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 8000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "563",
+    "fecha": "10-04-2026",
+    "desc": "Transferencia enviada MacArena Berenice Valverde",
+    "categoria": "Transferencia enviada",
+    "monto": -3200.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "564",
+    "fecha": "10-04-2026",
+    "desc": "Transferencia enviada Gonzalo Casagrande",
+    "categoria": "Transferencia enviada",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "565",
+    "fecha": "10-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 5000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "566",
+    "fecha": "10-04-2026",
+    "desc": "Pago Dlocal Argentina SA",
+    "categoria": "Otros pagos",
+    "monto": -8838.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "567",
+    "fecha": "10-04-2026",
+    "desc": "Devolución de pago Dlocal Argentina SA",
+    "categoria": "Devolución",
+    "monto": 8838.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "568",
+    "fecha": "10-04-2026",
+    "desc": "Pago Dlocal Argentina SA",
+    "categoria": "Otros pagos",
+    "monto": -7880.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "569",
+    "fecha": "11-04-2026",
+    "desc": "Devolución de pago Dlocal Argentina SA",
+    "categoria": "Devolución",
+    "monto": 7880.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "570",
+    "fecha": "11-04-2026",
+    "desc": "Pago Dlocal Argentina SA",
+    "categoria": "Otros pagos",
+    "monto": -10584.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "571",
+    "fecha": "11-04-2026",
+    "desc": "Devolución de pago Dlocal Argentina SA",
+    "categoria": "Devolución",
+    "monto": 10584.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "572",
+    "fecha": "11-04-2026",
+    "desc": "Pago Dlocal Argentina SA",
+    "categoria": "Otros pagos",
+    "monto": -9690.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "573",
+    "fecha": "11-04-2026",
+    "desc": "Devolución de pago Dlocal Argentina SA",
+    "categoria": "Devolución",
+    "monto": 9690.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "574",
+    "fecha": "11-04-2026",
+    "desc": "Pago Dlocal Argentina SA",
+    "categoria": "Otros pagos",
+    "monto": -9620.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "575",
+    "fecha": "11-04-2026",
+    "desc": "Devolución de pago Dlocal Argentina SA",
+    "categoria": "Devolución",
+    "monto": 9620.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "576",
+    "fecha": "11-04-2026",
+    "desc": "Pago Dlocal Argentina SA",
+    "categoria": "Otros pagos",
+    "monto": -10830.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "577",
+    "fecha": "11-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 10000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "578",
+    "fecha": "11-04-2026",
+    "desc": "Pago Dlo*uber*rides",
+    "categoria": "Otros pagos",
+    "monto": -9129.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "579",
+    "fecha": "11-04-2026",
+    "desc": "Devolución de pago Dlocal Argentina SA",
+    "categoria": "Devolución",
+    "monto": 10830.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "580",
+    "fecha": "11-04-2026",
+    "desc": "Dinero reservado Ahorro",
+    "categoria": "Otros",
+    "monto": -13000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "581",
+    "fecha": "11-04-2026",
+    "desc": "Pago Payu*ar*uber",
+    "categoria": "Otros pagos",
+    "monto": -345.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "582",
+    "fecha": "11-04-2026",
+    "desc": "Dinero retirado Ahorro",
+    "categoria": "Otros",
+    "monto": 3600.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "583",
+    "fecha": "11-04-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -3900.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "584",
+    "fecha": "11-04-2026",
+    "desc": "Dinero retirado Ahorro",
+    "categoria": "Otros",
+    "monto": 9400.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "585",
+    "fecha": "11-04-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -6000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "586",
+    "fecha": "11-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 8000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "587",
+    "fecha": "11-04-2026",
+    "desc": "Pago Dulce Familia",
+    "categoria": "Otros pagos",
+    "monto": -10000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "588",
+    "fecha": "11-04-2026",
+    "desc": "Transferencia enviada Dulce Familia",
+    "categoria": "Transferencia enviada",
+    "monto": -800.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "589",
+    "fecha": "11-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 2000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "590",
+    "fecha": "11-04-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -2000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "591",
+    "fecha": "12-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 9000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "592",
+    "fecha": "12-04-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -5800.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "593",
+    "fecha": "13-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 27.89,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "594",
+    "fecha": "13-04-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "595",
+    "fecha": "13-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "596",
+    "fecha": "14-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 1.22,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "597",
+    "fecha": "14-04-2026",
+    "desc": "Transferencia recibida PLESCIA ALEXIS MAXIMILIANO",
+    "categoria": "Transferencia recibida",
+    "monto": 295.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "598",
+    "fecha": "14-04-2026",
+    "desc": "Transferencia recibida Diego Brian Silva",
+    "categoria": "Transferencia recibida",
+    "monto": 3000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "599",
+    "fecha": "14-04-2026",
+    "desc": "Transferencia recibida Analia Veronica Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 3000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "600",
+    "fecha": "14-04-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "601",
+    "fecha": "14-04-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "602",
+    "fecha": "14-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "603",
+    "fecha": "14-04-2026",
+    "desc": "Transferencia enviada Ian Miguel Vaquero",
+    "categoria": "Transferencia enviada",
+    "monto": -1100.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "604",
+    "fecha": "14-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "605",
+    "fecha": "14-04-2026",
+    "desc": "Transferencia enviada Rojoyverde2518",
+    "categoria": "Transferencia enviada",
+    "monto": -900.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "606",
+    "fecha": "15-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.92,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "607",
+    "fecha": "15-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "608",
+    "fecha": "16-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.12,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "609",
+    "fecha": "16-04-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 1000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "610",
+    "fecha": "16-04-2026",
+    "desc": "Transferencia enviada Agustin Ortiz",
+    "categoria": "Transferencia enviada",
+    "monto": -1100.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "611",
+    "fecha": "16-04-2026",
+    "desc": "Transferencia recibida Nicolas Alcaraz",
+    "categoria": "Transferencia recibida",
+    "monto": 100000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "612",
+    "fecha": "16-04-2026",
+    "desc": "Pago con QR YPF KM 18",
+    "categoria": "Pago QR",
+    "monto": -7000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "613",
+    "fecha": "17-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.06,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "614",
+    "fecha": "17-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "615",
+    "fecha": "17-04-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -4440.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "616",
+    "fecha": "17-04-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "617",
+    "fecha": "17-04-2026",
+    "desc": "Transferencia recibida Marcos Adrián Labat",
+    "categoria": "Transferencia recibida",
+    "monto": 1100.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "618",
+    "fecha": "17-04-2026",
+    "desc": "Transferencia recibida Agustin Santiago Ortiz",
+    "categoria": "Transferencia recibida",
+    "monto": 1100.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "619",
+    "fecha": "17-04-2026",
+    "desc": "Transferencia enviada Diego Brian Silva",
+    "categoria": "Transferencia enviada",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "620",
+    "fecha": "17-04-2026",
+    "desc": "Transferencia enviada Lucas Jeronimo Beron",
+    "categoria": "Transferencia enviada",
+    "monto": -6479.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "621",
+    "fecha": "17-04-2026",
+    "desc": "Pago Qun Wang",
+    "categoria": "Otros pagos",
+    "monto": -8400.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "622",
+    "fecha": "17-04-2026",
+    "desc": "Transferencia enviada Alan Ariel Bottero",
+    "categoria": "Transferencia enviada",
+    "monto": -20000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "623",
+    "fecha": "18-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "624",
+    "fecha": "18-04-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "625",
+    "fecha": "18-04-2026",
+    "desc": "Pago Mostaza",
+    "categoria": "Otros pagos",
+    "monto": -3500.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "626",
+    "fecha": "18-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1800.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "627",
+    "fecha": "18-04-2026",
+    "desc": "Devolución de pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": 1800.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "628",
+    "fecha": "18-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1800.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "629",
+    "fecha": "18-04-2026",
+    "desc": "Transferencia enviada Claudia Mabel Acosta",
+    "categoria": "Transferencia enviada",
+    "monto": -24400.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "630",
+    "fecha": "19-04-2026",
+    "desc": "Transferencia enviada Myriam Janet Garate Karimuya",
+    "categoria": "Transferencia enviada",
+    "monto": -8300.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "631",
+    "fecha": "19-04-2026",
+    "desc": "Pago Dlocal Argentina SA",
+    "categoria": "Otros pagos",
+    "monto": -3396.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "632",
+    "fecha": "19-04-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -2000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "633",
+    "fecha": "20-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 121.08,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "634",
+    "fecha": "20-04-2026",
+    "desc": "Transferencia enviada Marcos Adrián Labat",
+    "categoria": "Transferencia enviada",
+    "monto": -1100.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "635",
+    "fecha": "20-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "636",
+    "fecha": "20-04-2026",
+    "desc": "Devolución de pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": 600.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "637",
+    "fecha": "20-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "638",
+    "fecha": "20-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "639",
+    "fecha": "20-04-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 1000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "640",
+    "fecha": "20-04-2026",
+    "desc": "Transferencia enviada Marcela Alejandra Peila",
+    "categoria": "Transferencia enviada",
+    "monto": -800.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "641",
+    "fecha": "21-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.12,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "642",
+    "fecha": "21-04-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 200.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "643",
+    "fecha": "21-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "644",
+    "fecha": "22-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.02,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "645",
+    "fecha": "22-04-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 2000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "646",
+    "fecha": "22-04-2026",
+    "desc": "Transferencia enviada Marcos Adrián Labat",
+    "categoria": "Transferencia enviada",
+    "monto": -1100.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "647",
+    "fecha": "22-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "648",
+    "fecha": "23-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 0.17,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "649",
+    "fecha": "23-04-2026",
+    "desc": "Transferencia recibida Analia Veronica Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 2000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "650",
+    "fecha": "23-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "651",
+    "fecha": "23-04-2026",
+    "desc": "Transferencia enviada Marcos Adrián Labat",
+    "categoria": "Transferencia enviada",
+    "monto": -1100.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "652",
+    "fecha": "23-04-2026",
+    "desc": "Transferencia recibida Diego Brian Silva",
+    "categoria": "Transferencia recibida",
+    "monto": 3000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "653",
+    "fecha": "23-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "654",
+    "fecha": "24-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 1.54,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "655",
+    "fecha": "24-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "656",
+    "fecha": "24-04-2026",
+    "desc": "Transferencia enviada Ian Miguel Vaquero",
+    "categoria": "Transferencia enviada",
+    "monto": -1100.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "657",
+    "fecha": "24-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "658",
+    "fecha": "25-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "659",
+    "fecha": "27-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 1.1,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "660",
+    "fecha": "27-04-2026",
+    "desc": "Transferencia recibida Hernan Ezequiel Rios",
+    "categoria": "Transferencia recibida",
+    "monto": 30000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "661",
+    "fecha": "27-04-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "662",
+    "fecha": "27-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "663",
+    "fecha": "27-04-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3500.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "664",
+    "fecha": "27-04-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -2759.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "665",
+    "fecha": "27-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "666",
+    "fecha": "27-04-2026",
+    "desc": "Pago con QR YPF KM 18",
+    "categoria": "Pago QR",
+    "monto": -7000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "667",
+    "fecha": "28-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 10.66,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "668",
+    "fecha": "28-04-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -2220.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "669",
+    "fecha": "28-04-2026",
+    "desc": "Transferencia recibida Agustin Santiago Ortiz",
+    "categoria": "Transferencia recibida",
+    "monto": 1100.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "670",
+    "fecha": "28-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "671",
+    "fecha": "28-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "672",
+    "fecha": "28-04-2026",
+    "desc": "Transferencia enviada Rojoyverde2518",
+    "categoria": "Transferencia enviada",
+    "monto": -2300.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "673",
+    "fecha": "29-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 6.07,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "674",
+    "fecha": "29-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -900.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "675",
+    "fecha": "29-04-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "676",
+    "fecha": "29-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "677",
+    "fecha": "29-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "678",
+    "fecha": "29-04-2026",
+    "desc": "Transferencia enviada OPEN 25",
+    "categoria": "Pago QR",
+    "monto": -3000.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "679",
+    "fecha": "29-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "680",
+    "fecha": "30-04-2026",
+    "desc": "Rendimientos",
+    "categoria": "Rendimientos",
+    "monto": 1.39,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "681",
+    "fecha": "30-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -1400.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "682",
+    "fecha": "30-04-2026",
+    "desc": "Pago Carrefour",
+    "categoria": "Supermercado",
+    "monto": -1110.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "683",
+    "fecha": "30-04-2026",
+    "desc": "Transferencia recibida Jaquelina Elizabeth Gil",
+    "categoria": "Transferencia recibida",
+    "monto": 200.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "684",
+    "fecha": "30-04-2026",
+    "desc": "Transferencia recibida Diego Brian Silva",
+    "categoria": "Transferencia recibida",
+    "monto": 2000.0,
+    "tipo": "Ingreso",
+    "mes": "Abril"
+  },
+  {
+    "id": "685",
+    "fecha": "30-04-2026",
+    "desc": "Pago Ab Vending",
+    "categoria": "Vending/Comida",
+    "monto": -600.0,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  },
+  {
+    "id": "686",
+    "fecha": "TOTAL GASTOS DEL MES",
+    "desc": "",
+    "categoria": "Otros",
+    "monto": -1226576.9,
+    "tipo": "Gasto",
+    "mes": "Abril"
+  }
+]
