@@ -9,4 +9,4 @@ RUN npm run build
 
 EXPOSE 10000
 
-CMD ["sh", "-c", "(npx prisma db push --accept-data-loss || true; npx tsx prisma/seed.ts || true) & node dist/server.js"]
+CMD ["sh", "-c", "timeout 60 npx tsx prisma/seed.ts || true; node dist/server.js"]
