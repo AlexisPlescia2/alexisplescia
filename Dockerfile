@@ -2,11 +2,8 @@ FROM node:20-alpine
 RUN apk add --no-cache openssl
 WORKDIR /app
 
-COPY backend/package*.json ./
-COPY backend/prisma ./prisma
-RUN npm ci
-
 COPY backend/ .
+RUN npm ci --ignore-scripts
 RUN npx prisma generate
 RUN npm run build
 
