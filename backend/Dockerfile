@@ -9,4 +9,4 @@ RUN npm run build
 
 EXPOSE 4000
 
-CMD ["sh", "-c", "npx prisma db push --accept-data-loss && npx tsx prisma/seed.ts; node dist/server.js"]
+CMD ["node", "dist/server.js"]
