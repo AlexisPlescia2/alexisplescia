@@ -22,6 +22,7 @@ export const env = {
   FRONTEND_URL: optional('FRONTEND_URL', 'http://localhost:5173'),
   BACKEND_URL: optional('BACKEND_URL', 'http://localhost:4000'),
   ALLOWED_ORIGINS: optional('ALLOWED_ORIGINS', 'http://localhost:5173'),
+  KEEPALIVE_TOKEN: optional('KEEPALIVE_TOKEN'),
 }
 
 // Validar en runtime pero sin crashear el proceso al importar
@@ -33,7 +34,7 @@ const missing = Object.entries({
 if (missing.length > 0) {
   console.error(`[env] Variables críticas faltantes: ${missing.join(', ')}`)
   if (isProd) {
-    // Log el error pero no crashear — Railway healthcheck necesita que el proceso arranque
+    // No se crashea para que Render pueda registrar el error en logs antes de fallar
     console.error('[env] La app puede no funcionar correctamente sin estas variables')
   }
 }
