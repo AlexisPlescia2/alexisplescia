@@ -1,9 +1,29 @@
 import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
 import { Category } from '../types/product'
 import { productService } from '../services/productService'
 import { useProducts } from '../hooks/useProducts'
 import { useSlowFetchMessage } from '../hooks/useSlowFetchMessage'
 import ProjectShowcase from '../components/product/ProjectShowcase'
+
+const listVariants = {
+  hidden: {},
+  show: {
+    transition: {
+      staggerChildren: 0.06,
+      delayChildren: 0.05,
+    },
+  },
+}
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 12 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.25, ease: 'easeOut' },
+  },
+}
 
 export default function Shop() {
   const [categories, setCategories] = useState<Category[]>([])
@@ -70,7 +90,7 @@ export default function Shop() {
           </p>
         )}
 
-        {/* Loading */}
+        {/* Loading skeleton — no motion during load */}
         {loading && (
           <div className="space-y-8">
             {[1, 2, 3].map((i) => (
@@ -81,7 +101,7 @@ export default function Shop() {
                   <div className="h-4 rounded w-full" style={{ background: '#1a1a1a' }} />
                   <div className="h-4 rounded w-3/4" style={{ background: '#1a1a1a' }} />
                   <div className="space-y-2 pt-2">
-                    {[1,2,3].map(j => <div key={j} className="h-3 rounded w-full" style={{ background: '#1a1a1a' }} />)}
+                    {[1, 2, 3].map(j => <div key={j} className="h-3 rounded w-full" style={{ background: '#1a1a1a' }} />)}
                   </div>
                 </div>
                 <div className="hidden lg:block lg:w-1/2 min-h-[380px]" style={{ background: '#141414' }} />
@@ -90,13 +110,20 @@ export default function Shop() {
           </div>
         )}
 
-        {/* Proyectos */}
+        {/* Proyectos — stagger animation after data arrives */}
         {!loading && products.length > 0 && (
-          <div className="space-y-12">
+          <motion.div
+            className="space-y-12"
+            variants={listVariants}
+            initial="hidden"
+            animate="show"
+          >
             {products.map((project, i) => (
-              <ProjectShowcase key={project.id} project={project} index={i} />
+              <motion.div key={project.id} variants={itemVariants}>
+                <ProjectShowcase project={project} index={i} />
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         )}
 
         {/* Vacío */}
