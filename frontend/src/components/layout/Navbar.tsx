@@ -62,16 +62,28 @@ export default function Navbar() {
           {/* Actions — desktop */}
           <div className="hidden md:flex items-center gap-2">
             {isAuthenticated && user?.role === 'ADMIN' && (
-              <Link
-                to="/dash"
-                className={`px-3 py-1.5 text-sm rounded-md transition-colors duration-150 ${
-                  isActive('/dash')
-                    ? 'text-[#e8e8e8] bg-white/[0.08]'
-                    : 'text-[#e8e8e8]/50 hover:text-[#e8e8e8] hover:bg-white/[0.05]'
-                }`}
-              >
-                Dashboard
-              </Link>
+              <>
+                <Link
+                  to="/dash"
+                  className={`px-3 py-1.5 text-sm rounded-md transition-colors duration-150 ${
+                    isActive('/dash')
+                      ? 'text-[#e8e8e8] bg-white/[0.08]'
+                      : 'text-[#e8e8e8]/50 hover:text-[#e8e8e8] hover:bg-white/[0.05]'
+                  }`}
+                >
+                  Dashboard
+                </Link>
+                <Link
+                  to="/admin"
+                  className={`px-3 py-1.5 text-sm rounded-md transition-colors duration-150 ${
+                    isActive('/admin')
+                      ? 'text-[#e8e8e8] bg-white/[0.08]'
+                      : 'text-[#e8e8e8]/50 hover:text-[#e8e8e8] hover:bg-white/[0.05]'
+                  }`}
+                >
+                  Admin
+                </Link>
+              </>
             )}
             {isAuthenticated ? (
               <div className="flex items-center gap-2">
@@ -149,21 +161,38 @@ export default function Navbar() {
               ))}
 
               {isAuthenticated && user?.role === 'ADMIN' && (
-                <motion.div
-                  initial={{ opacity: 0, x: -12 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ type: 'spring', stiffness: 400, damping: 28, delay: navLinks.length * 0.04 }}
-                >
-                  <Link
-                    to="/dash"
-                    onClick={closeMenu}
-                    className={`block py-3 text-sm transition-colors ${
-                      isActive('/dash') ? 'text-[#e8e8e8]' : 'text-[#e8e8e8]/50 hover:text-[#e8e8e8]'
-                    }`}
+                <>
+                  <motion.div
+                    initial={{ opacity: 0, x: -12 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ type: 'spring', stiffness: 400, damping: 28, delay: navLinks.length * 0.04 }}
                   >
-                    Dashboard
-                  </Link>
-                </motion.div>
+                    <Link
+                      to="/dash"
+                      onClick={closeMenu}
+                      className={`block py-3 text-sm transition-colors ${
+                        isActive('/dash') ? 'text-[#e8e8e8]' : 'text-[#e8e8e8]/50 hover:text-[#e8e8e8]'
+                      }`}
+                    >
+                      Dashboard
+                    </Link>
+                  </motion.div>
+                  <motion.div
+                    initial={{ opacity: 0, x: -12 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ type: 'spring', stiffness: 400, damping: 28, delay: (navLinks.length + 1) * 0.04 }}
+                  >
+                    <Link
+                      to="/admin"
+                      onClick={closeMenu}
+                      className={`block py-3 text-sm transition-colors ${
+                        isActive('/admin') ? 'text-[#e8e8e8]' : 'text-[#e8e8e8]/50 hover:text-[#e8e8e8]'
+                      }`}
+                    >
+                      Admin
+                    </Link>
+                  </motion.div>
+                </>
               )}
 
               {isAuthenticated && (
