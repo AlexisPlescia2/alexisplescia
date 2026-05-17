@@ -43,6 +43,18 @@ export default function ImageCarousel({ images, alt, badge }: ImageCarouselProps
   const handleNext = () => { goNext(); resetInterval() }
   const handleDotClick = (i: number) => { goTo(i); resetInterval() }
 
+  // Shared drag/swipe handlers for slides
+  const onMouseDown = (e: React.MouseEvent) => { dragStartX.current = e.clientX }
+  const onMouseUp = (e: React.MouseEvent) => {
+    const delta = dragStartX.current - e.clientX
+    if (Math.abs(delta) > 40) delta > 0 ? handleNext() : handlePrev()
+  }
+  const onTouchStart = (e: React.TouchEvent) => { dragStartX.current = e.touches[0].clientX }
+  const onTouchEnd = (e: React.TouchEvent) => {
+    const delta = dragStartX.current - e.changedTouches[0].clientX
+    if (Math.abs(delta) > 40) delta > 0 ? handleNext() : handlePrev()
+  }
+
   if (total === 0) {
     return (
       <div className="w-full h-full bg-[#141414] flex items-center justify-center">
@@ -51,39 +63,48 @@ export default function ImageCarousel({ images, alt, badge }: ImageCarouselProps
     )
   }
 
-  return (
-    <div className="relative w-full h-full overflow-hidden bg-[#141414] select-none group">
+  const nextIndex = (current + 1) % total
 
-      {/* Slides */}
+  return (
+    <div
+      className="relative w-full h-full overflow-hidden bg-[#141414] select-none group"
+      onMouseDown={onMouseDown}
+      onMouseUp={onMouseUp}
+      onTouchStart={onTouchStart}
+      onTouchEnd={onTouchEnd}
+    >
+      {/* Only render active slide (and briefly the prev slide for transition) */}
       {images.map((src, i) => {
         const isActive = i === current
         const isPrev = i === prev
+
+        // Only mount active and prev slides; skip all others
+        if (!isActive && !isPrev) return null
+
         return (
           <img
             key={i}
             src={src}
             alt={`${alt} — ${i + 1}`}
             draggable={false}
+            width={800}
+            height={600}
             className="absolute inset-0 w-full h-full object-cover"
+            loading={i === 0 ? 'eager' : 'lazy'}
             style={{
               opacity: isActive ? 1 : 0,
               transform: isActive ? 'translateX(0)' : isPrev ? 'translateX(-10px)' : 'translateX(10px)',
               transition: 'opacity 300ms ease, transform 300ms ease',
               zIndex: isActive ? 2 : isPrev ? 1 : 0,
             }}
-            onMouseDown={(e) => { dragStartX.current = e.clientX }}
-            onMouseUp={(e) => {
-              const delta = dragStartX.current - e.clientX
-              if (Math.abs(delta) > 40) delta > 0 ? handleNext() : handlePrev()
-            }}
-            onTouchStart={(e) => { dragStartX.current = e.touches[0].clientX }}
-            onTouchEnd={(e) => {
-              const delta = dragStartX.current - e.changedTouches[0].clientX
-              if (Math.abs(delta) > 40) delta > 0 ? handleNext() : handlePrev()
-            }}
           />
         )
       })}
+
+      {/* Preload next image (hidden, just to warm browser cache) */}
+      {total > 1 && nextIndex !== current && (
+        <link rel="preload" as="image" href={images[nextIndex]} />
+      )}
 
       {/* Gradient overlay — izquierda (fusión con panel info) */}
       <div

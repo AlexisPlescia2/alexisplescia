@@ -98,7 +98,11 @@ export default function ProductDetail() {
               <img
                 src={mainImage}
                 alt={product.name}
+                loading="eager"
+                width={800}
+                height={600}
                 className="w-full h-full object-cover"
+                style={{ aspectRatio: '4/3' }}
                 onError={(e) => { (e.target as HTMLImageElement).src = PLACEHOLDER }}
               />
             </div>
@@ -110,7 +114,15 @@ export default function ProductDetail() {
                     onClick={() => setActiveImg(i)}
                     className={`w-16 h-16 rounded overflow-hidden border-2 transition-colors ${i === activeImg ? 'border-accent' : 'border-white/10'}`}
                   >
-                    <img src={img} alt="" className="w-full h-full object-cover" onError={(e) => { (e.target as HTMLImageElement).src = PLACEHOLDER }} />
+                    <img
+                      src={img}
+                      alt=""
+                      loading="lazy"
+                      width={64}
+                      height={64}
+                      className="w-full h-full object-cover"
+                      onError={(e) => { (e.target as HTMLImageElement).src = PLACEHOLDER }}
+                    />
                   </button>
                 ))}
               </div>
