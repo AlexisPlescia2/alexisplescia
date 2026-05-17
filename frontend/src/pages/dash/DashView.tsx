@@ -5,6 +5,8 @@ import { useAuthStore } from '../../store/authStore'
 import { useAuth } from '../../hooks/useAuth'
 import gastosData from '../../data/gastos_2026.json'
 
+const PORTFOLIO_URL = (import.meta.env.VITE_PORTFOLIO_URL as string) || '/'
+
 const spring = { type: 'spring' as const, stiffness: 300, damping: 26, mass: 0.9 }
 const fadeUp = { hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0 } }
 
@@ -36,6 +38,7 @@ const CAT_COLORS: Record<string, string> = {
 }
 
 const MESES = ['Enero', 'Febrero', 'Marzo', 'Abril']
+const MESES_ANO = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre']
 const TRANSFERENCIAS = ['Transferencia enviada', 'Transferencia recibida', 'Rendimientos', 'Devolución', 'Ingreso']
 
 function fmtARS(n: number) {
@@ -88,7 +91,6 @@ export default function DashView() {
     })
   }, [allGastos, mesFiltro, catFiltro, busqueda])
 
-  // KPIs por mes seleccionado (o total)
   const kpiData = useMemo(() => {
     const fuente = mesFiltro === 'Todos' ? allGastos : allGastos.filter(g => g.mes === mesFiltro)
     const gastos = fuente.filter(g => g.tipo === 'Gasto' && !TRANSFERENCIAS.includes(g.categoria))
@@ -101,7 +103,16 @@ export default function DashView() {
     return { totalGastos, totalIngresos, ahorro, tasa, promDiario: totalGastos / dias }
   }, [allGastos, mesFiltro])
 
-  // Datos por mes para el bar chart
+  // Acumulado YTD: saldo desde Enero hasta el mes del filtro (o todo el año si "Todos")
+  const kpiYTD = useMemo(() => {
+    const idx = mesFiltro === 'Todos' ? MESES_ANO.length - 1 : MESES_ANO.indexOf(mesFiltro)
+    const mesesHasta = new Set(MESES_ANO.slice(0, idx + 1))
+    const fuente = allGastos.filter(g => mesesHasta.has(g.mes))
+    const gastos = fuente.filter(g => g.tipo === 'Gasto' && !TRANSFERENCIAS.includes(g.categoria))
+    const ingresos = fuente.filter(g => g.tipo === 'Ingreso' || g.categoria === 'Transferencia recibida')
+    return ingresos.reduce((s, g) => s + Math.abs(g.monto), 0) - gastos.reduce((s, g) => s + Math.abs(g.monto), 0)
+  }, [allGastos, mesFiltro])
+
   const porMes = useMemo(() => {
     return [...MESES, ...Array.from(new Set(nuevosGastos.map(g => g.mes)))].map(mes => {
       const g = allGastos.filter(x => x.mes === mes && x.tipo === 'Gasto' && !TRANSFERENCIAS.includes(x.categoria))
@@ -109,7 +120,6 @@ export default function DashView() {
     })
   }, [allGastos, nuevosGastos])
 
-  // Pie por categoría
   const porCategoria = useMemo(() => {
     const fuente = mesFiltro === 'Todos' ? allGastos : allGastos.filter(g => g.mes === mesFiltro)
     const map: Record<string, number> = {}
@@ -149,6 +159,15 @@ export default function DashView() {
 
   const allMeses = ['Todos', ...MESES, ...Array.from(new Set(nuevosGastos.map(g => g.mes).filter(m => !MESES.includes(m))))]
 
+  const kpiCards = [
+    { label: 'Gastos reales', value: fmtARS(kpiData.totalGastos), color: 'text-red-400' },
+    { label: 'Ingresos', value: fmtARS(kpiData.totalIngresos), color: 'text-green-400' },
+    { label: 'Saldo disponible', value: fmtARS(kpiData.ahorro), color: kpiData.ahorro >= 0 ? 'text-blue-400' : 'text-red-400' },
+    { label: 'Tasa de ahorro', value: kpiData.tasa.toFixed(1) + '%', color: 'text-[#e8e8e8]' },
+    { label: 'Gasto diario prom.', value: fmtARS(kpiData.promDiario), color: 'text-[#e8e8e8]' },
+    { label: 'Acumulado YTD', value: fmtARS(kpiYTD), color: kpiYTD >= 0 ? 'text-blue-400' : 'text-red-400' },
+  ]
+
   return (
     <div className="min-h-screen bg-background text-[#e8e8e8]"
       style={{ fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif' }}>
@@ -156,8 +175,15 @@ export default function DashView() {
       {/* Topbar */}
       <header className="sticky top-0 z-40 border-b border-border"
         style={{ background: 'rgba(10,10,10,0.85)', backdropFilter: 'blur(20px)' }}>
-        <div className="max-w-6xl mx-auto px-4 h-14 flex items-center justify-between">
+        <div className="w-full px-4 lg:px-6 h-14 flex items-center justify-between">
           <div className="flex items-center gap-3 flex-wrap">
+            {/* Botón volver al portfolio */}
+            <a href={PORTFOLIO_URL}
+              className="text-xs text-[#e8e8e8]/40 hover:text-[#e8e8e8] transition-colors flex items-center gap-1 mr-1">
+              <span>←</span>
+              <span className="hidden sm:inline">Portfolio</span>
+            </a>
+            <span className="text-[#e8e8e8]/20 hidden sm:inline">·</span>
             <span className="text-sm font-semibold tracking-tight">Finanzas personales</span>
             <span className="text-[#e8e8e8]/20">·</span>
             {(['resumen', 'movimientos', 'nuevo'] as const).map(t => (
@@ -176,7 +202,7 @@ export default function DashView() {
         </div>
       </header>
 
-      <main className="max-w-6xl mx-auto px-4 py-6">
+      <main className="w-full px-4 lg:px-6 py-6">
 
         {/* Filtro de mes global */}
         <div className="flex gap-2 mb-6 flex-wrap">
@@ -188,18 +214,12 @@ export default function DashView() {
           ))}
         </div>
 
-        {/* KPI Cards */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mb-6">
-          {[
-            { label: 'Gastos reales', value: fmtARS(kpiData.totalGastos) },
-            { label: 'Ingresos', value: fmtARS(kpiData.totalIngresos) },
-            { label: 'Ahorro neto', value: fmtARS(kpiData.ahorro) },
-            { label: 'Tasa de ahorro', value: kpiData.tasa.toFixed(1) + '%' },
-            { label: 'Gasto diario prom.', value: fmtARS(kpiData.promDiario) },
-          ].map(k => (
+        {/* KPI Cards — 6 tarjetas */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-6">
+          {kpiCards.map(k => (
             <motion.div key={k.label} className="card-dark p-4" variants={fadeUp} initial="hidden" animate="show" transition={spring}>
-              <p className="text-[11px] text-[#e8e8e8]/40 mb-1.5 tracking-wide">{k.label}</p>
-              <p className="text-lg font-semibold tracking-tight">{k.value}</p>
+              <p className="text-[11px] text-[#e8e8e8]/40 mb-1.5 tracking-wide leading-tight">{k.label}</p>
+              <p className={`text-lg font-semibold tracking-tight font-mono ${k.color}`}>{k.value}</p>
             </motion.div>
           ))}
         </div>
@@ -268,7 +288,7 @@ export default function DashView() {
                           <span className="ml-2">{fmtFecha(g.fecha)} · {g.mes}</span>
                         </p>
                       </div>
-                      <span className="text-sm font-medium text-red-400">{fmtARS(g.monto)}</span>
+                      <span className="text-sm font-medium text-red-400 font-mono">{fmtARS(g.monto)}</span>
                     </div>
                   ))}
                 </div>
@@ -318,7 +338,7 @@ export default function DashView() {
                         </button>
                       )}
 
-                      <span className={`text-sm font-medium shrink-0 ${g.tipo === 'Ingreso' ? 'text-green-400' : 'text-[#e8e8e8]/70'}`}>
+                      <span className={`text-sm font-medium font-mono shrink-0 ${g.tipo === 'Ingreso' ? 'text-green-400' : 'text-[#e8e8e8]/70'}`}>
                         {g.tipo === 'Ingreso' ? '+' : ''}{fmtARS(g.monto)}
                       </span>
 
@@ -332,90 +352,138 @@ export default function DashView() {
             </motion.div>
           )}
 
-          {/* ── NUEVO GASTO ── */}
+          {/* ── NUEVO GASTO — layout 2 columnas (form | mini-dashboard) ── */}
           {tab === 'nuevo' && (
             <motion.div key="nuevo" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={spring}
-              className="max-w-lg">
-              <div className="card-dark p-6">
-                <h3 className="text-sm font-semibold mb-5 tracking-tight">Agregar gasto</h3>
-                <div className="space-y-4">
-                  <div className="grid grid-cols-2 gap-3">
-                    <div>
-                      <label className="text-[11px] text-[#e8e8e8]/40 block mb-1.5">Fecha</label>
-                      <input type="date" value={form.fecha} onChange={e => setForm(f => ({ ...f, fecha: e.target.value }))}
-                        className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-sm text-[#e8e8e8] outline-none focus:border-accent/50" />
+              className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+
+              {/* Columna izquierda: formulario */}
+              <div>
+                <div className="card-dark p-6">
+                  <h3 className="text-sm font-semibold mb-5 tracking-tight">Agregar gasto</h3>
+                  <div className="space-y-4">
+                    <div className="grid grid-cols-2 gap-3">
+                      <div>
+                        <label className="text-[11px] text-[#e8e8e8]/40 block mb-1.5">Fecha</label>
+                        <input type="date" value={form.fecha} onChange={e => setForm(f => ({ ...f, fecha: e.target.value }))}
+                          className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-sm text-[#e8e8e8] outline-none focus:border-accent/50" />
+                      </div>
+                      <div>
+                        <label className="text-[11px] text-[#e8e8e8]/40 block mb-1.5">Mes</label>
+                        <input value={form.mes} onChange={e => setForm(f => ({ ...f, mes: e.target.value }))}
+                          placeholder="Mayo, Junio..."
+                          className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-sm text-[#e8e8e8] placeholder-[#e8e8e8]/20 outline-none focus:border-accent/50" />
+                      </div>
                     </div>
+
                     <div>
-                      <label className="text-[11px] text-[#e8e8e8]/40 block mb-1.5">Mes</label>
-                      <input value={form.mes} onChange={e => setForm(f => ({ ...f, mes: e.target.value }))}
-                        placeholder="Mayo, Junio..."
+                      <label className="text-[11px] text-[#e8e8e8]/40 block mb-1.5">Descripción</label>
+                      <input value={form.desc} onChange={e => setForm(f => ({ ...f, desc: e.target.value }))}
+                        placeholder="Ej: Supermercado Coto"
                         className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-sm text-[#e8e8e8] placeholder-[#e8e8e8]/20 outline-none focus:border-accent/50" />
                     </div>
-                  </div>
 
-                  <div>
-                    <label className="text-[11px] text-[#e8e8e8]/40 block mb-1.5">Descripción</label>
-                    <input value={form.desc} onChange={e => setForm(f => ({ ...f, desc: e.target.value }))}
-                      placeholder="Ej: Supermercado Coto"
-                      className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-sm text-[#e8e8e8] placeholder-[#e8e8e8]/20 outline-none focus:border-accent/50" />
-                  </div>
-
-                  <div className="grid grid-cols-2 gap-3">
-                    <div>
-                      <label className="text-[11px] text-[#e8e8e8]/40 block mb-1.5">Categoría</label>
-                      <select value={form.categoria} onChange={e => setForm(f => ({ ...f, categoria: e.target.value }))}
-                        className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-sm text-[#e8e8e8] outline-none focus:border-accent/50">
-                        {CATEGORIAS.map(c => <option key={c} value={c}>{c}</option>)}
-                      </select>
+                    <div className="grid grid-cols-2 gap-3">
+                      <div>
+                        <label className="text-[11px] text-[#e8e8e8]/40 block mb-1.5">Categoría</label>
+                        <select value={form.categoria} onChange={e => setForm(f => ({ ...f, categoria: e.target.value }))}
+                          className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-sm text-[#e8e8e8] outline-none focus:border-accent/50">
+                          {CATEGORIAS.map(c => <option key={c} value={c}>{c}</option>)}
+                        </select>
+                      </div>
+                      <div>
+                        <label className="text-[11px] text-[#e8e8e8]/40 block mb-1.5">Tipo</label>
+                        <select value={form.tipo} onChange={e => setForm(f => ({ ...f, tipo: e.target.value }))}
+                          className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-sm text-[#e8e8e8] outline-none focus:border-accent/50">
+                          <option value="Gasto">Gasto</option>
+                          <option value="Ingreso">Ingreso</option>
+                        </select>
+                      </div>
                     </div>
+
                     <div>
-                      <label className="text-[11px] text-[#e8e8e8]/40 block mb-1.5">Tipo</label>
-                      <select value={form.tipo} onChange={e => setForm(f => ({ ...f, tipo: e.target.value }))}
-                        className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-sm text-[#e8e8e8] outline-none focus:border-accent/50">
-                        <option value="Gasto">Gasto</option>
-                        <option value="Ingreso">Ingreso</option>
-                      </select>
+                      <label className="text-[11px] text-[#e8e8e8]/40 block mb-1.5">Monto ($)</label>
+                      <input type="number" value={form.monto} onChange={e => setForm(f => ({ ...f, monto: e.target.value }))}
+                        placeholder="0"
+                        className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-sm text-[#e8e8e8] placeholder-[#e8e8e8]/20 outline-none focus:border-accent/50" />
+                    </div>
+
+                    <motion.button onClick={addGasto} whileTap={{ scale: 0.97 }} transition={spring}
+                      className="w-full btn-primary py-2.5 text-sm">
+                      {saved ? '✓ Guardado' : 'Agregar gasto'}
+                    </motion.button>
+                  </div>
+                </div>
+
+                {/* Lista de gastos nuevos agregados */}
+                {nuevosGastos.length > 0 && (
+                  <div className="card-dark mt-4 overflow-hidden">
+                    <div className="px-5 py-3 border-b border-border">
+                      <h4 className="text-xs font-semibold text-[#e8e8e8]/60 tracking-wide uppercase">Gastos agregados</h4>
+                    </div>
+                    <div className="divide-y divide-border">
+                      {nuevosGastos.map(g => (
+                        <div key={g.id} className="px-5 py-3 flex items-center justify-between">
+                          <div>
+                            <p className="text-sm text-[#e8e8e8]/80">{g.desc}</p>
+                            <p className="text-[11px] text-[#e8e8e8]/35 mt-0.5">{g.categoria} · {g.mes}</p>
+                          </div>
+                          <div className="flex items-center gap-3">
+                            <span className={`text-sm font-medium font-mono ${g.tipo === 'Ingreso' ? 'text-green-400' : 'text-[#e8e8e8]/70'}`}>
+                              {fmtARS(g.monto)}
+                            </span>
+                            <button onClick={() => deleteGasto(g.id)} className="text-[#e8e8e8]/20 hover:text-red-400 text-xs transition-colors">✕</button>
+                          </div>
+                        </div>
+                      ))}
                     </div>
                   </div>
+                )}
+              </div>
 
-                  <div>
-                    <label className="text-[11px] text-[#e8e8e8]/40 block mb-1.5">Monto ($)</label>
-                    <input type="number" value={form.monto} onChange={e => setForm(f => ({ ...f, monto: e.target.value }))}
-                      placeholder="0"
-                      className="w-full bg-surface border border-border rounded-lg px-3 py-2 text-sm text-[#e8e8e8] placeholder-[#e8e8e8]/20 outline-none focus:border-accent/50" />
+              {/* Columna derecha: mini-dashboard contextual */}
+              <div className="space-y-4">
+                <div className="card-dark p-5">
+                  <h3 className="text-sm font-semibold mb-1 tracking-tight">Gastos por mes</h3>
+                  <p className="text-[11px] text-[#e8e8e8]/35 mb-4">Sin transferencias</p>
+                  <ResponsiveContainer width="100%" height={180}>
+                    <BarChart data={porMes} barSize={20}>
+                      <CartesianGrid strokeDasharray="3 3" stroke="#222" vertical={false} />
+                      <XAxis dataKey="mes" tick={{ fill: '#555', fontSize: 11 }} axisLine={false} tickLine={false} />
+                      <YAxis tick={{ fill: '#555', fontSize: 11 }} axisLine={false} tickLine={false} tickFormatter={v => `$${(v/1000).toFixed(0)}k`} />
+                      <Tooltip formatter={(v) => fmtARS(Number(v))} contentStyle={{ background: '#1a1a1a', border: '1px solid #222', borderRadius: 10, fontSize: 12 }} />
+                      <Bar dataKey="gastos" name="Gastos" fill="#3b82f6" radius={[4, 4, 0, 0]} />
+                    </BarChart>
+                  </ResponsiveContainer>
+                </div>
+
+                <div className="card-dark p-5">
+                  <h3 className="text-sm font-semibold mb-1 tracking-tight">Por categoría</h3>
+                  <p className="text-[11px] text-[#e8e8e8]/35 mb-3">{mesFiltro === 'Todos' ? 'Todos los meses' : mesFiltro}</p>
+                  <div className="flex gap-4 items-center">
+                    <ResponsiveContainer width={120} height={120}>
+                      <PieChart>
+                        <Pie data={porCategoria} dataKey="value" cx="50%" cy="50%" innerRadius={32} outerRadius={54} paddingAngle={2}>
+                          {porCategoria.map((e) => <Cell key={e.name} fill={e.color} />)}
+                        </Pie>
+                        <Tooltip formatter={(v) => fmtARS(Number(v))} contentStyle={{ background: '#1a1a1a', border: '1px solid #222', borderRadius: 10, fontSize: 12 }} />
+                      </PieChart>
+                    </ResponsiveContainer>
+                    <div className="flex-1 space-y-1.5">
+                      {porCategoria.slice(0, 5).map(c => (
+                        <div key={c.name} className="flex items-center justify-between text-xs">
+                          <div className="flex items-center gap-1.5">
+                            <div className="w-2 h-2 rounded-full shrink-0" style={{ backgroundColor: c.color }} />
+                            <span className="text-[#e8e8e8]/50 truncate max-w-[90px]">{c.name}</span>
+                          </div>
+                          <span className="text-[#e8e8e8]/70 font-mono">{fmtARS(c.value)}</span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
-
-                  <motion.button onClick={addGasto} whileTap={{ scale: 0.97 }} transition={spring}
-                    className="w-full btn-primary py-2.5 text-sm">
-                    {saved ? '✓ Guardado' : 'Agregar gasto'}
-                  </motion.button>
                 </div>
               </div>
 
-              {/* Lista de gastos nuevos agregados */}
-              {nuevosGastos.length > 0 && (
-                <div className="card-dark mt-4 overflow-hidden">
-                  <div className="px-5 py-3 border-b border-border">
-                    <h4 className="text-xs font-semibold text-[#e8e8e8]/60 tracking-wide uppercase">Gastos agregados</h4>
-                  </div>
-                  <div className="divide-y divide-border">
-                    {nuevosGastos.map(g => (
-                      <div key={g.id} className="px-5 py-3 flex items-center justify-between">
-                        <div>
-                          <p className="text-sm text-[#e8e8e8]/80">{g.desc}</p>
-                          <p className="text-[11px] text-[#e8e8e8]/35 mt-0.5">{g.categoria} · {g.mes}</p>
-                        </div>
-                        <div className="flex items-center gap-3">
-                          <span className={`text-sm font-medium ${g.tipo === 'Ingreso' ? 'text-green-400' : 'text-[#e8e8e8]/70'}`}>
-                            {fmtARS(g.monto)}
-                          </span>
-                          <button onClick={() => deleteGasto(g.id)} className="text-[#e8e8e8]/20 hover:text-red-400 text-xs transition-colors">✕</button>
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
             </motion.div>
           )}
 
