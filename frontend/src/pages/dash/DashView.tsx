@@ -376,7 +376,7 @@ export default function DashView() {
                 exit={{ opacity: 0, y: -6 }}
                 transition={{ duration: 0.16 }}
               >
-                <p className="text-lg font-semibold font-mono tracking-tight text-rose-400">
+                <p className={`text-lg font-semibold font-mono tracking-tight ${deudaVista === 'pagadas' ? 'text-green-400' : 'text-rose-400'}`}>
                   {fmtARS(deudaVista === 'nopagadas' ? kpi.deudasNoPagadas : kpi.deudasPagadas)}
                 </p>
                 <p className="text-[10px] text-[#e8e8e8]/25 mt-0.5 leading-tight">
