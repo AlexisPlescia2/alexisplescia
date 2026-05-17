@@ -64,9 +64,13 @@ export default function Navbar() {
             {isAuthenticated && user?.role === 'ADMIN' && (
               <Link
                 to="/dash"
-                className="px-3 py-1.5 text-xs text-[#e8e8e8]/30 hover:text-[#e8e8e8]/60 transition-colors"
+                className={`px-3 py-1.5 text-sm rounded-md transition-colors duration-150 ${
+                  isActive('/dash')
+                    ? 'text-[#e8e8e8] bg-white/[0.08]'
+                    : 'text-[#e8e8e8]/50 hover:text-[#e8e8e8] hover:bg-white/[0.05]'
+                }`}
               >
-                ·
+                Dashboard
               </Link>
             )}
             {isAuthenticated ? (
@@ -144,11 +148,29 @@ export default function Navbar() {
                 </motion.div>
               ))}
 
-              {isAuthenticated && (
+              {isAuthenticated && user?.role === 'ADMIN' && (
                 <motion.div
                   initial={{ opacity: 0, x: -12 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ type: 'spring', stiffness: 400, damping: 28, delay: navLinks.length * 0.04 }}
+                >
+                  <Link
+                    to="/dash"
+                    onClick={closeMenu}
+                    className={`block py-3 text-sm transition-colors ${
+                      isActive('/dash') ? 'text-[#e8e8e8]' : 'text-[#e8e8e8]/50 hover:text-[#e8e8e8]'
+                    }`}
+                  >
+                    Dashboard
+                  </Link>
+                </motion.div>
+              )}
+
+              {isAuthenticated && (
+                <motion.div
+                  initial={{ opacity: 0, x: -12 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ type: 'spring', stiffness: 400, damping: 28, delay: (navLinks.length + 1) * 0.04 }}
                   className="pt-3 border-t border-white/[0.06] flex items-center justify-between"
                 >
                   <span className="text-sm text-[#e8e8e8]/50">{user?.name}</span>
