@@ -5,11 +5,22 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import { useConfigStore } from '../../store/configStore'
 
-const pageTransition = {
-  initial: { opacity: 0, y: 12 },
-  animate: { opacity: 1, y: 0 },
-  exit: { opacity: 0, y: -8 },
-  transition: { type: 'spring' as const, stiffness: 320, damping: 26, mass: 0.85 },
+// Reduced duration for /shop so it doesn't compete with the card stagger animation
+function getPageTransition(pathname: string) {
+  if (pathname === '/shop') {
+    return {
+      initial: { opacity: 0 },
+      animate: { opacity: 1 },
+      exit: { opacity: 0 },
+      transition: { duration: 0.15, ease: 'easeOut' },
+    }
+  }
+  return {
+    initial: { opacity: 0, y: 12 },
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -8 },
+    transition: { type: 'spring' as const, stiffness: 320, damping: 26, mass: 0.85 },
+  }
 }
 
 export default function PageWrapper() {
@@ -19,6 +30,8 @@ export default function PageWrapper() {
   useEffect(() => {
     if (!loaded) loadConfig()
   }, [loaded, loadConfig])
+
+  const pageTransition = getPageTransition(location.pathname)
 
   return (
     <div className="min-h-screen bg-background text-[#e8e8e8] flex flex-col">
