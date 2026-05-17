@@ -25,7 +25,10 @@ export default function ProductCard({ product, showPrice = true, className = '' 
             src={mainImage}
             alt={product.name}
             loading="lazy"
+            width={400}
+            height={300}
             className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            style={{ aspectRatio: '4/3' }}
             onError={(e) => {
               ;(e.target as HTMLImageElement).src = PLACEHOLDER
             }}
