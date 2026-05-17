@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { Category } from '../types/product'
 import { productService } from '../services/productService'
 import { useFeaturedProducts } from '../hooks/useProducts'
+import { useSlowFetchMessage } from '../hooks/useSlowFetchMessage'
 import ProductCard from '../components/product/ProductCard'
 import { Skeleton } from '../components/ui/Loader'
 
@@ -72,6 +73,7 @@ export default function Home() {
   const [categories, setCategories] = useState<Category[]>([])
   const [categoriesLoading, setCategoriesLoading] = useState(true)
   const { products: featured, loading: featuredLoading } = useFeaturedProducts()
+  const isFeaturedSlow = useSlowFetchMessage(featuredLoading)
 
   useEffect(() => {
     document.title = 'Alexis Plescia — Portfolio'
@@ -305,6 +307,12 @@ export default function Home() {
               </svg>
             </Link>
           </motion.div>
+
+          {isFeaturedSlow && (
+            <p className="text-xs font-mono text-[#e8e8e8]/30 mb-4 text-center tracking-wide">
+              Despertando el servidor, un momento...
+            </p>
+          )}
 
           {featuredLoading ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
