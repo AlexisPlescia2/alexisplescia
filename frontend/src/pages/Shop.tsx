@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react'
 import { Category } from '../types/product'
 import { productService } from '../services/productService'
 import { useProducts } from '../hooks/useProducts'
+import { useSlowFetchMessage } from '../hooks/useSlowFetchMessage'
 import ProjectShowcase from '../components/product/ProjectShowcase'
 
 export default function Shop() {
@@ -13,6 +14,7 @@ export default function Shop() {
     sort: 'newest',
     limit: 20,
   })
+  const isSlowFetch = useSlowFetchMessage(loading)
 
   useEffect(() => {
     productService.getCategories().then(setCategories).catch(console.error)
@@ -59,6 +61,13 @@ export default function Shop() {
               </button>
             ))}
           </div>
+        )}
+
+        {/* Slow fetch message */}
+        {isSlowFetch && (
+          <p className="text-xs font-mono text-[#e8e8e8]/30 mb-6 text-center tracking-wide">
+            Despertando el servidor, un momento...
+          </p>
         )}
 
         {/* Loading */}
