@@ -142,8 +142,20 @@
 
   /* ── Skeleton ── */
   .skeleton {
-    @apply bg-surface animate-pulse;
     border-radius: 8px;
+    background: linear-gradient(
+      90deg,
+      #1e1e1e 0%,
+      #2a2a2a 50%,
+      #1e1e1e 100%
+    );
+    background-size: 200% 100%;
+    animation: skeleton-shimmer 1.6s ease-in-out infinite;
+  }
+
+  @keyframes skeleton-shimmer {
+    0%   { background-position: 200% 0; }
+    100% { background-position: -200% 0; }
   }
 }
 
