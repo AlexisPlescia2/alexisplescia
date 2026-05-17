@@ -184,8 +184,12 @@ export default function DashView() {
     const totalAhorros = ahorrosList.reduce((s, g) => s + Math.abs(g.monto), 0)
     const deudasNoPagadas = deudasList.filter(g => !isPaid(g.id, pagados)).reduce((s, g) => s + Math.abs(g.monto), 0)
     const deudasPagadas = deudasList.filter(g => isPaid(g.id, pagados)).reduce((s, g) => s + Math.abs(g.monto), 0)
+    // No pagados excluyendo deudas (solo visible en "Todos")
+    const pendienteSinDeudas = pendientesList
+      .filter(g => g.categoria !== 'Deuda')
+      .reduce((s, g) => s + Math.abs(g.monto), 0)
 
-    return { totalGastos, totalIngresos, saldo, pctPendiente, totalAhorros, deudasPagadas, deudasNoPagadas }
+    return { totalGastos, totalIngresos, saldo, pctPendiente, totalAhorros, deudasPagadas, deudasNoPagadas, pendienteSinDeudas }
   }, [allGastos, mesFiltro, pagados])
 
   const porMes = useMemo(() => {
@@ -331,7 +335,7 @@ export default function DashView() {
         </div>
 
         {/* ── 6 KPI Cards ── */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mb-6">
+        <div className={`grid grid-cols-2 sm:grid-cols-3 gap-3 mb-6 ${mesFiltro === 'Todos' ? 'lg:grid-cols-7' : 'lg:grid-cols-6'}`}>
 
           {/* 1 — Gastos */}
           <motion.div className="card-dark p-4" variants={fadeUp} initial="hidden" animate="show" transition={spring}>
@@ -401,6 +405,25 @@ export default function DashView() {
               {fmtARS(kpi.totalAhorros)}
             </p>
           </motion.div>
+
+          {/* 7 — Pendiente sin deudas (solo visible en "Todos") */}
+          <AnimatePresence>
+            {mesFiltro === 'Todos' && (
+              <motion.div
+                className="card-dark p-4"
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.95 }}
+                transition={spring}
+              >
+                <p className="text-[11px] text-[#e8e8e8]/40 mb-1.5 tracking-wide leading-tight">Pendiente anual</p>
+                <p className="text-lg font-semibold font-mono tracking-tight text-orange-400">
+                  {fmtARS(kpi.pendienteSinDeudas)}
+                </p>
+                <p className="text-[10px] text-[#e8e8e8]/25 mt-0.5">sin deudas</p>
+              </motion.div>
+            )}
+          </AnimatePresence>
 
         </div>
 
