@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { Product } from '../../types/product'
 import ImageCarousel from './ImageCarousel'
 
@@ -125,9 +126,9 @@ export default function ProjectShowcase({ project, index }: ProjectShowcaseProps
             ))}
           </div>
 
-          {/* Botón */}
-          {project.projectUrl && (
-            <div>
+          {/* Botón Ver proyecto */}
+          <div>
+            {project.projectUrl ? (
               <a
                 href={project.projectUrl}
                 target="_blank"
@@ -157,8 +158,36 @@ export default function ProjectShowcase({ project, index }: ProjectShowcaseProps
                   <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
                 </svg>
               </a>
-            </div>
-          )}
+            ) : (
+              <Link
+                to={`/product/${project.slug}`}
+                className="inline-flex items-center gap-2 font-body font-semibold transition-all"
+                style={{
+                  background: '#1a1a1a',
+                  border: '1px solid #333333',
+                  color: '#888888',
+                  padding: '10px 22px',
+                  borderRadius: 6,
+                  fontSize: 13,
+                  letterSpacing: '0.04em',
+                  textDecoration: 'none',
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.borderColor = '#4fc3f7'
+                  e.currentTarget.style.color = '#4fc3f7'
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.borderColor = '#333333'
+                  e.currentTarget.style.color = '#888888'
+                }}
+              >
+                Ver proyecto
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5}>
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                </svg>
+              </Link>
+            )}
+          </div>
         </div>
 
         {/* ── DERECHA: Carousel ── */}
