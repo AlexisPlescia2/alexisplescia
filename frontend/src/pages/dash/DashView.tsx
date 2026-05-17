@@ -41,7 +41,7 @@ const CAT_COLORS: Record<string, string> = {
   'Supermercado': '#3b82f6', 'Vending/Comida': '#60a5fa', 'Farmacia': '#a78bfa',
   'Combustible': '#f59e0b', 'Educación': '#10b981', 'Mercado Libre': '#f97316',
   'Suscripciones': '#ec4899', 'Créditos MP': '#6366f1', 'Pago QR': '#14b8a6',
-  'Otros pagos': '#64748b', 'Otros': '#374151', 'Transporte': '#06b6d4',
+  'Otros pagos': '#64748b', 'Otros': '#881337', 'Transporte': '#06b6d4',
   'Autos/Moto': '#84cc16', 'Transferencia enviada': '#ef4444',
   'Transferencia recibida': '#22c55e', 'Rendimientos': '#fbbf24',
   'Devolución': '#a3e635', 'Ingreso': '#4ade80',
