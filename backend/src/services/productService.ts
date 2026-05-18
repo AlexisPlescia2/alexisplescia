@@ -22,10 +22,7 @@ const SUMMARY_SELECT = {
   brand: true,
   featured: true,
   createdAt: true,
-  images: {
-    take: 1,
-    select: { url: true, alt: true },
-  },
+  images: true,
   category: {
     select: { id: true, name: true, slug: true },
   },

@@ -1,17 +1,10 @@
 import api from './api'
 import { Product, ProductFilters, ProductsResponse, Category } from '../types/product'
 
-// The summary endpoint returns images as {url, alt}[] — normalize to string[]
-function normalizeImages(
-  products: Array<Product & { images: Array<{ url: string; alt?: string }> | string[] }>
-): Product[] {
+function normalizeImages(products: Product[]): Product[] {
   return products.map((p) => ({
     ...p,
-    images: Array.isArray(p.images)
-      ? p.images.map((img) =>
-          typeof img === 'string' ? img : (img as { url: string }).url
-        )
-      : [],
+    images: Array.isArray(p.images) ? (p.images as string[]) : [],
   }))
 }
 
@@ -20,7 +13,7 @@ export const productService = {
     const { data } = await api.get<ProductsResponse>('/products/summary', { params })
     return {
       ...data,
-      products: normalizeImages(data.products as Parameters<typeof normalizeImages>[0]),
+      products: normalizeImages(data.products),
     }
   },
 
@@ -30,11 +23,10 @@ export const productService = {
   },
 
   async getFeaturedProducts(): Promise<Product[]> {
-    // Use the lightweight summary endpoint with featured=true
     const { data } = await api.get<ProductsResponse>('/products/summary', {
       params: { featured: 'true', limit: 8 },
     })
-    return normalizeImages(data.products as Parameters<typeof normalizeImages>[0])
+    return normalizeImages(data.products)
   },
 
   async getCategories(): Promise<Category[]> {
