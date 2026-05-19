@@ -112,6 +112,7 @@ export default function DashView() {
   const [tab, setTab] = useState<'resumen' | 'movimientos' | 'nuevo'>('resumen')
   const [mesFiltro, setMesFiltro] = useState('Todos')
   const [catFiltro, setCatFiltro] = useState('Todas')
+  const [tipoFiltro, setTipoFiltro] = useState('Todos')
   const [busqueda, setBusqueda] = useState('')
   const [editingId, setEditingId] = useState<string | null>(null)
   const [editCat, setEditCat] = useState('')
@@ -159,10 +160,11 @@ export default function DashView() {
     return allGastos.filter(g => {
       if (mesFiltro !== 'Todos' && g.mes !== mesFiltro) return false
       if (catFiltro !== 'Todas' && g.categoria !== catFiltro) return false
+      if (tipoFiltro !== 'Todos' && g.tipo !== tipoFiltro) return false
       if (busqueda && !g.desc.toLowerCase().includes(busqueda.toLowerCase())) return false
       return true
     })
-  }, [allGastos, mesFiltro, catFiltro, busqueda])
+  }, [allGastos, mesFiltro, catFiltro, tipoFiltro, busqueda])
 
   const kpi = useMemo(() => {
     const fuente = mesFiltro === 'Todos' ? allGastos : allGastos.filter(g => g.mes === mesFiltro)
@@ -497,7 +499,13 @@ export default function DashView() {
                           >
                             {g.categoria}
                           </span>
-                          <span className="ml-2">{fmtFecha(g.fecha)} · {g.mes}</span>
+                          <span className="ml-2">{fmtFecha(g.fecha)} · </span>
+                          <button
+                            onClick={() => { setMesFiltro(g.mes); setTipoFiltro('Todos'); setCatFiltro('Todas'); setBusqueda(''); setTab('movimientos') }}
+                            className="text-[#e8e8e8]/35 hover:text-accent transition-colors underline-offset-2 hover:underline"
+                          >
+                            {g.mes}
+                          </button>
                         </p>
                       </div>
                       <span className={`text-sm font-medium font-mono shrink-0 ${isPaid(g.id, pagados) ? 'text-red-400' : 'text-[#e8e8e8]/25'}`}>
@@ -516,7 +524,7 @@ export default function DashView() {
               key="movimientos"
               initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} transition={spring}
             >
-              <div className="flex gap-2 mb-4 flex-wrap">
+              <div className="flex gap-2 mb-4 flex-wrap items-center">
                 <input
                   value={busqueda}
                   onChange={e => setBusqueda(e.target.value)}
@@ -531,7 +539,22 @@ export default function DashView() {
                   <option value="Todas">Todas las categorías</option>
                   {CATEGORIAS.map(c => <option key={c} value={c}>{c}</option>)}
                 </select>
-                <span className="text-xs text-[#e8e8e8]/30 self-center ml-2">
+                <div className="flex gap-1">
+                  {(['Todos', 'Gasto', 'Ingreso'] as const).map(t => (
+                    <button
+                      key={t}
+                      onClick={() => setTipoFiltro(t)}
+                      className={`px-2.5 py-1.5 text-xs rounded-lg border transition-colors ${
+                        tipoFiltro === t
+                          ? 'border-accent/50 text-accent bg-accent/5'
+                          : 'border-border text-[#e8e8e8]/40 hover:text-[#e8e8e8]'
+                      }`}
+                    >
+                      {t}
+                    </button>
+                  ))}
+                </div>
+                <span className="text-xs text-[#e8e8e8]/30 self-center ml-1">
                   {gastosFiltrados.length} movimientos
                 </span>
               </div>
