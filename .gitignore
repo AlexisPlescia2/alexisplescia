@@ -5,3 +5,5 @@ dist/
 .DS_Store
 backend/node_modules
 frontend/node_modules
+# Datos financieros personales — solo locales, nunca en el repo
+frontend/src/data/gastos_*.json

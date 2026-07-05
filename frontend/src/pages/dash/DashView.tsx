@@ -6,7 +6,11 @@ import {
 } from 'recharts'
 import { useAuthStore } from '../../store/authStore'
 import { useAuth } from '../../hooks/useAuth'
-import gastosData from '../../data/gastos_2026.json'
+// gastos_2026.json lives locally and is gitignored — never bundled in production.
+// import.meta.glob returns {} (empty) if the file doesn't exist, so the dashboard
+// shows an empty state on Vercel without failing the build.
+const _dataModules = import.meta.glob('../../data/gastos_*.json', { eager: true })
+const gastosData: unknown[] = Object.values(_dataModules)[0] as unknown[] ?? []
 
 const PORTFOLIO_URL = (import.meta.env.VITE_PORTFOLIO_URL as string) || '/'
 const CURRENT_YEAR = new Date().getFullYear()
