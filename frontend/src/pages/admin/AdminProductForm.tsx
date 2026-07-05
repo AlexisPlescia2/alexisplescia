@@ -1,6 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import { adminService, AdminCategory } from '../../services/adminService'
+import api from '../../services/api'
 
 interface FormData {
   name: string
@@ -10,7 +11,6 @@ interface FormData {
   stock: string
   categoryId: string
   brand: string
-  images: string
   projectUrl: string
   githubUrl: string
   featured: boolean
@@ -19,17 +19,20 @@ interface FormData {
 
 const EMPTY: FormData = {
   name: '', description: '', price: '', comparePrice: '', stock: '',
-  categoryId: '', brand: '', images: '', projectUrl: '', githubUrl: '', featured: false, onSale: false,
+  categoryId: '', brand: '', projectUrl: '', githubUrl: '', featured: false, onSale: false,
 }
 
 export default function AdminProductForm() {
   const { id } = useParams<{ id: string }>()
   const isEdit = Boolean(id)
   const navigate = useNavigate()
+  const fileInputRef = useRef<HTMLInputElement>(null)
 
   const [form, setForm] = useState<FormData>(EMPTY)
+  const [images, setImages] = useState<string[]>([])
   const [categories, setCategories] = useState<AdminCategory[]>([])
   const [loading, setLoading] = useState(false)
+  const [uploading, setUploading] = useState(false)
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
 
@@ -49,16 +52,50 @@ export default function AdminProductForm() {
             stock: product.stock.toString(),
             categoryId: product.categoryId,
             brand: product.brand,
-            images: product.images.join('\n'),
             projectUrl: product.projectUrl || '',
             githubUrl: product.githubUrl || '',
             featured: product.featured,
             onSale: product.onSale,
           })
+          setImages(product.images)
         }
       })
     }
   }, [id, isEdit])
+
+  const handleFileChange = async (e: React.ChangeEvent<HTMLInputElement>) => {
+    const files = e.target.files
+    if (!files?.length) return
+
+    setUploading(true)
+    setError('')
+    try {
+      const formData = new FormData()
+      Array.from(files).forEach((f) => formData.append('images', f))
+      const { data } = await api.post<{ urls: string[] }>('/upload', formData, {
+        headers: { 'Content-Type': 'multipart/form-data' },
+      })
+      setImages((prev) => [...prev, ...data.urls])
+    } catch (err) {
+      setError(err instanceof Error ? err.message : 'Error al subir imágenes')
+    } finally {
+      setUploading(false)
+      if (fileInputRef.current) fileInputRef.current.value = ''
+    }
+  }
+
+  const removeImage = (index: number) => {
+    setImages((prev) => prev.filter((_, i) => i !== index))
+  }
+
+  const moveImage = (from: number, to: number) => {
+    setImages((prev) => {
+      const next = [...prev]
+      const [item] = next.splice(from, 1)
+      next.splice(to, 0, item)
+      return next
+    })
+  }
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -75,11 +112,6 @@ export default function AdminProductForm() {
     if (isNaN(price) || price <= 0) { setError('Precio inválido'); return }
     if (isNaN(stock) || stock < 0) { setError('Stock inválido'); return }
 
-    const imagesArr = form.images
-      .split('\n')
-      .map((u) => u.trim())
-      .filter(Boolean)
-
     const payload = {
       name: form.name.trim(),
       description: form.description.trim(),
@@ -88,7 +120,7 @@ export default function AdminProductForm() {
       stock,
       categoryId: form.categoryId,
       brand: form.brand.trim(),
-      images: imagesArr,
+      images,
       projectUrl: form.projectUrl.trim() || null,
       githubUrl: form.githubUrl.trim() || null,
       featured: form.featured,
@@ -185,20 +217,56 @@ export default function AdminProductForm() {
           <p className="text-xs text-white/30 mt-1">Si está vacío el botón no se muestra</p>
         </Field>
 
-        <Field label="URLs de imágenes (una por línea)">
-          <textarea
-            className="input-admin resize-none h-24 font-mono text-xs"
-            value={form.images}
-            onChange={(e) => set('images', e.target.value)}
-            placeholder="https://ejemplo.com/imagen1.jpg&#10;https://ejemplo.com/imagen2.jpg"
+        {/* Image uploader */}
+        <Field label="Imágenes del producto">
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept="image/jpeg,image/png,image/webp,image/gif"
+            multiple
+            className="hidden"
+            onChange={handleFileChange}
           />
-          <p className="text-xs text-white/30 mt-1">Pegá URLs de imágenes, una por línea</p>
+          <button
+            type="button"
+            onClick={() => fileInputRef.current?.click()}
+            disabled={uploading}
+            className="w-full border border-dashed border-white/15 rounded-lg py-4 text-sm text-white/40 hover:border-white/30 hover:text-white/60 transition-colors disabled:opacity-50"
+          >
+            {uploading ? 'Subiendo...' : '+ Seleccionar imágenes (JPG, PNG, WebP · máx. 5 MB c/u)'}
+          </button>
+          <p className="text-xs text-white/30 mt-1">La primera imagen es la principal. Podés reordenar arrastrando.</p>
         </Field>
 
-        {form.images && (
-          <div className="flex gap-2 flex-wrap">
-            {form.images.split('\n').filter(Boolean).map((url, i) => (
-              <img key={i} src={url.trim()} alt="" className="w-16 h-16 object-cover rounded border border-white/10" onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }} />
+        {images.length > 0 && (
+          <div className="flex flex-wrap gap-3">
+            {images.map((url, i) => (
+              <div key={url} className="relative group">
+                <img
+                  src={url}
+                  alt=""
+                  className="w-20 h-20 object-cover rounded border border-white/10"
+                  onError={(e) => { (e.target as HTMLImageElement).style.opacity = '0.3' }}
+                />
+                {i === 0 && (
+                  <span className="absolute top-1 left-1 text-[9px] bg-accent text-white px-1 rounded leading-4">principal</span>
+                )}
+                <div className="absolute inset-0 flex items-center justify-center gap-1 opacity-0 group-hover:opacity-100 bg-black/60 rounded transition-opacity">
+                  {i > 0 && (
+                    <button type="button" onClick={() => moveImage(i, i - 1)} className="text-white/80 hover:text-white text-xs px-1" title="Mover izquierda">
+                      ←
+                    </button>
+                  )}
+                  <button type="button" onClick={() => removeImage(i)} className="text-red-400 hover:text-red-300 text-xs px-1" title="Eliminar">
+                    ✕
+                  </button>
+                  {i < images.length - 1 && (
+                    <button type="button" onClick={() => moveImage(i, i + 1)} className="text-white/80 hover:text-white text-xs px-1" title="Mover derecha">
+                      →
+                    </button>
+                  )}
+                </div>
+              </div>
             ))}
           </div>
         )}
@@ -218,7 +286,7 @@ export default function AdminProductForm() {
           <button type="button" onClick={() => navigate('/admin/products')} className="px-4 py-2 bg-white/10 text-white text-sm rounded hover:bg-white/15 transition-colors">
             Cancelar
           </button>
-          <button type="submit" disabled={loading} className="px-6 py-2 bg-accent text-white text-sm rounded hover:bg-red-700 transition-colors disabled:opacity-50">
+          <button type="submit" disabled={loading || uploading} className="px-6 py-2 bg-accent text-white text-sm rounded hover:bg-red-700 transition-colors disabled:opacity-50">
             {loading ? 'Guardando...' : isEdit ? 'Guardar cambios' : 'Crear producto'}
           </button>
         </div>

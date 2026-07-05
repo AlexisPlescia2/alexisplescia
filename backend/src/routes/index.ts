@@ -6,6 +6,7 @@ import adminRoutes from './adminRoutes'
 import configRoutes from './configRoutes'
 import contactRoutes from './contactRoutes'
 import keepaliveRoutes from './keepaliveRoutes'
+import uploadRoutes from './uploadRoutes'
 
 const router = Router()
 
@@ -16,5 +17,6 @@ router.use('/admin', adminRoutes)
 router.use('/config', configRoutes)
 router.use('/contact', contactRoutes)
 router.use('/keepalive', keepaliveRoutes)
+router.use('/upload', uploadRoutes)
 
 export { router }

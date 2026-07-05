@@ -1,3 +1,4 @@
+import 'dotenv/config'
 import { PrismaClient } from '@prisma/client'
 import bcrypt from 'bcryptjs'
 
@@ -280,45 +281,33 @@ async function main() {
 
   console.log(`[seed] ✓ ${created} proyectos creados`)
 
-  // Admin user
-  const hashedPassword = await bcrypt.hash('admin123', 10)
-  await prisma.user.upsert({
-    where: { email: 'alexisplescia@gmail.com' },
-    update: {},
-    create: {
-      email: 'alexisplescia@gmail.com',
-      password: hashedPassword,
+  // Admin users — passwords loaded from env vars (never hardcoded)
+  const adminUsers = [
+    {
+      email: process.env.SEED_ADMIN_EMAIL ?? 'alexisplescia@gmail.com',
+      password: process.env.SEED_ADMIN_PASSWORD,
       name: 'Alexis Plescia',
-      role: 'ADMIN',
     },
-  })
-  console.log('[seed] ✓ Admin: alexisplescia@gmail.com / admin123')
-
-  const hashedZakhi = await bcrypt.hash('1984', 10)
-  await prisma.user.upsert({
-    where: { email: 'zakhi@alexisplescia.com' },
-    update: {},
-    create: {
-      email: 'zakhi@alexisplescia.com',
-      password: hashedZakhi,
+    {
+      email: process.env.SEED_ADMIN2_EMAIL ?? 'zakhi@alexisplescia.com',
+      password: process.env.SEED_ADMIN2_PASSWORD,
       name: 'Zakhi',
-      role: 'ADMIN',
     },
-  })
-  console.log('[seed] ✓ Admin: zakhi@alexisplescia.com / 1984')
+  ]
 
-  const hashedAdmin = await bcrypt.hash('198484', 10)
-  await prisma.user.upsert({
-    where: { email: 'admin@alexisplescia123.com' },
-    update: {},
-    create: {
-      email: 'admin@alexisplescia123.com',
-      password: hashedAdmin,
-      name: 'Admin',
-      role: 'ADMIN',
-    },
-  })
-  console.log('[seed] ✓ Admin: admin@alexisplescia123.com / 198484')
+  for (const admin of adminUsers) {
+    if (!admin.password) {
+      console.warn(`[seed] ⚠ Saltando ${admin.email} — variable de entorno no definida`)
+      continue
+    }
+    const hashed = await bcrypt.hash(admin.password, 12)
+    await prisma.user.upsert({
+      where: { email: admin.email },
+      update: {},
+      create: { email: admin.email, password: hashed, name: admin.name, role: 'ADMIN' },
+    })
+    console.log(`[seed] ✓ Admin creado: ${admin.email}`)
+  }
 
   // Store config
   const configs = [

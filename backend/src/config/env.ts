@@ -23,6 +23,8 @@ export const env = {
   BACKEND_URL: optional('BACKEND_URL', 'http://localhost:4000'),
   ALLOWED_ORIGINS: optional('ALLOWED_ORIGINS', 'http://localhost:5173'),
   KEEPALIVE_TOKEN: optional('KEEPALIVE_TOKEN'),
+  SUPABASE_URL: required('SUPABASE_URL'),
+  SUPABASE_SERVICE_ROLE_KEY: required('SUPABASE_SERVICE_ROLE_KEY'),
 }
 
 // Validar en runtime pero sin crashear el proceso al importar

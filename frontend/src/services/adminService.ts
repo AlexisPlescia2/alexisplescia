@@ -140,4 +140,13 @@ export const adminService = {
   async updateConfig(updates: Record<string, string>): Promise<void> {
     await api.patch('/config', updates)
   },
+
+  async uploadImages(files: File[]): Promise<string[]> {
+    const formData = new FormData()
+    files.forEach((f) => formData.append('images', f))
+    const { data } = await api.post<{ urls: string[] }>('/upload', formData, {
+      headers: { 'Content-Type': 'multipart/form-data' },
+    })
+    return data.urls
+  },
 }
