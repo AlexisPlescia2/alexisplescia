@@ -303,10 +303,10 @@ async function main() {
     const hashed = await bcrypt.hash(admin.password, 12)
     await prisma.user.upsert({
       where: { email: admin.email },
-      update: {},
+      update: { password: hashed, role: 'ADMIN', name: admin.name },
       create: { email: admin.email, password: hashed, name: admin.name, role: 'ADMIN' },
     })
-    console.log(`[seed] ✓ Admin creado: ${admin.email}`)
+    console.log(`[seed] ✓ Admin creado/actualizado: ${admin.email}`)
   }
 
   // Store config
