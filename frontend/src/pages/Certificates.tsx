@@ -83,7 +83,7 @@ const CERTS = [
   },
   {
     title: 'Desarrollador Full Stack',
-    institution: 'Universidad de Buenos Aires (UBA) · Talento Tech',
+    institution: 'Universidad de Buenos Aires (UBA)',
     year: 'Dic 2023 – Ago 2024',
     desc: 'Full stack con Python, Flask, React y JavaScript, bases SQL y NoSQL (MongoDB), APIs REST, POO, Docker y Git/GitHub bajo Scrum. Proyecto final en equipo: app colaborativa de gestión de tareas con backend Flask y frontend React.',
     icon: '🎓',

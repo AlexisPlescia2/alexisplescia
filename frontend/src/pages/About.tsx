@@ -89,7 +89,7 @@ const EDUCATION = [
   },
   {
     title: 'Desarrollador Full Stack',
-    institution: 'Universidad de Buenos Aires (UBA) · Talento Tech',
+    institution: 'Universidad de Buenos Aires (UBA)',
     period: 'Dic 2023 – Ago 2024',
     items: ['Python, Flask, React y JavaScript', 'SQL y NoSQL (MongoDB), APIs REST y POO', 'Docker, Git/GitHub y Scrum · Proyecto final: app de gestión de tareas en equipo'],
   },
