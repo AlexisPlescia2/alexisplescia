@@ -88,10 +88,10 @@ const EDUCATION = [
     items: ['Algoritmos y estructuras de datos', 'Programación Orientada a Objetos', 'Python, C, C++'],
   },
   {
-    title: 'Formación Profesional — Programación Informática',
+    title: 'Desarrollador Full Stack',
     institution: 'Universidad de Buenos Aires (UBA) · Talento Tech',
     period: 'Dic 2023 – Ago 2024',
-    items: ['Desarrollo web Full Stack con Python y Django', 'APIs REST, ORM y despliegue', 'Formularios, autenticación y Docker'],
+    items: ['Python, Flask, React y JavaScript', 'SQL y NoSQL (MongoDB), APIs REST y POO', 'Docker, Git/GitHub y Scrum · Proyecto final: app de gestión de tareas en equipo'],
   },
   {
     title: 'JavaScript Avanzado',

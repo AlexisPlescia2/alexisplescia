@@ -82,10 +82,10 @@ const CERTS = [
     logo: 'https://utn.edu.ar/images/logo-utn.png',
   },
   {
-    title: 'Formación Profesional — Programación Informática',
+    title: 'Desarrollador Full Stack',
     institution: 'Universidad de Buenos Aires (UBA) · Talento Tech',
     year: 'Dic 2023 – Ago 2024',
-    desc: 'Desarrollo web full stack con Python y Django, APIs REST, ORM y despliegue en producción.',
+    desc: 'Full stack con Python, Flask, React y JavaScript, bases SQL y NoSQL (MongoDB), APIs REST, POO, Docker y Git/GitHub bajo Scrum. Proyecto final en equipo: app colaborativa de gestión de tareas con backend Flask y frontend React.',
     icon: '🎓',
     logo: 'https://cdn.simpleicons.org/python/3776AB',
   },
