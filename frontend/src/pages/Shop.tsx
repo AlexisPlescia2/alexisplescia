@@ -1,133 +1,76 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
+import { useSearchParams } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { useProducts } from '../hooks/useProducts'
-import { useCategories } from '../hooks/useCategories'
-import { useSlowFetchMessage } from '../hooks/useSlowFetchMessage'
-import ProjectShowcase from '../components/product/ProjectShowcase'
+import CasoCard, { AvisoFicticio } from '../components/casos/CasoCard'
+import { CATEGORIAS_CASOS, casosOrdenados, categoriaSlug } from '../data/casos'
 
 const listVariants = {
   hidden: {},
-  show: {
-    transition: {
-      staggerChildren: 0.06,
-      delayChildren: 0.05,
-    },
-  },
+  show: { transition: { staggerChildren: 0.05 } },
 }
-
 const itemVariants = {
   hidden: { opacity: 0, y: 12 },
-  show: {
-    opacity: 1,
-    y: 0,
-    transition: { duration: 0.25, ease: 'easeOut' as const },
-  },
+  show: { opacity: 1, y: 0, transition: { duration: 0.25, ease: 'easeOut' as const } },
 }
 
-export default function Shop() {
-  const { categories } = useCategories()
-  const [activeCategory, setActiveCategory] = useState<string | undefined>(undefined)
+const chip = (active: boolean) =>
+  `text-xs font-mono px-4 py-1.5 rounded-full border transition-colors ${
+    active
+      ? 'bg-accent border-accent text-white'
+      : 'border-border text-[#e8e8e8]/50 hover:text-[#e8e8e8] hover:border-[#e8e8e8]/30'
+  }`
 
-  const { products, loading } = useProducts({
-    category: activeCategory,
-    sort: 'newest',
-    limit: 20,
-  })
-  const isSlowFetch = useSlowFetchMessage(loading)
+export default function Shop() {
+  const [params, setParams] = useSearchParams()
+  const activeSlug = params.get('category') ?? undefined
+  const active = CATEGORIAS_CASOS.find((c) => categoriaSlug(c.nombre) === activeSlug)?.nombre
+
+  const casos = active ? casosOrdenados.filter((c) => c.categoria === active) : casosOrdenados
 
   useEffect(() => {
     document.title = 'Proyectos — Alexis Plescia'
   }, [])
 
+  const select = (slug?: string) => setParams(slug ? { category: slug } : {}, { replace: true })
+
   return (
     <div className="min-h-screen bg-background py-12 px-4">
       <div className="max-w-6xl mx-auto">
-
-        {/* Header */}
-        <div className="mb-10">
-          <p className="font-mono text-gold/60 text-xs tracking-[0.3em] uppercase mb-2">Mi trabajo</p>
+        <div className="mb-8">
+          <p className="font-mono text-gold/60 text-xs tracking-[0.3em] uppercase mb-2">Casos de estudio</p>
           <h1 className="section-title">Proyectos</h1>
+          <p className="text-[#e8e8e8]/50 mt-4 max-w-2xl leading-relaxed">
+            Cada caso cuenta el problema, qué hice, cómo lo hice y qué resultado tuvo, con capturas y archivos de ejemplo
+            para descargar.
+          </p>
         </div>
 
-        {/* Filtro por categoría */}
-        {categories.length > 0 && (
-          <div className="flex flex-wrap gap-2 mb-10">
-            <button
-              onClick={() => setActiveCategory(undefined)}
-              className={`text-xs font-mono px-4 py-1.5 rounded-full border transition-colors ${
-                !activeCategory
-                  ? 'bg-accent border-accent text-white'
-                  : 'border-border text-[#e8e8e8]/50 hover:text-[#e8e8e8] hover:border-[#e8e8e8]/30'
-              }`}
-            >
-              Todos
+        <AvisoFicticio className="mb-8 max-w-2xl" />
+
+        <div className="flex flex-wrap gap-2 mb-10">
+          <button onClick={() => select()} className={chip(!active)}>
+            Todos
+          </button>
+          {CATEGORIAS_CASOS.map((c) => (
+            <button key={c.nombre} onClick={() => select(categoriaSlug(c.nombre))} className={chip(active === c.nombre)}>
+              {c.nombre}
             </button>
-            {categories.map((cat) => (
-              <button
-                key={cat.id}
-                onClick={() => setActiveCategory(cat.slug)}
-                className={`text-xs font-mono px-4 py-1.5 rounded-full border transition-colors ${
-                  activeCategory === cat.slug
-                    ? 'bg-accent border-accent text-white'
-                    : 'border-border text-[#e8e8e8]/50 hover:text-[#e8e8e8] hover:border-[#e8e8e8]/30'
-                }`}
-              >
-                {cat.name}
-              </button>
-            ))}
-          </div>
-        )}
+          ))}
+        </div>
 
-        {/* Slow fetch message */}
-        {isSlowFetch && (
-          <p className="text-xs font-mono text-[#e8e8e8]/30 mb-6 text-center tracking-wide">
-            Despertando el servidor, un momento...
-          </p>
-        )}
-
-        {/* Loading skeleton — no motion during load */}
-        {loading && (
-          <div className="space-y-8">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="overflow-hidden animate-pulse flex" style={{ background: '#111111', border: '1px solid #222', borderRadius: 8 }}>
-                <div className="p-8 lg:p-10 lg:w-1/2 space-y-4">
-                  <div className="h-3 rounded w-20" style={{ background: '#1a1a1a' }} />
-                  <div className="h-8 rounded w-64" style={{ background: '#1a1a1a' }} />
-                  <div className="h-4 rounded w-full" style={{ background: '#1a1a1a' }} />
-                  <div className="h-4 rounded w-3/4" style={{ background: '#1a1a1a' }} />
-                  <div className="space-y-2 pt-2">
-                    {[1, 2, 3].map(j => <div key={j} className="h-3 rounded w-full" style={{ background: '#1a1a1a' }} />)}
-                  </div>
-                </div>
-                <div className="hidden lg:block lg:w-1/2 min-h-[380px]" style={{ background: '#141414' }} />
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* Proyectos — stagger animation after data arrives */}
-        {!loading && products.length > 0 && (
-          <motion.div
-            className="space-y-12"
-            variants={listVariants}
-            initial="hidden"
-            animate="show"
-          >
-            {products.map((project, i) => (
-              <motion.div key={project.id} variants={itemVariants}>
-                <ProjectShowcase project={project} index={i} />
-              </motion.div>
-            ))}
-          </motion.div>
-        )}
-
-        {/* Vacío */}
-        {!loading && products.length === 0 && (
-          <div className="card-dark p-16 text-center">
-            <p className="font-mono text-[#e8e8e8]/30 text-sm">No hay proyectos en esta categoría.</p>
-          </div>
-        )}
-
+        <motion.div
+          key={active ?? 'todos'}
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5"
+          variants={listVariants}
+          initial="hidden"
+          animate="show"
+        >
+          {casos.map((caso) => (
+            <motion.div key={caso.slug} variants={itemVariants}>
+              <CasoCard caso={caso} />
+            </motion.div>
+          ))}
+        </motion.div>
       </div>
     </div>
   )

@@ -1,32 +1,8 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { useFeaturedProducts } from '../hooks/useProducts'
-import { useCategories } from '../hooks/useCategories'
-import { useSlowFetchMessage } from '../hooks/useSlowFetchMessage'
-import ProductCard from '../components/product/ProductCard'
-import { Skeleton } from '../components/ui/Loader'
-
-// Espejo de las categorías del seed, en el mismo orden que devuelve la API
-// (orderBy name asc). Se muestran al instante mientras el backend despierta;
-// al llegar los datos reales solo aparecen los contadores, sin saltos.
-const FALLBACK_CATEGORIES = [
-  { name: 'Análisis de Datos', slug: 'data-analysis', icon: '📊' },
-  { name: 'Automatización', slug: 'automatizacion', icon: '⚡' },
-  { name: 'Backend & APIs', slug: 'backend', icon: '⚙️' },
-  { name: 'Dashboards & KPIs', slug: 'dashboards', icon: '📈' },
-  { name: 'Desarrollo Web', slug: 'web-apps', icon: '🌐' },
-  { name: 'DevOps & Deploy', slug: 'devops', icon: '🚀' },
-]
-
-const CATEGORY_ICONS: Record<string, string> = {
-  'web-apps': '🌐',
-  'data-analysis': '📊',
-  dashboards: '📈',
-  backend: '⚙️',
-  automatizacion: '⚡',
-  devops: '🚀',
-}
+import { CATEGORIAS_CASOS, casosDestacados, categoriaSlug, contarPorCategoria } from '../data/casos'
+import CasoCard from '../components/casos/CasoCard'
 
 const POWER_BI_SVG = (
   <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4" fill="#F2C811">
@@ -66,25 +42,18 @@ const springBase = { type: 'spring' as const, stiffness: 320, damping: 26, mass:
 const springFast = { type: 'spring' as const, stiffness: 400, damping: 30 }
 
 export default function Home() {
-  const { categories } = useCategories()
-  const { products: featured, loading: featuredLoading } = useFeaturedProducts()
-  const isFeaturedSlow = useSlowFetchMessage(featuredLoading)
-
   useEffect(() => {
     document.title = 'Alexis Plescia — Portfolio'
   }, [])
 
-  type DisplayCat = { slug: string; name: string; icon: string; count?: number }
-
-  const displayCategories: DisplayCat[] =
-    categories.length > 0
-      ? categories.map((c) => ({
-          slug: c.slug,
-          name: c.name,
-          icon: CATEGORY_ICONS[c.slug] || '📦',
-          count: c._count?.products,
-        }))
-      : FALLBACK_CATEGORIES.map((c) => ({ ...c, count: undefined }))
+  // Categorías y destacados salen de los casos de estudio (contenido estático):
+  // se muestran al instante, sin esperar al backend.
+  const displayCategories = CATEGORIAS_CASOS.map((c) => ({
+    slug: categoriaSlug(c.nombre),
+    name: c.nombre,
+    icon: c.icono,
+    count: contarPorCategoria(c.nombre),
+  }))
 
   return (
     <div className="bg-background">
@@ -227,7 +196,7 @@ export default function Home() {
           </motion.div>
 
           <motion.div
-            className="grid grid-cols-2 sm:grid-cols-3 gap-4"
+            className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4"
             variants={stagger}
             initial="hidden"
             whileInView="show"
@@ -277,7 +246,7 @@ export default function Home() {
             transition={springBase}
           >
             <div>
-              <span className="label-caps block mb-2">Los más recientes</span>
+              <span className="label-caps block mb-2">Casos destacados</span>
               <h2 className="section-title">Proyectos</h2>
             </div>
             <Link
@@ -291,55 +260,21 @@ export default function Home() {
             </Link>
           </motion.div>
 
-          {isFeaturedSlow && (
-            <p className="text-xs font-mono text-[#e8e8e8]/30 mb-4 text-center tracking-wide">
-              Despertando el servidor, un momento...
-            </p>
-          )}
-
-          {featuredLoading ? (
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-              {Array.from({ length: 4 }).map((_, i) => (
-                <div key={i} className="card-dark overflow-hidden animate-pulse">
-                  <div className="aspect-[4/3] bg-surface" />
-                  <div className="p-4 space-y-2">
-                    <Skeleton className="h-3 w-1/3" />
-                    <Skeleton className="h-4 w-3/4" />
-                    <Skeleton className="h-9 mt-2" />
-                  </div>
-                </div>
-              ))}
-            </div>
-          ) : featured.length > 0 ? (
-            (() => {
-              const count = Math.min(featured.length, 4)
-              const isFew = count < 3
-              return (
-                <motion.div
-                  className={isFew ? 'flex flex-wrap justify-center gap-5' : 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5'}
-                  variants={stagger}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: true, margin: '-60px' }}
-                >
-                  {featured.slice(0, 4).map((product) => (
-                    <motion.div key={product.id} variants={fadeUp} transition={springBase}
-                      className={isFew ? 'w-full sm:w-72' : ''}>
-                      <motion.div whileHover={{ y: -4 }} transition={springFast} className="h-full">
-                        <ProductCard product={product} showPrice={false} />
-                      </motion.div>
-                    </motion.div>
-                  ))}
+          <motion.div
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5"
+            variants={stagger}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: '-60px' }}
+          >
+            {casosDestacados.slice(0, 4).map((caso) => (
+              <motion.div key={caso.slug} variants={fadeUp} transition={springBase}>
+                <motion.div whileHover={{ y: -4 }} transition={springFast} className="h-full">
+                  <CasoCard caso={caso} />
                 </motion.div>
-              )
-            })()
-          ) : (
-            <div className="text-center py-12">
-              <p className="text-sm font-mono text-[#e8e8e8]/25">
-                Ejecutá el seed para ver proyectos aquí
-              </p>
-            </div>
-          )}
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 

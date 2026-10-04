@@ -5,9 +5,11 @@ const columns = [
   {
     title: 'Proyectos',
     links: [
-      { label: 'Desarrollo Web', to: '/shop?category=web-apps' },
-      { label: 'Dashboards', to: '/shop?category=dashboards' },
-      { label: 'Análisis de Datos', to: '/shop?category=data-analysis' },
+      { label: 'Desarrollo Web', to: '/shop?category=desarrollo-web' },
+      { label: 'Análisis Funcional', to: '/shop?category=analisis-funcional' },
+      { label: 'Dashboards & KPIs', to: '/shop?category=dashboards-kpis' },
+      { label: 'Automatización', to: '/shop?category=automatizacion' },
+      { label: 'Análisis de Datos', to: '/shop?category=analisis-de-datos' },
     ],
   },
   {

@@ -10,6 +10,7 @@ import Home from './pages/Home'
 // Lazy-loaded routes (non-critical or heavy)
 const Shop = lazy(() => import('./pages/Shop'))
 const ProductDetail = lazy(() => import('./pages/ProductDetail'))
+const CasoDetail = lazy(() => import('./pages/CasoDetail'))
 const About = lazy(() => import('./pages/About'))
 const Contact = lazy(() => import('./pages/Contact'))
 const Login = lazy(() => import('./pages/Login'))
@@ -44,6 +45,22 @@ export const router = createBrowserRouter([
         element: (
           <Suspense fallback={<BlankFallback />}>
             <Shop />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'proyectos',
+        element: (
+          <Suspense fallback={<BlankFallback />}>
+            <Shop />
+          </Suspense>
+        ),
+      },
+      {
+        path: 'proyectos/:slug',
+        element: (
+          <Suspense fallback={<BlankFallback />}>
+            <CasoDetail />
           </Suspense>
         ),
       },
