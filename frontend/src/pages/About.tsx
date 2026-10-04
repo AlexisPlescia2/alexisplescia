@@ -84,7 +84,7 @@ const EDUCATION = [
   {
     title: 'Tecnicatura Universitaria en Programación',
     institution: 'Universidad Tecnológica Nacional (UTN)',
-    period: 'Jun 2022 – Presente',
+    period: 'Discontinuada',
     items: ['Algoritmos y estructuras de datos', 'Programación Orientada a Objetos', 'Python, C, C++'],
   },
   {
@@ -95,13 +95,13 @@ const EDUCATION = [
   },
   {
     title: 'JavaScript Developer',
-    institution: 'Coderhouse',
+    institution: 'EducaciónIT',
     period: 'Dic 2022 – Mar 2023',
     items: ['Desarrollo de aplicaciones web con JavaScript', 'DOM, eventos y APIs', 'Buenas prácticas y control de versiones con Git'],
   },
   {
     title: 'Programación en JavaScript',
-    institution: 'Coderhouse',
+    institution: 'EducaciónIT',
     period: 'Dic 2022 – Abr 2023',
     items: ['Fundamentos de JavaScript ES6+', 'Programación funcional y orientada a objetos', 'Manipulación del DOM y fetch API'],
   },
