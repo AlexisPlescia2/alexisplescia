@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import { Category } from '../types/product'
-import { productService } from '../services/productService'
 import { useProducts } from '../hooks/useProducts'
+import { useCategories } from '../hooks/useCategories'
 import { useSlowFetchMessage } from '../hooks/useSlowFetchMessage'
 import ProjectShowcase from '../components/product/ProjectShowcase'
 
@@ -26,7 +25,7 @@ const itemVariants = {
 }
 
 export default function Shop() {
-  const [categories, setCategories] = useState<Category[]>([])
+  const { categories } = useCategories()
   const [activeCategory, setActiveCategory] = useState<string | undefined>(undefined)
 
   const { products, loading } = useProducts({
@@ -35,10 +34,6 @@ export default function Shop() {
     limit: 20,
   })
   const isSlowFetch = useSlowFetchMessage(loading)
-
-  useEffect(() => {
-    productService.getCategories().then(setCategories).catch(console.error)
-  }, [])
 
   useEffect(() => {
     document.title = 'Proyectos — Alexis Plescia'

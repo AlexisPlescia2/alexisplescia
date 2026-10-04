@@ -1,22 +1,26 @@
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Category } from '../types/product'
-import { productService } from '../services/productService'
 import { useFeaturedProducts } from '../hooks/useProducts'
+import { useCategories } from '../hooks/useCategories'
 import { useSlowFetchMessage } from '../hooks/useSlowFetchMessage'
 import ProductCard from '../components/product/ProductCard'
 import { Skeleton } from '../components/ui/Loader'
 
+// Espejo de las categorías del seed, en el mismo orden que devuelve la API
+// (orderBy name asc). Se muestran al instante mientras el backend despierta;
+// al llegar los datos reales solo aparecen los contadores, sin saltos.
 const FALLBACK_CATEGORIES = [
-  { name: 'Apps Web', slug: 'web-apps', icon: '🌐' },
   { name: 'Análisis de Datos', slug: 'data-analysis', icon: '📊' },
-  { name: 'Dashboards', slug: 'dashboards', icon: '📈' },
-  { name: 'Backend & APIs', slug: 'backend', icon: '⚙️' },
+  { name: 'Aplicaciones Web', slug: 'web-apps', icon: '🌐' },
   { name: 'Automatización', slug: 'automatizacion', icon: '🤖' },
+  { name: 'Backend & APIs', slug: 'backend', icon: '⚙️' },
+  { name: 'Dashboards & KPIs', slug: 'dashboards', icon: '📈' },
+  { name: 'DevOps & Deploy', slug: 'devops', icon: '🚀' },
   { name: 'E-Commerce', slug: 'ecommerce', icon: '🛒' },
-  { name: 'DevOps', slug: 'devops', icon: '🚀' },
   { name: 'IA & Datos', slug: 'ia-datos', icon: '🧠' },
+  { name: 'Mobile & Responsive', slug: 'mobile', icon: '📱' },
+  { name: 'Otros Proyectos', slug: 'otros', icon: '📦' },
 ]
 
 const CATEGORY_ICONS: Record<string, string> = {
@@ -70,18 +74,12 @@ const springBase = { type: 'spring' as const, stiffness: 320, damping: 26, mass:
 const springFast = { type: 'spring' as const, stiffness: 400, damping: 30 }
 
 export default function Home() {
-  const [categories, setCategories] = useState<Category[]>([])
-  const [categoriesLoading, setCategoriesLoading] = useState(true)
+  const { categories } = useCategories()
   const { products: featured, loading: featuredLoading } = useFeaturedProducts()
   const isFeaturedSlow = useSlowFetchMessage(featuredLoading)
 
   useEffect(() => {
     document.title = 'Alexis Plescia — Portfolio'
-    productService
-      .getCategories()
-      .then(setCategories)
-      .catch(() => setCategories([]))
-      .finally(() => setCategoriesLoading(false))
   }, [])
 
   type DisplayCat = { slug: string; name: string; icon: string; count?: number }
@@ -236,49 +234,42 @@ export default function Home() {
             </Link>
           </motion.div>
 
-          {categoriesLoading ? (
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
-              {Array.from({ length: 8 }).map((_, i) => (
-                <Skeleton key={i} className="h-28 rounded-card" />
-              ))}
-            </div>
-          ) : (
-            <motion.div
-              className="grid grid-cols-2 sm:grid-cols-4 gap-4"
-              variants={stagger}
-              initial="hidden"
-              whileInView="show"
-              viewport={{ once: true, margin: '-60px' }}
-            >
-              {displayCategories.map((cat) => (
-                <motion.div key={cat.slug} variants={fadeUp} transition={springBase}>
-                  <motion.div whileHover={{ scale: 1.025, y: -2 }} whileTap={{ scale: 0.98 }} transition={springFast}>
-                    <Link
-                      to={`/shop?category=${cat.slug}`}
-                      className="group relative card-dark p-5 hover:border-accent/30 flex flex-col gap-2 block h-full"
-                    >
-                      <span className="text-2xl">{cat.icon}</span>
-                      <div>
-                        <h3 className="font-semibold text-sm text-[#e8e8e8] group-hover:text-accent transition-colors tracking-tight">
-                          {cat.name}
-                        </h3>
-                        {cat.count !== undefined && (
-                          <p className="text-xs font-mono text-[#e8e8e8]/30 mt-0.5">
-                            {cat.count} proyecto{cat.count !== 1 ? 's' : ''}
-                          </p>
-                        )}
-                      </div>
-                      <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                        <svg className="w-3.5 h-3.5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                        </svg>
-                      </div>
-                    </Link>
-                  </motion.div>
+          <motion.div
+            className="grid grid-cols-2 sm:grid-cols-4 gap-4"
+            variants={stagger}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, margin: '-60px' }}
+          >
+            {displayCategories.map((cat) => (
+              <motion.div key={cat.slug} variants={fadeUp} transition={springBase}>
+                <motion.div whileHover={{ scale: 1.025, y: -2 }} whileTap={{ scale: 0.98 }} transition={springFast}>
+                  <Link
+                    to={`/shop?category=${cat.slug}`}
+                    className="group relative card-dark p-5 hover:border-accent/30 flex flex-col gap-2 block h-full"
+                  >
+                    <span className="text-2xl">{cat.icon}</span>
+                    <div>
+                      <h3 className="font-semibold text-sm text-[#e8e8e8] group-hover:text-accent transition-colors tracking-tight">
+                        {cat.name}
+                      </h3>
+                      {/* Siempre se renderiza para reservar el alto y evitar saltos de layout */}
+                      <p className="text-xs font-mono text-[#e8e8e8]/30 mt-0.5 min-h-[1rem]">
+                        {cat.count !== undefined
+                          ? `${cat.count} proyecto${cat.count !== 1 ? 's' : ''}`
+                          : '\u00a0'}
+                      </p>
+                    </div>
+                    <div className="absolute bottom-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                      <svg className="w-3.5 h-3.5 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
+                  </Link>
                 </motion.div>
-              ))}
-            </motion.div>
-          )}
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
       </section>
 
