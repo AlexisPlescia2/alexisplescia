@@ -235,7 +235,7 @@ async function main() {
   const configs = [
     { key: 'store_name', value: 'Alexis Plescia — Portfolio' },
     { key: 'store_description', value: 'Desarrollador Full Stack & Analista de Datos' },
-    { key: 'store_phone', value: '+549 1127242060' },
+    { key: 'store_phone', value: '+549 1127585783' },
     { key: 'store_email', value: 'alexisplescia@gmail.com' },
     { key: 'store_address', value: 'Hurlingham, Buenos Aires, Argentina' },
     { key: 'free_shipping_threshold', value: '0' },
@@ -243,7 +243,7 @@ async function main() {
     { key: 'currency', value: 'ARS' },
     { key: 'github_url', value: 'https://github.com/AlexisPlescia' },
     { key: 'linkedin_url', value: 'https://www.linkedin.com/in/alexisplescia/' },
-    { key: 'whatsapp_number', value: '5491127242060' },
+    { key: 'whatsapp_number', value: '5491127585783' },
     { key: 'announcement_bar', value: '' },
     { key: 'linkedin_url', value: 'https://www.linkedin.com/in/alexisplescia/' },
     { key: 'github_url', value: 'https://github.com/AlexisPlescia' },

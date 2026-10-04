@@ -32,10 +32,10 @@ export default function Contact() {
     document.title = 'Contacto — Alexis Plescia'
   }, [])
 
-  const phone = config['store_phone'] || '+549 1127242060'
+  const phone = config['store_phone'] || '+549 1127585783'
   const email = config['store_email'] || 'alexisplescia@gmail.com'
   const address = config['store_address'] || 'Hurlingham, Buenos Aires, Argentina'
-  const whatsapp = config['whatsapp_number'] || '5491127242060'
+  const whatsapp = config['whatsapp_number'] || '5491127585783'
   const linkedin = config['linkedin_url'] || 'https://www.linkedin.com/in/alexisplescia/'
   const github = config['github_url'] || 'https://github.com/AlexisPlescia'
 
