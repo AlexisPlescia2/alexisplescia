@@ -12,10 +12,10 @@ import { Skeleton } from '../components/ui/Loader'
 // al llegar los datos reales solo aparecen los contadores, sin saltos.
 const FALLBACK_CATEGORIES = [
   { name: 'Análisis de Datos', slug: 'data-analysis', icon: '📊' },
-  { name: 'Aplicaciones Web', slug: 'web-apps', icon: '🌐' },
   { name: 'Automatización', slug: 'automatizacion', icon: '⚡' },
   { name: 'Backend & APIs', slug: 'backend', icon: '⚙️' },
   { name: 'Dashboards & KPIs', slug: 'dashboards', icon: '📈' },
+  { name: 'Desarrollo Web', slug: 'web-apps', icon: '🌐' },
   { name: 'DevOps & Deploy', slug: 'devops', icon: '🚀' },
 ]
 

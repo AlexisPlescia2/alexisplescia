@@ -5,7 +5,7 @@ const columns = [
   {
     title: 'Proyectos',
     links: [
-      { label: 'Aplicaciones Web', to: '/shop?category=web-apps' },
+      { label: 'Desarrollo Web', to: '/shop?category=web-apps' },
       { label: 'Dashboards', to: '/shop?category=dashboards' },
       { label: 'Análisis de Datos', to: '/shop?category=data-analysis' },
     ],

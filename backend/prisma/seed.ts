@@ -10,8 +10,8 @@ async function main() {
   // Categorías de proyectos
   const webApps = await prisma.category.upsert({
         where: { slug: 'web-apps' },
-        update: {},
-        create: { name: 'Aplicaciones Web', slug: 'web-apps', image: 'https://picsum.photos/seed/webapps/400/300' },
+        update: { name: 'Desarrollo Web' },
+        create: { name: 'Desarrollo Web', slug: 'web-apps', image: 'https://picsum.photos/seed/webapps/400/300' },
   })
     const dataAnalysis = await prisma.category.upsert({
           where: { slug: 'data-analysis' },
