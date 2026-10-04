@@ -2,11 +2,11 @@ import { useEffect } from 'react'
 
 const CERTS = [
   {
-    title: 'Tecnicatura Universitaria en Programación',
-    institution: 'Universidad Tecnológica Nacional (UTN)',
-    year: 'Jun 2022 – Presente',
-    desc: 'Carrera universitaria en programación con foco en algoritmos, estructuras de datos, POO y desarrollo de software.',
-    icon: '🏛️',
+    title: 'Carrera Business Analyst',
+    institution: 'EducaciónIT · Certificación con Manhattan University',
+    year: 'En curso',
+    desc: 'Relevamiento de requerimientos, modelado de procesos con UML, user stories, gestión de proyectos, OKRs, rol de Product Owner y SQL. Incluye preparación para la certificación PMI-PBA. Ya completados: Análisis Funcional e Introducción a UX.',
+    icon: '🧩',
   },
   {
     title: 'Formación Profesional — Programación Informática',
@@ -28,6 +28,13 @@ const CERTS = [
     year: 'Dic 2022 – Abr 2023',
     desc: 'Fundamentos de JavaScript ES6+, programación funcional y orientada a objetos, manipulación del DOM.',
     icon: '💻',
+  },
+  {
+    title: 'Tecnicatura Universitaria en Programación',
+    institution: 'Universidad Tecnológica Nacional (UTN)',
+    year: 'Discontinuada',
+    desc: 'Cursada parcial: bases de programación en C, programación orientada a objetos e inglés técnico.',
+    icon: '🏛️',
   },
   {
     title: 'Analista de Datos — KPIs & Dashboards',
