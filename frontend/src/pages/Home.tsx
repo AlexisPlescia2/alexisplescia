@@ -57,7 +57,7 @@ const SKILLS = [
   { area: 'Frontend', items: ['React', 'Vite', 'TypeScript', 'TailwindCSS', 'HTML/CSS'] },
   { area: 'Backend', items: ['Node.js', 'Express', 'Python', 'Flask', 'Django'] },
   { area: 'Datos', items: ['Power BI', 'Looker Studio', 'Excel', 'Google Sheets', 'SQL'] },
-  { area: 'DevOps', items: ['Docker', 'Git', 'Railway', 'Vercel', 'PM2', 'Nginx'] },
+  { area: 'DevOps', items: ['Docker', 'Git', 'Render', 'Vercel', 'PM2', 'Nginx'] },
 ]
 
 const fadeUp = {
