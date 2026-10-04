@@ -89,21 +89,15 @@ const EDUCATION = [
   },
   {
     title: 'Formación Profesional — Programación Informática',
-    institution: 'Universidad de Buenos Aires (UBA) · EducacionIT',
+    institution: 'Universidad de Buenos Aires (UBA) · Talento Tech',
     period: 'Dic 2023 – Ago 2024',
     items: ['Desarrollo web Full Stack con Python y Django', 'APIs REST, ORM y despliegue', 'Formularios, autenticación y Docker'],
   },
   {
-    title: 'JavaScript Developer',
-    institution: 'EducaciónIT',
-    period: 'Dic 2022 – Mar 2023',
-    items: ['Desarrollo de aplicaciones web con JavaScript', 'DOM, eventos y APIs', 'Buenas prácticas y control de versiones con Git'],
-  },
-  {
-    title: 'Programación en JavaScript',
+    title: 'JavaScript Avanzado',
     institution: 'EducaciónIT',
     period: 'Dic 2022 – Abr 2023',
-    items: ['Fundamentos de JavaScript ES6+', 'Programación funcional y orientada a objetos', 'Manipulación del DOM y fetch API'],
+    items: ['DOM, eventos, Promises y async/await', 'Fetch API, SPAs, closures, prototipos y clases', 'Módulos, Node.js, Webpack e introducción a TypeScript'],
   },
 ]
 

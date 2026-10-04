@@ -3,8 +3,8 @@ import { useEffect, useState } from 'react'
 // Logo oficial de cada institución/empresa, servido como favicon de su propio
 // sitio (no se redibuja ni se copia: se carga desde la fuente). Si no carga,
 // se muestra el emoji de respaldo.
-const logoUrl = (domain: string) =>
-  `https://www.google.com/s2/favicons?domain=${domain}&sz=128`
+const logoUrl = (logo: string) =>
+  logo.startsWith('http') ? logo : `https://www.google.com/s2/favicons?domain=${logo}&sz=128`
 
 function CertLogo({ domain, fallback, alt }: { domain?: string; fallback: string; alt: string }) {
   const [failed, setFailed] = useState(false)
@@ -35,26 +35,17 @@ const CERTS = [
   },
   {
     title: 'Formación Profesional — Programación Informática',
-    institution: 'Universidad de Buenos Aires (UBA) · EducacionIT',
+    institution: 'Universidad de Buenos Aires (UBA) · Talento Tech',
     year: 'Dic 2023 – Ago 2024',
     desc: 'Desarrollo web full stack con Python y Django, APIs REST, ORM y despliegue en producción.',
     icon: '🎓',
-    logo: 'educacionit.com',
   },
   {
-    title: 'JavaScript Developer',
-    institution: 'EducaciónIT',
-    year: 'Dic 2022 – Mar 2023',
-    desc: 'Desarrollo de aplicaciones web con JavaScript moderno, DOM, eventos, fetch API y buenas prácticas.',
-    icon: '🟨',
-    logo: 'educacionit.com',
-  },
-  {
-    title: 'Programación en JavaScript',
+    title: 'JavaScript Avanzado',
     institution: 'EducaciónIT',
     year: 'Dic 2022 – Abr 2023',
-    desc: 'Fundamentos de JavaScript ES6+, programación funcional y orientada a objetos, manipulación del DOM.',
-    icon: '💻',
+    desc: 'DOM y eventos, Promises y async/await, Fetch API y SPAs, closures, prototipos y clases, módulos, iteradores y generadores, storage APIs, Node.js, Webpack e introducción a TypeScript.',
+    icon: '🟨',
     logo: 'educacionit.com',
   },
   {
@@ -63,7 +54,7 @@ const CERTS = [
     year: 'Discontinuada',
     desc: 'Cursada parcial: bases de programación en C, programación orientada a objetos e inglés técnico.',
     icon: '🏛️',
-    logo: 'utn.edu.ar',
+    logo: 'https://utn.edu.ar/images/logo-utn.png',
   },
   {
     title: 'Analista de Datos — KPIs & Dashboards',
