@@ -33,33 +33,23 @@ async function main() {
           update: {},
           create: { name: 'Automatización', slug: 'automatizacion', image: 'https://picsum.photos/seed/automatizacion/400/300' },
     })
-    const ecommerce = await prisma.category.upsert({
-          where: { slug: 'ecommerce' },
-          update: {},
-          create: { name: 'E-Commerce', slug: 'ecommerce', image: 'https://picsum.photos/seed/ecommerce/400/300' },
-    })
-    const mobile = await prisma.category.upsert({
-          where: { slug: 'mobile' },
-          update: {},
-          create: { name: 'Mobile & Responsive', slug: 'mobile', image: 'https://picsum.photos/seed/mobile/400/300' },
-    })
     const devops = await prisma.category.upsert({
           where: { slug: 'devops' },
           update: {},
           create: { name: 'DevOps & Deploy', slug: 'devops', image: 'https://picsum.photos/seed/devops/400/300' },
     })
-    const iaDatos = await prisma.category.upsert({
-          where: { slug: 'ia-datos' },
-          update: {},
-          create: { name: 'IA & Datos', slug: 'ia-datos', image: 'https://picsum.photos/seed/iadatos/400/300' },
-    })
-    const otros = await prisma.category.upsert({
-          where: { slug: 'otros' },
-          update: {},
-          create: { name: 'Otros Proyectos', slug: 'otros', image: 'https://picsum.photos/seed/otros/400/300' },
-    })
 
-  console.log('[seed] ✓ 10 categorías creadas')
+  // Categorías retiradas: se borran solo si no tienen proyectos asignados,
+  // para que no vuelvan a aparecer y sin riesgo de perder datos.
+  const removed = await prisma.category.deleteMany({
+    where: {
+      slug: { in: ['ecommerce', 'mobile', 'ia-datos', 'otros'] },
+      products: { none: {} },
+    },
+  })
+  if (removed.count > 0) console.log(`[seed] ✓ ${removed.count} categorías retiradas eliminadas`)
+
+  console.log('[seed] ✓ 6 categorías aseguradas')
 
   // Proyectos
   const proyectos = [
@@ -268,11 +258,7 @@ async function main() {
     console.log('[seed] ✓ Store config cargada')
 
   // Supress unused variable warnings
-  void ecommerce
-    void mobile
-    void devops
-    void iaDatos
-    void otros
+  void devops
 
   console.log('[seed] ✓ Seed completado exitosamente')
 }

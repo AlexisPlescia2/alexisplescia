@@ -13,14 +13,10 @@ import { Skeleton } from '../components/ui/Loader'
 const FALLBACK_CATEGORIES = [
   { name: 'Análisis de Datos', slug: 'data-analysis', icon: '📊' },
   { name: 'Aplicaciones Web', slug: 'web-apps', icon: '🌐' },
-  { name: 'Automatización', slug: 'automatizacion', icon: '🤖' },
+  { name: 'Automatización', slug: 'automatizacion', icon: '⚡' },
   { name: 'Backend & APIs', slug: 'backend', icon: '⚙️' },
   { name: 'Dashboards & KPIs', slug: 'dashboards', icon: '📈' },
   { name: 'DevOps & Deploy', slug: 'devops', icon: '🚀' },
-  { name: 'E-Commerce', slug: 'ecommerce', icon: '🛒' },
-  { name: 'IA & Datos', slug: 'ia-datos', icon: '🧠' },
-  { name: 'Mobile & Responsive', slug: 'mobile', icon: '📱' },
-  { name: 'Otros Proyectos', slug: 'otros', icon: '📦' },
 ]
 
 const CATEGORY_ICONS: Record<string, string> = {
@@ -28,12 +24,8 @@ const CATEGORY_ICONS: Record<string, string> = {
   'data-analysis': '📊',
   dashboards: '📈',
   backend: '⚙️',
-  automatizacion: '🤖',
-  ecommerce: '🛒',
-  mobile: '📱',
+  automatizacion: '⚡',
   devops: '🚀',
-  'ia-datos': '🧠',
-  otros: '📦',
 }
 
 const POWER_BI_SVG = (
@@ -235,7 +227,7 @@ export default function Home() {
           </motion.div>
 
           <motion.div
-            className="grid grid-cols-2 sm:grid-cols-4 gap-4"
+            className="grid grid-cols-2 sm:grid-cols-3 gap-4"
             variants={stagger}
             initial="hidden"
             whileInView="show"

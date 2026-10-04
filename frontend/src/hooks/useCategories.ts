@@ -5,6 +5,11 @@ import { getCached, setCached, isCacheValid } from '../utils/productsCache'
 
 const CATEGORIES_KEY = 'categories:list'
 
+// Categorías dadas de baja. El seed las borra de la DB en el próximo deploy;
+// mientras tanto (o si quedaron en algún cache) no se muestran.
+const RETIRED_SLUGS = new Set(['ecommerce', 'mobile', 'ia-datos', 'otros'])
+const visible = (list: Category[]) => list.filter((c) => !RETIRED_SLUGS.has(c.slug))
+
 /**
  * Categorías con stale-while-revalidate (mismo patrón que los productos).
  * El estado inicial se lee del cache de forma síncrona, así la primera
@@ -13,7 +18,7 @@ const CATEGORIES_KEY = 'categories:list'
  */
 export function useCategories() {
   const [categories, setCategories] = useState<Category[]>(
-    () => getCached<Category[]>(CATEGORIES_KEY) ?? [],
+    () => visible(getCached<Category[]>(CATEGORIES_KEY) ?? []),
   )
   const [loading, setLoading] = useState(() => getCached(CATEGORIES_KEY) === null)
 
@@ -27,7 +32,7 @@ export function useCategories() {
       .getCategories()
       .then((fresh) => {
         if (cancelled) return
-        setCategories(fresh)
+        setCategories(visible(fresh))
         setCached(CATEGORIES_KEY, fresh)
       })
       .catch(() => {
