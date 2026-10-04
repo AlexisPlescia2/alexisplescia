@@ -66,6 +66,14 @@ const CERTS = [
     logo: 'educacionit.com',
   },
   {
+    title: 'Diseño UX',
+    institution: 'EducaciónIT',
+    year: 'Finalizado',
+    desc: 'Diseño centrado en el usuario con Figma y FigJam: investigación con entrevistas y proto-personas, benchmark, arquitectura de información, user flows, UX writing, accesibilidad y evaluaciones heurísticas.',
+    icon: '🎨',
+    logo: 'educacionit.com',
+  },
+  {
     title: 'Tecnicatura Universitaria en Programación',
     institution: 'Universidad Tecnológica Nacional (UTN)',
     year: 'Discontinuada',
