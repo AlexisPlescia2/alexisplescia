@@ -330,7 +330,7 @@ export default function Home() {
             <div className="card-dark p-12 border-accent/10 relative overflow-hidden text-center">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/[0.06] to-transparent pointer-events-none" />
               <h2 className="section-title text-3xl md:text-4xl mb-4 relative">
-                ¿Trabajamos juntos?
+                Contacto
               </h2>
               <p className="text-[#e8e8e8]/40 mb-8 max-w-sm mx-auto relative text-sm leading-relaxed">
                 Disponible para proyectos freelance y posiciones full-time.
@@ -348,7 +348,7 @@ export default function Home() {
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} transition={springFast}>
                   <Link to="/contact" className="btn-secondary px-7 py-3 text-sm">
-                    Contacto
+                    Escribime
                   </Link>
                 </motion.div>
               </div>
