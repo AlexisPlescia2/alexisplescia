@@ -39,6 +39,7 @@ const CERTS = [
     year: 'Dic 2023 – Ago 2024',
     desc: 'Desarrollo web full stack con Python y Django, APIs REST, ORM y despliegue en producción.',
     icon: '🎓',
+    logo: 'https://cdn.simpleicons.org/python/3776AB',
   },
   {
     title: 'JavaScript Avanzado',
