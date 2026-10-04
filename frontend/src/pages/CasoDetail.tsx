@@ -140,9 +140,9 @@ export default function CasoDetail() {
                   <button
                     type="button"
                     onClick={() => setZoom(i + 1)}
-                    className="block w-full rounded-lg overflow-hidden border border-border bg-surface cursor-zoom-in"
+                    className="block w-full aspect-[16/10] rounded-lg overflow-hidden border border-border bg-white cursor-zoom-in"
                   >
-                    <img src={c.src} alt={c.epigrafe} loading="lazy" className="w-full h-auto hover:scale-[1.02] transition-transform duration-300" />
+                    <img src={c.src} alt={c.epigrafe} loading="lazy" className="w-full h-full object-contain hover:scale-[1.02] transition-transform duration-300" />
                   </button>
                   <figcaption className="text-xs text-[#e8e8e8]/40 mt-2 leading-relaxed">{c.epigrafe}</figcaption>
                 </figure>
