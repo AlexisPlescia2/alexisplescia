@@ -348,7 +348,7 @@ export default function Home() {
                 </motion.div>
                 <motion.div whileHover={{ scale: 1.03 }} whileTap={{ scale: 0.97 }} transition={springFast}>
                   <Link to="/contact" className="btn-secondary px-7 py-3 text-sm">
-                    Escribime
+                    Contacto
                   </Link>
                 </motion.div>
               </div>
