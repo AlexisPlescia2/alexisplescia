@@ -325,7 +325,7 @@ export default function Home() {
                   {featured.slice(0, 4).map((product) => (
                     <motion.div key={product.id} variants={fadeUp} transition={springBase}
                       className={isFew ? 'w-full sm:w-72' : ''}>
-                      <motion.div whileHover={{ y: -4 }} transition={springFast}>
+                      <motion.div whileHover={{ y: -4 }} transition={springFast} className="h-full">
                         <ProductCard product={product} showPrice={false} />
                       </motion.div>
                     </motion.div>

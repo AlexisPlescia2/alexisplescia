@@ -17,7 +17,7 @@ export default function ProductCard({ product, showPrice = true, className = '' 
   const mainImage = product.images?.[0] || PLACEHOLDER
 
   return (
-    <div className={`group relative card-dark overflow-hidden hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-200 flex flex-col ${className}`}>
+    <div className={`group relative card-dark overflow-hidden hover:border-accent/30 hover:shadow-lg hover:shadow-accent/5 transition-all duration-200 flex flex-col h-full ${className}`}>
       {/* Image */}
       <Link to={`/product/${product.slug}`} className="block overflow-hidden">
         <div className="aspect-[4/3] overflow-hidden bg-surface">
@@ -39,14 +39,14 @@ export default function ProductCard({ product, showPrice = true, className = '' 
       {/* Badges */}
       <div className="absolute top-3 left-3 flex flex-col gap-1">
         {product.featured && (
-          <span className="px-2 py-0.5 bg-gold/20 text-gold text-xs font-mono uppercase tracking-wider rounded border border-gold/30">
+          <span className="px-2 py-0.5 bg-black/60 backdrop-blur-sm text-gold text-xs font-mono uppercase tracking-wider rounded border border-gold/30">
             Destacado
           </span>
         )}
       </div>
 
       {/* Info */}
-      <div className="p-4 flex flex-col flex-1">
+      <div className="p-4 flex flex-col flex-1 gap-3">
         <Link to={`/product/${product.slug}`}>
           {product.category && (
             <p className="text-xs font-mono text-gold/60 uppercase tracking-wider mb-1">
@@ -59,7 +59,7 @@ export default function ProductCard({ product, showPrice = true, className = '' 
         </Link>
 
         {showPrice && (
-          <div className="mt-auto pt-3">
+          <div>
             {product.price > 0 ? (
               <span className="font-mono text-accent font-semibold text-base">{formatPrice(product.price)}</span>
             ) : (
@@ -68,8 +68,10 @@ export default function ProductCard({ product, showPrice = true, className = '' 
           </div>
         )}
 
+        {/* mt-auto empuja el botón al fondo: todas las tarjetas quedan alineadas
+            aunque el título ocupe una o dos líneas */}
         <button
-          className="btn-primary w-full py-2 text-sm mt-3"
+          className="btn-primary w-full py-2 text-sm mt-auto"
           onClick={() => navigate(`/product/${product.slug}`)}
         >
           Ver proyecto →
